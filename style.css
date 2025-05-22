@@ -2,27 +2,63 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background: #f8f9fa;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 header {
-  background-color: #003366;
+  background: #004d99;
   color: white;
-  padding: 20px;
+  padding: 1rem 0;
   text-align: center;
 }
 
-section {
-  padding: 20px;
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0 0;
 }
 
-h1, h2 {
-  color: #003366;
+nav ul li {
+  margin: 0 1rem;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-  margin: 10px 0;
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  background: #cce5ff;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.hero .btn-whatsapp {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #25D366;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.layanan, .tentang {
+  padding: 2rem 0;
+}
+
+footer {
+  background: #343a40;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
 }
