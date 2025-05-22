@@ -1,81 +1,47 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>BINTANG JAYA AC - Layanan</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BINTANG JAYA AC - Layanan</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; }
+        header { background:#0d6efd; color:#fff; padding:20px 0; text-align:center; }
+        nav ul { list-style:none; margin:0; padding:0; display:flex; justify-content:center; background:#003d99; }
+        nav ul li { margin:0 15px; }
+        nav ul li a { color:#fff; text-decoration:none; padding:14px 20px; display:block; }
+        nav ul li a:hover { background:#0056b3; }
+        nav ul li a[aria-current=\"page\"] { background:#0056b3; }
+        .container { max-width:1000px; margin:20px auto; padding:20px; background:#fff; border-radius:8px; }
+        ul.services-list { list-style-type: disc; padding-left: 20px; }
+        footer { background:#003d99; color:#fff; text-align:center; padding:10px 0; margin-top:20px; }
+    </style>
 </head>
-<body class="bg-light">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">BINTANG JAYA AC</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="index.html">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">Tentang Kami</a></li>
-          <li class="nav-item"><a class="nav-link active" href="services.html">Layanan</a></li>
-          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="contact.html">Kontak</a></li>
+<body>
+    <header>
+        <h1>BINTANG JAYA AC</h1>
+        <p>Solusi Terbaik untuk Kebutuhan AC Anda</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang Kami</a></li>
+            <li><a href="layanan.html" aria-current="page">Layanan</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
         </ul>
-      </div>
+    </nav>
+    <div class="container">
+        <h2>Layanan Kami</h2>
+        <ul class="services-list">
+            <li>Pasang AC Baru & Bekas dengan teknisi profesional dan harga bersaing.</li>
+            <li>Servis dan Perbaikan AC untuk menjaga performa maksimal.</li>
+            <li>Cuci AC secara menyeluruh untuk udara yang segar dan sehat.</li>
+            <li>Jual Beli AC baru dan second dengan garansi kualitas.</li>
+        </ul>
     </div>
-  </nav>
-
-  <header class="bg-primary text-white py-5">
-    <div class="container text-center">
-      <h1 class="display-4 fw-bold">Layanan Kami</h1>
-      <p class="lead">Kami menyediakan berbagai layanan AC terbaik untuk Anda</p>
-    </div>
-  </header>
-
-  <main class="container my-5">
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h3 class="card-title">Pasang AC Baru & Bekas</h3>
-            <p class="card-text">Pemasangan AC berkualitas dengan harga terbaik. Kami menangani berbagai tipe AC sesuai kebutuhan Anda.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h3 class="card-title">Servis AC</h3>
-            <p class="card-text">Perbaikan AC dan pengisian freon oleh teknisi ahli untuk memastikan AC Anda selalu optimal.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h3 class="card-title">Cuci AC Berkala</h3>
-            <p class="card-text">Layanan cuci AC secara rutin untuk menjaga performa dan kesehatan udara yang Anda hirup.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6">
-        <div class="card shadow-sm">
-          <div class="card-body">
-            <h3 class="card-title">Jual Beli AC</h3>
-            <p class="card-text">Kami menyediakan AC baru dan bekas berkualitas dengan harga kompetitif. Tukar tambah juga tersedia.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <footer class="bg-light text-center py-3 mt-5 border-top">
-    &copy; 2025 BINTANG JAYA AC. All rights reserved.
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <footer>
+        <p>&copy; 2025 BINTANG JAYA AC. Semua Hak Dilindungi.</p>
+    </footer>
 </body>
 </html>
