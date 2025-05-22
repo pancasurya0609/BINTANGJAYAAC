@@ -1,32 +1,161 @@
-<section class="services" aria-label="Layanan Kami">
-  <h2 style="text-align:center; color:#003d99; margin-bottom:30px;">Layanan Kami</h2>
-  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px; max-width:900px; margin:0 auto;">
-    <article style="background:#e7f0ff; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,61,153,0.15); transition: transform 0.3s ease;">
-      <h3 style="color:#0d6efd; margin-bottom:12px;">Pasang AC Baru & Bekas</h3>
-      <p style="color:#333; line-height:1.5;">Pemasangan AC berkualitas dengan teknisi profesional yang berpengalaman. Kami memberikan layanan pemasangan untuk AC baru maupun bekas dengan harga bersaing dan hasil rapi sesuai standar keamanan.</p>
-    </article>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BINTANG JAYA AC - Layanan Kami</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f4f7fb;
+      color: #333;
+    }
+    header {
+      background: #0d6efd;
+      color: white;
+      padding: 25px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(13,110,253,0.4);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+      letter-spacing: 2px;
+    }
+    nav {
+      background: #003d99;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0; padding: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav ul li {
+      margin: 0 18px;
+    }
+    nav ul li a {
+      display: block;
+      padding: 14px 22px;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover,
+    nav ul li a[aria-current="page"] {
+      background-color: #0056b3;
+      border-radius: 6px;
+    }
+    main {
+      max-width: 960px;
+      margin: 40px auto 60px;
+      padding: 0 15px;
+    }
+    h2 {
+      color: #003d99;
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 40px;
+      letter-spacing: 1px;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 30px;
+    }
+    .service-item {
+      background: #e7f0ff;
+      border-radius: 14px;
+      padding: 25px 20px;
+      box-shadow: 0 4px 14px rgba(0,61,153,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0,61,153,0.3);
+    }
+    .service-item h3 {
+      color: #0d6efd;
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+    .service-item p {
+      line-height: 1.6;
+      font-size: 1rem;
+      color: #1a1a1a;
+    }
+    footer {
+      background: #003d99;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 0.9rem;
+      letter-spacing: 0.5px;
+      margin-top: 60px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        font-size: 1.8rem;
+      }
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+      nav ul li {
+        margin: 6px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BINTANG JAYA AC</h1>
+  </header>
 
-    <article style="background:#e7f0ff; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,61,153,0.15); transition: transform 0.3s ease;">
-      <h3 style="color:#0d6efd; margin-bottom:12px;">Servis & Perbaikan AC</h3>
-      <p style="color:#333; line-height:1.5;">Servis rutin dan perbaikan cepat untuk menjaga performa AC Anda tetap maksimal. Kami menangani berbagai jenis kerusakan dan pengisian freon agar AC Anda selalu dingin dan hemat energi.</p>
-    </article>
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="tentang.html">Tentang Kami</a></li>
+      <li><a href="layanan.html" aria-current="page">Layanan</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
 
-    <article style="background:#e7f0ff; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,61,153,0.15); transition: transform 0.3s ease;">
-      <h3 style="color:#0d6efd; margin-bottom:12px;">Cuci AC Menyeluruh</h3>
-      <p style="color:#333; line-height:1.5;">Layanan cuci AC yang menyeluruh untuk menghilangkan debu, kotoran, dan bakteri. Dengan rutin mencuci AC, Anda mendapatkan udara yang lebih bersih, sehat, dan nyaman di ruangan Anda.</p>
-    </article>
+  <main>
+    <h2>Layanan Kami</h2>
+    <div class="services-grid">
+      <article class="service-item" aria-labelledby="service1-title">
+        <h3 id="service1-title">Pasang AC Baru & Bekas</h3>
+        <p>Pemasangan AC berkualitas dengan teknisi profesional yang berpengalaman. Kami memberikan layanan pemasangan untuk AC baru maupun bekas dengan harga bersaing dan hasil rapi sesuai standar keamanan.</p>
+      </article>
 
-    <article style="background:#e7f0ff; padding:20px; border-radius:12px; box-shadow:0 4px 12px rgba(0,61,153,0.15); transition: transform 0.3s ease;">
-      <h3 style="color:#0d6efd; margin-bottom:12px;">Jual Beli AC Baru & Second</h3>
-      <p style="color:#333; line-height:1.5;">Kami menyediakan AC baru dan second dengan garansi kualitas dan harga kompetitif. Konsultasikan kebutuhan Anda dengan kami untuk mendapatkan AC yang sesuai budget dan spesifikasi.</p>
-    </article>
-  </div>
-</section>
+      <article class="service-item" aria-labelledby="service2-title">
+        <h3 id="service2-title">Servis & Perbaikan AC</h3>
+        <p>Servis rutin dan perbaikan cepat untuk menjaga performa AC Anda tetap maksimal. Kami menangani berbagai jenis kerusakan dan pengisian freon agar AC Anda selalu dingin dan hemat energi.</p>
+      </article>
 
-<style>
-  /* Hover effect untuk artikel layanan */
-  section.services article:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 8px 20px rgba(0,61,153,0.3);
-  }
-</style>
+      <article class="service-item" aria-labelledby="service3-title">
+        <h3 id="service3-title">Cuci AC Menyeluruh</h3>
+        <p>Layanan cuci AC yang menyeluruh untuk menghilangkan debu, kotoran, dan bakteri. Dengan rutin mencuci AC, Anda mendapatkan udara yang lebih bersih, sehat, dan nyaman di ruangan Anda.</p>
+      </article>
+
+      <article class="service-item" aria-labelledby="service4-title">
+        <h3 id="service4-title">Jual Beli AC Baru & Second</h3>
+        <p>Kami menyediakan AC baru dan second dengan garansi kualitas dan harga kompetitif. Konsultasikan kebutuhan Anda dengan kami untuk mendapatkan AC yang sesuai budget dan spesifikasi.</p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 BINTANG JAYA AC. Semua Hak Dilindungi.
+  </footer>
+</body>
+</html>
