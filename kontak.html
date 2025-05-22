@@ -3,18 +3,80 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BINTANG JAYA AC - Kontak</title>
+    <title>Kontak Kami - BINTANG JAYA AC</title>
     <style>
-        body { font-family: Arial, sans-serif; margin:0; padding:0; background:#f4f4f4; }
-        header { background:#0d6efd; color:#fff; padding:20px 0; text-align:center; }
-        nav ul { list-style:none; margin:0; padding:0; display:flex; justify-content:center; background:#003d99; }
-        nav ul li { margin:0 15px; }
-        nav ul li a { color:#fff; text-decoration:none; padding:14px 20px; display:block; }
-        nav ul li a:hover { background:#0056b3; }
-        nav ul li a[aria-current=\"page\"] { background:#0056b3; }
-        .container { max-width:1000px; margin:20px auto; padding:20px; background:#fff; border-radius:8px; }
-        .contact-info p { line-height:1.6; }
-        footer { background:#003d99; color:#fff; text-align:center; padding:10px 0; margin-top:20px; }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #0d6efd;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0; padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #003d99;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        nav ul li a:hover, nav ul li a[aria-current="page"] {
+            background-color: #0056b3;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1, h2 {
+            color: #003d99;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        .contact-info a {
+            color: #0d6efd;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            background-color: #003d99;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -31,11 +93,25 @@
             <li><a href="kontak.html" aria-current="page">Kontak</a></li>
         </ul>
     </nav>
-    <div class="container contact-info">
+    <div class="container">
         <h2>Kontak Kami</h2>
-        <p>Alamat: Jl. Pancing I LK IX, Mabar Hilir</p>
-        <p>WhatsApp: <a href="https://wa.me/6282304257994" target="_blank" rel="noopener">+62 823-0425-7994</a></p>
-        <p>Email: info@bintangjayaac.shop</p>
+        <p>Silakan hubungi kami melalui informasi di bawah ini untuk konsultasi, pemesanan, atau layanan servis AC terbaik dari BINTANG JAYA AC.</p>
+        <div class="contact-info">
+            <p><strong>Alamat:</strong><br>Jl. Pancing I LK IX, Mabar Hilir, Medan, Sumatera Utara</p>
+            <p><strong>Telepon / WhatsApp:</strong><br><a href="https://wa.me/6282304257994" target="_blank" rel="noopener">+62 823-0425-7994</a></p>
+            <p><strong>Email:</strong><br><a href="mailto:info@bintangjayaac.shop">info@bintangjayaac.shop</a></p>
+            <p><strong>Jam Operasional:</strong><br>Senin – Sabtu: 08.00 – 18.00 WIB<br>Minggu & Hari Libur: Libur / Hubungi untuk jadwal khusus</p>
+        </div>
+        <h3>Lokasi Kami</h3>
+        <p>Kunjungi kantor kami untuk layanan tatap muka dan konsultasi langsung. Berikut peta lokasi kami:</p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1234567890123!2d98.123456789!3d3.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312ab34cd56789%3A0x1234567890abcdef!2sJl.%20Pancing%20I%20LK%20IX%2C%20Mabar%20Hilir!5e0!3m2!1sid!2sid!4v1684654789512!5m2!1sid!2sid"
+            width="100%"
+            height="350"
+            style="border:0; border-radius:8px;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
     <footer>
         <p>&copy; 2025 BINTANG JAYA AC. Semua Hak Dilindungi.</p>
