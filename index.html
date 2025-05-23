@@ -6,55 +6,115 @@
   <title>Bintang Jaya AC - Servis dan Pasang AC Medan</title>
   <style>
     body {
-      background-color: #f0f8ff; /* warna biru sangat muda */
+      background-color: #f0f8ff;
       font-family: Arial, sans-serif;
       color: #333;
       margin: 0;
-      padding: 20px;
+      padding: 0;
       line-height: 1.6;
     }
     header {
       background-color: #007acc;
       color: white;
       padding: 15px 20px;
-      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .logo {
       font-size: 1.8em;
       font-weight: bold;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     main {
-      max-width: 800px;
-      margin: 20px auto;
+      max-width: 900px;
+      margin: 30px auto;
       background-color: white;
-      padding: 20px;
+      padding: 25px;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
     }
     footer {
       text-align: center;
-      margin-top: 40px;
+      margin: 40px 0 20px 0;
       font-size: 0.9em;
       color: #666;
     }
-    a {
-      color: #007acc;
+    a.cta-button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: white;
+      border-radius: 5px;
       text-decoration: none;
+      font-weight: bold;
     }
-    a:hover {
-      text-decoration: underline;
+    a.cta-button:hover {
+      background-color: #005fa3;
+    }
+    h1, h2 {
+      color: #007acc;
+    }
+    section {
+      margin-bottom: 30px;
     }
   </style>
 </head>
 <body>
   <header>
-    BINTANG JAYA AC
+    <div class="logo">BINTANG JAYA AC</div>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="blog.html">Blog</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="kontak.html">Kontak</a>
+      <a href="tentang.html">Tentang Kami</a>
+    </nav>
   </header>
+
   <main>
-    <h1>Selamat datang di Bintang Jaya AC</h1>
-    <p>Kami melayani jual, pasang, servis, dan cuci AC di Medan khususnya Mabar dan Marelan.</p>
-    <p>Hubungi kami sekarang juga untuk layanan terbaik dan harga bersaing.</p>
-    <p><a href="kontak.html">Kontak Kami</a></p>
+    <section>
+      <h1>Selamat datang di Bintang Jaya AC</h1>
+      <p>Kami melayani jual, pasang, servis, dan cuci AC di Medan, khususnya daerah Mabar dan Marelan.</p>
+      <p>Kami memberikan layanan terbaik dengan teknisi profesional dan harga bersaing.</p>
+      <a href="kontak.html" class="cta-button">Hubungi Kami Sekarang</a>
+    </section>
+
+    <section>
+      <h2>Layanan Kami</h2>
+      <ul>
+        <li><strong>Jual AC:</strong> Menyediakan AC berbagai merek dan tipe sesuai kebutuhan Anda.</li>
+        <li><strong>Pasang AC:</strong> Pemasangan AC dengan teknisi berpengalaman dan cepat.</li>
+        <li><strong>Servis AC:</strong> Perawatan dan perbaikan AC agar selalu dingin dan hemat listrik.</li>
+        <li><strong>Cuci AC:</strong> Membersihkan AC dari debu dan kotoran untuk kualitas udara yang lebih baik.</li>
+      </ul>
+      <a href="layanan.html" class="cta-button">Lihat Semua Layanan</a>
+    </section>
+
+    <section>
+      <h2>Artikel Terbaru di Blog</h2>
+      <ul>
+        <li><a href="blog/cara-merawat-ac.html">Cara Merawat AC agar Tetap Awet dan Dingin</a></li>
+        <li><a href="blog/tanda-ac-perlu-servis.html">5 Tanda AC Anda Perlu Segera Diservis</a></li>
+        <li><a href="blog/merek-ac-terbaik.html">Merek AC Terbaik untuk Rumah di Medan</a></li>
+      </ul>
+      <a href="blog.html" class="cta-button">Baca Semua Artikel</a>
+    </section>
   </main>
+
   <footer>
     &copy; 2025 Bintang Jaya AC - All rights reserved.
   </footer>
