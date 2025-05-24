@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bintang Jaya AC - Service & Pasang AC di Medan</title>
-  <meta name="description" content="BINTANG JAYA AC melayani service AC, pasang AC, cuci AC, dan jual beli AC di Medan. Teknisi berpengalaman dan bergaransi.">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BINTANG JAYA AC - Spesialis Service & Pasang AC Medan</title>
+  <meta name="description" content="BINTANG JAYA AC melayani service AC, pasang AC, cuci AC, dan jual beli AC di Medan. Teknisi berpengalaman & bergaransi.">
   <style>
-    * {
+    *, *::before, *::after {
       box-sizing: border-box;
-      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f8f9fa;
+      background: #f4f4f4;
       color: #333;
+      line-height: 1.6;
     }
 
     header {
@@ -25,27 +26,16 @@
       text-align: center;
     }
 
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-    }
-
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-    }
-
     nav {
       background: #343a40;
-      display: flex;
-      justify-content: center;
-      padding: 0.5rem;
+      padding: 1rem;
+      text-align: center;
     }
 
     nav a {
       color: white;
+      margin: 0 15px;
       text-decoration: none;
-      margin: 0 1rem;
       font-weight: bold;
     }
 
@@ -60,31 +50,26 @@
     }
 
     section {
-      margin-bottom: 3rem;
+      margin-bottom: 2.5rem;
     }
 
     section h2 {
       color: #007bff;
       border-bottom: 2px solid #007bff;
       padding-bottom: 0.5rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
+      margin-bottom: 1rem;
     }
 
     .card {
       background: white;
       padding: 1rem;
-      margin-bottom: 1rem;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 1.5rem;
     }
 
-    .contact a {
-      color: #007bff;
-      text-decoration: none;
-      font-weight: bold;
+    .card h3 {
+      margin-top: 0;
     }
 
     footer {
@@ -94,13 +79,21 @@
       padding: 1rem;
     }
 
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     @media (max-width: 600px) {
       nav {
-        flex-direction: column;
-        align-items: center;
+        display: block;
       }
-
       nav a {
+        display: block;
         margin: 0.5rem 0;
       }
     }
@@ -109,15 +102,13 @@
 <body>
   <header>
     <h1>BINTANG JAYA AC</h1>
-    <p>Spesialis Service & Pasang AC Terpercaya di Medan</p>
+    <p>Spesialis Service & Pasang AC Profesional di Medan</p>
   </header>
 
   <nav>
     <a href="#layanan">Layanan</a>
-    <a href="#tentang">Tentang Kami</a>
-    <a href="#testimoni">Testimoni</a>
-    <a href="#kontak">Kontak</a>
     <a href="#artikel">Artikel</a>
+    <a href="#kontak">Kontak</a>
   </nav>
 
   <main>
@@ -125,56 +116,41 @@
       <h2>Layanan Kami</h2>
       <div class="card">
         <h3>Service AC</h3>
-        <p>Perbaikan AC berbagai merek, penanganan bocor, tidak dingin, dan lainnya oleh teknisi berpengalaman.</p>
+        <p>Perbaikan AC berbagai merek dengan teknisi profesional. Tangani AC bocor, tidak dingin, atau bermasalah lainnya.</p>
       </div>
       <div class="card">
         <h3>Cuci AC</h3>
-        <p>Pembersihan menyeluruh unit indoor & outdoor, menjaga performa dan efisiensi AC Anda.</p>
+        <p>Pembersihan menyeluruh unit indoor dan outdoor untuk menjaga efisiensi pendinginan dan kesehatan udara.</p>
       </div>
       <div class="card">
         <h3>Pasang AC Baru / Bekas</h3>
-        <p>Instalasi unit AC sesuai standar teknis, rapi, aman, dan bergaransi.</p>
+        <p>Instalasi AC dengan rapi, cepat, dan bergaransi. Melayani pasang AC rumahan, kantor, dan ruko.</p>
       </div>
       <div class="card">
         <h3>Jual Beli AC</h3>
-        <p>Menjual AC baru & second bergaransi. Menerima AC bekas dengan harga bersaing.</p>
+        <p>Menjual AC baru & second berkualitas, serta menerima AC bekas dengan harga kompetitif.</p>
       </div>
-    </section>
-
-    <section id="tentang">
-      <h2>Tentang Kami</h2>
-      <p><strong>BINTANG JAYA AC</strong> adalah usaha jasa service dan pemasangan AC terpercaya di Medan. Kami telah melayani ratusan pelanggan sejak tahun 2018. Prioritas kami adalah kepuasan pelanggan dengan hasil kerja berkualitas dan harga bersahabat.</p>
-    </section>
-
-    <section id="testimoni">
-      <h2>Testimoni Pelanggan</h2>
-      <div class="card">
-        <p>"AC saya jadi dingin lagi! Pekerjaan cepat dan teknisi ramah. Terima kasih!"<br><em>– Rudi, Medan Tembung</em></p>
-      </div>
-      <div class="card">
-        <p>"Harga terjangkau dan hasilnya memuaskan. Akan saya rekomendasikan ke teman-teman."<br><em>– Sari, Medan Area</em></p>
-      </div>
-    </section>
-
-    <section id="kontak">
-      <h2>Kontak Kami</h2>
-      <p>📍 Alamat: Jl Pancing I LK IX, Mabar Hilir, Medan</p>
-      <p>📞 WhatsApp: <a href="https://wa.me/6282304257994" target="_blank">0823-0425-7994</a></p>
-      <p>Jam Layanan: Senin - Sabtu, 08.00 - 17.00 WIB</p>
     </section>
 
     <section id="artikel">
       <h2>Artikel Terbaru</h2>
       <div class="card">
-        <h3>Cara Merawat AC Agar Tetap Dingin dan Awet</h3>
-        <p>Merawat AC tidak sulit! Bersihkan filter secara rutin, hindari menyetel suhu terlalu rendah, dan lakukan cuci AC minimal 3 bulan sekali.</p>
-        <p><a href="#">Baca Selengkapnya →</a></p>
+        <h3>Cara Merawat AC Agar Tetap Dingin</h3>
+        <p>Merawat AC secara rutin penting agar performa tetap optimal. Bersihkan filter, cek freon, dan lakukan servis berkala.</p>
+        <p><a href="#">Baca Selengkapnya</a></p>
       </div>
+    </section>
+
+    <section id="kontak">
+      <h2>Kontak Kami</h2>
+      <p><strong>Alamat:</strong> Jl Pancing I LK IX, Mabar Hilir, Medan</p>
+      <p><strong>WhatsApp:</strong> <a href="https://wa.me/6282304257994" target="_blank">0823-0425-7994</a></p>
+      <p><strong>Email:</strong> info@bintangjayaac.shop (opsional, bisa ditambahkan)</p>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Bintang Jaya AC - Medan. All rights reserved.</p>
+    <p>&copy; 2025 BINTANG JAYA AC. All rights reserved.</p>
   </footer>
 </body>
 </html>
