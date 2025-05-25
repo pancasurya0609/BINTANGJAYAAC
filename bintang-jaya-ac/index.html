@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BINTANG JAYA AC – Jasa Service & Penjualan AC Profesional</title>
-  <meta name="description" content="BINTANG JAYA AC menyediakan jasa pasang, service, cuci, dan jual beli AC dengan teknisi profesional di Medan.">
+  <title>BINTANG JAYA AC – Solusi AC Profesional</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      margin: 0; padding: 0;
-      background: #f9f9f9; color: #333;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
     }
     header {
       background: #005f73;
@@ -21,68 +22,66 @@
       background: #0a9396;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
       padding: 10px;
-      position: relative;
-      z-index: 1000;
     }
     nav a {
-      color: white !important;
-      margin: 10px 15px;
+      color: white;
+      margin: 0 15px;
       text-decoration: none;
       font-weight: bold;
-      font-size: 1rem;
     }
     .hero {
-      background: #e0f4f1;
+      background: url('https://bintangjayaac.shop/assets/hero.jpg') no-repeat center center/cover;
+      color: white;
+      padding: 100px 20px;
       text-align: center;
-      padding: 40px 20px;
-    }
-    .hero img {
-      width: 100%; max-width: 800px;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
     .hero h1 {
-      margin-top: 20px;
       font-size: 2.5em;
-      color: #005f73;
+      margin-bottom: 10px;
     }
-    .hero p { font-size: 1.2em; color: #444; }
+    .hero p {
+      font-size: 1.2em;
+    }
     .container {
-      max-width: 1100px; margin: 40px auto; padding: 0 20px;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    .section { margin-bottom: 60px; }
-    .section h2 {
-      color: #005f73; margin-bottom: 20px; text-align: center;
+    .services, .article {
+      margin-bottom: 60px;
+    }
+    .services h2, .article h2 {
+      color: #005f73;
+      margin-bottom: 20px;
     }
     .service-list {
-      display: flex; flex-wrap: wrap; gap: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
     }
     .service-item {
       background: white;
       flex: 1 1 calc(50% - 20px);
-      padding: 20px; border-radius: 8px;
+      padding: 20px;
+      border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      text-align: center;
     }
-    .service-item img {
-      width: 100%; height: 150px;
-      object-fit: cover; border-radius: 6px;
-      margin-bottom: 10px;
+    .service-item h3 {
+      margin-top: 0;
+      color: #0a9396;
     }
-    .service-item h3 { margin: 10px 0; color: #0a9396; }
     .contact {
       background: #e9d8a6;
       padding: 40px 20px;
       text-align: center;
-      border-radius: 12px;
     }
     .contact h2 {
-      margin-bottom: 10px; color: #005f73;
+      margin-bottom: 10px;
     }
-    .contact p { margin: 5px 0; }
+    .contact p {
+      margin: 5px 0;
+    }
     footer {
       background: #005f73;
       color: white;
@@ -90,86 +89,88 @@
       padding: 20px;
     }
     @media (max-width: 768px) {
-      .service-item { flex: 1 1 100%; }
+      .service-item {
+        flex: 1 1 100%;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>BINTANG JAYA AC</h1>
-    <p>Solusi Terbaik untuk Kebutuhan AC Anda</p>
-  </header>
+<header>
+  <h1>BINTANG JAYA AC</h1>
+  <p>Solusi Terbaik untuk Kebutuhan AC Anda</p>
+</header>
 
-  <nav>
-    <a href="#">Beranda</a>
-    <a href="#tentang">Tentang Kami</a>
-    <a href="#layanan">Layanan</a>
-    <a href="#artikel">Artikel</a>
-    <a href="#kontak">Kontak</a>
-  </nav>
+<nav>
+  <a href="#">Beranda</a>
+  <a href="#tentang">Tentang Kami</a>
+  <a href="#layanan">Layanan</a>
+  <a href="#artikel">Artikel</a>
+  <a href="#kontak">Kontak</a>
+</nav>
 
-  <section class="hero">
-    <img src="images/teknisi.jpg" alt="Teknisi AC sedang bekerja">
-    <h1>Selamat Datang di BINTANG JAYA AC</h1>
-    <p>Profesional dalam pemasangan, servis, cuci, dan jual beli AC</p>
+<section class="hero">
+  <h1>Selamat Datang di BINTANG JAYA AC</h1>
+  <p>Profesional dalam pemasangan, servis, cuci, dan jual beli AC</p>
+</section>
+
+<div class="container">
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Kami adalah penyedia layanan profesional dalam pemasangan, servis, cuci, dan jual beli AC, baik baru maupun bekas. Dengan tim teknisi berpengalaman, kami berkomitmen memberikan layanan terbaik untuk kenyamanan ruangan Anda.</p>
+    <p>Di BINTANG JAYA AC, kepuasan pelanggan adalah prioritas utama kami. Kami memahami bahwa AC yang berfungsi dengan baik sangat penting untuk menciptakan suasana yang nyaman dan sejuk di rumah, kantor, atau tempat usaha Anda. Oleh karena itu, kami selalu menggunakan teknologi terbaru dan metode kerja yang efisien dalam setiap pemasangan dan perawatan AC.</p>
+    <p>Kami juga siap memberikan konsultasi gratis untuk membantu Anda memilih AC yang sesuai dengan kebutuhan dan budget Anda.</p>
   </section>
 
-  <div class="container">
-
-    <section id="tentang" class="section">
-      <h2>Tentang Kami</h2>
-      <p>BINTANG JAYA AC adalah penyedia jasa terpercaya di Medan yang berfokus pada pemasangan, perawatan, dan perbaikan AC. Dengan teknisi berpengalaman dan bergaransi, kami siap membantu Anda menciptakan udara sejuk di rumah, kantor, atau bisnis Anda.</p>
-    </section>
-
-    <section id="layanan" class="section">
-      <h2>Layanan Kami</h2>
-      <div class="service-list">
-        <div class="service-item">
-          <img src="images/layanan1.jpg" alt="Pemasangan AC">
-          <h3>Pemasangan AC</h3>
-          <p>Instalasi AC baru & bekas dengan teknisi profesional dan garansi pengerjaan.</p>
-        </div>
-        <div class="service-item">
-          <img src="images/layanan2.jpg" alt="Service & Perbaikan AC">
-          <h3>Service & Perbaikan</h3>
-          <p>Perbaikan AC tidak dingin, bocor, mati total, dan penggantian sparepart.</p>
-        </div>
-        <div class="service-item">
-          <img src="images/layanan3.jpg" alt="Cuci AC">
-          <h3>Cuci AC</h3>
-          <p>Pembersihan indoor dan outdoor unit secara menyeluruh untuk menjaga efisiensi AC.</p>
-        </div>
-        <div class="service-item">
-          <img src="images/layanan4.jpg" alt="Jual Beli AC">
-          <h3>Jual Beli AC</h3>
-          <p>Menjual AC baru & bekas berkualitas, serta menerima pembelian AC second.</p>
-        </div>
+  <section id="layanan" class="services">
+    <h2>Layanan Kami</h2>
+    <div class="service-list">
+      <div class="service-item">
+        <h3>Pemasangan AC</h3>
+        <p>Pasang AC baru dan bekas dengan teknisi profesional dan harga bersaing.</p>
       </div>
-    </section>
+      <div class="service-item">
+        <h3>Servis & Perbaikan AC</h3>
+        <p>Servis berkala, perbaikan kerusakan, pengisian freon, dan pengecekan menyeluruh.</p>
+      </div>
+      <div class="service-item">
+        <h3>Cuci AC</h3>
+        <p>Pembersihan menyeluruh indoor & outdoor untuk menjaga udara bersih dan sehat.</p>
+      </div>
+      <div class="service-item">
+        <h3>Jual Beli AC</h3>
+        <p>Tersedia AC baru dan second bergaransi dengan berbagai merek terpercaya.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="artikel" class="section">
-      <h2>Artikel: Tips Merawat AC</h2>
-      <ul>
-        <li><strong>Bersihkan Filter AC</strong> minimal 1 bulan sekali.</li>
-        <li><strong>Lakukan Service Berkala</strong> setiap 3–6 bulan.</li>
-        <li><strong>Jaga Kebersihan Area Outdoor</strong>.</li>
-        <li><strong>Periksa Level Freon</strong> secara berkala.</li>
-      </ul>
-    </section>
+  <section id="artikel" class="article">
+    <h2>Panduan Merawat AC Agar Awet dan Efisien</h2>
+    <p>Merawat AC secara rutin sangat penting untuk memastikan kinerjanya tetap optimal dan memperpanjang umur perangkat. Berikut adalah beberapa tips perawatan AC yang dapat Anda lakukan:</p>
+    <ul>
+      <li><strong>Bersihkan Filter Secara Berkala:</strong> Filter yang kotor dapat menghambat aliran udara dan mengurangi efisiensi AC. Bersihkan filter setidaknya sekali sebulan.</li>
+      <li><strong>Periksa Kondisi Freon:</strong> Pastikan level freon sesuai dengan standar. Kekurangan freon dapat menyebabkan AC tidak dingin dan meningkatkan konsumsi energi.</li>
+      <li><strong>Jaga Kebersihan Unit Outdoor:</strong> Pastikan unit outdoor bebas dari debu, daun, dan kotoran lainnya yang dapat menghambat kinerja kondensor.</li>
+      <li><strong>Lakukan Servis Rutin:</strong> Lakukan servis oleh teknisi profesional setidaknya dua kali setahun untuk memastikan semua komponen berfungsi dengan baik.</li>
+    </ul>
+    <p>Dengan perawatan yang tepat, AC Anda akan bekerja lebih efisien, hemat energi, dan memiliki umur yang lebih panjang.</p>
+  </section>
 
-    <section id="kontak" class="contact">
-      <h2>Hubungi Kami</h2>
-      <p><strong>Alamat:</strong> Jl. Pancing I LK IX, Mabar Hilir, Medan</p>
-      <p><strong>WhatsApp:</strong> <a href="https://wa.me/6282304257994">0823-0425-7994</a></p>
-      <p><strong>Email:</strong> <a href="mailto:info@bintangjayaac.shop">info@bintangjayaac.shop</a></p>
-    </section>
+  <section id="kontak" class="contact">
+    <h2>Hubungi Kami</h2>
+    <p><strong>Alamat:</strong> Jl. Contoh No.123, Jakarta</p>
+    <p><strong>Telepon:</strong> 0812-3456-7890</p>
+    <p><strong>Email:</strong> info@bintangjayaac.shop</p>
+    <p><strong>Jam Operasional:</strong> Senin - Sabtu, 08:00 - 17:00</p>
+  </section>
 
-  </div>
+</div>
 
-  <footer>
-    <p>© 2025 BINTANG JAYA AC. All rights reserved.</p>
-  </footer>
+<footer>
+  <p>&copy; 2025 BINTANG JAYA AC. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
