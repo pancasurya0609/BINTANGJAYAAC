@@ -1,16 +1,54 @@
-body {
-  background-color: #000;
-  color: #fff;
-  font-family: sans-serif;
-  padding: 20px;
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-nav a {
+.slider {
+  display: flex;
+  width: 300%;
+  animation: slide 12s infinite;
+}
+
+.slide {
+  width: 100%;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slide-text {
+  position: absolute;
+  top: 20%;
+  left: 10%;
   color: white;
-  margin: 0 10px;
-  text-decoration: none;
+  background-color: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 500px;
 }
 
-nav a:hover {
-  color: #0af;
+.wa-button {
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
 }
+
+@keyframes slide {
+  0%   { transform: translateX(0%); }
+  33%  { transform: translateX(0%); }
+  34%  { transform: translateX(-100%); }
+  66%  { transform: translateX(-100%); }
+  67%  { transform: translateX(-200%); }
+  100% { transform: translateX(-200%); }
+}
+</style>
