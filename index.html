@@ -41,22 +41,20 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Bintang Jaya AC</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
           <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
-          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
-          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak Kami</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Banner Slider -->
+  <!-- Carousel Banner -->
   <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -70,132 +68,96 @@
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Sebelumnya</span>
+      <span class="carousel-control-prev-icon"></span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Berikutnya</span>
+      <span class="carousel-control-next-icon"></span>
     </button>
   </div>
 
-  <!-- Artikel Tentang Kami -->
+  <!-- Konten Utama -->
   <main class="container my-5">
-    <article id="tentang" class="article">
-      <h2 class="mb-4 text-primary fw-bold">Selamat Datang di Bintang Jaya AC</h2>
-      <p>Kami adalah penyedia jasa service dan perbaikan AC terpercaya di Medan dan sekitarnya. Dengan pengalaman bertahun-tahun, kami berkomitmen memberikan layanan terbaik agar AC Anda selalu dalam kondisi prima dan memberikan kenyamanan maksimal bagi Anda dan keluarga.</p>
+    <article class="article">
+      <h2 class="text-primary fw-bold">Selamat Datang di Bintang Jaya AC</h2>
+      <p>Kami melayani service, perawatan, pemasangan, dan bongkar pasang AC rumah, kantor, ruko, dan bangunan lainnya. Bintang Jaya AC siap hadir di daerah Medan Marelan, Helvetia, Mabar, dan sekitarnya.</p>
 
-      <h3 class="mt-5 mb-3 text-primary fw-semibold">Kenapa Memilih Kami?</h3>
-      <ul class="list-group list-group-flush mb-4">
-        <li class="list-group-item">Teknisi profesional dan berpengalaman dengan sertifikasi.</li>
-        <li class="list-group-item">Harga transparan dan kompetitif tanpa biaya tersembunyi.</li>
-        <li class="list-group-item">Pelayanan cepat, ramah, dan komunikatif.</li>
-        <li class="list-group-item">Garansi kerja sebagai jaminan kualitas layanan.</li>
+      <h3 id="layanan" class="text-primary fw-semibold mt-5">Layanan Kami</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Service AC (perbaikan segala jenis dan merek AC)</li>
+        <li class="list-group-item">Cuci AC (membersihkan evaporator, filter, dan blower)</li>
+        <li class="list-group-item">Isi Freon AC R32, R410A, dan R22</li>
+        <li class="list-group-item">Pemasangan unit baru atau bekas</li>
+        <li class="list-group-item">Bongkar pasang AC lama ke tempat baru</li>
       </ul>
+
+      <h3 class="text-primary fw-semibold mt-4">Keunggulan Kami</h3>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">✅ Teknisi bersertifikat dan pengalaman lebih dari 5 tahun</li>
+        <li class="list-group-item">✅ Jangkauan luas dan cepat tanggap</li>
+        <li class="list-group-item">✅ Garansi pekerjaan dan kepuasan pelanggan</li>
+        <li class="list-group-item">✅ Layanan konsultasi dan survei gratis</li>
+      </ul>
+
+      <h3 class="text-primary fw-semibold mt-4">Testimoni Pelanggan</h3>
+      <div class="row row-cols-1 row-cols-md-2 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p>"Pelayanan cepat dan AC langsung dingin. Sangat profesional!"</p>
+              <footer class="blockquote-footer">Rina – Medan Marelan</footer>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <p>"Terbaik! Harga transparan, teknisi ramah."</p>
+              <footer class="blockquote-footer">Budi – Mabar</footer>
+            </div>
+          </div>
+        </div>
+      </div>
     </article>
 
-    <!-- Layanan Kami -->
-    <section id="layanan" class="my-5">
-      <h3 class="text-primary mb-4 fw-semibold">Layanan Kami</h3>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Service & Perbaikan AC</h5>
-              <p class="card-text">Menangani berbagai keluhan AC seperti tidak dingin, bocor, berisik, atau mati total.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Pemasangan AC Baru</h5>
-              <p class="card-text">Instalasi AC split, cassette, maupun central dengan standar keamanan dan efisiensi tinggi.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Cuci & Perawatan AC</h5>
-              <p class="card-text">Pembersihan menyeluruh unit indoor & outdoor untuk menjaga udara bersih dan hemat energi.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100 shadow-sm">
-            <div class="card-body">
-              <h5 class="card-title">Isi & Tambah Freon</h5>
-              <p class="card-text">Pengisian freon R32, R410A, atau R22 agar AC tetap dingin optimal dan tidak cepat rusak.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Tips Perawatan -->
-    <section class="mt-5">
-      <h3 class="mb-3 text-primary fw-semibold">Tips Merawat AC</h3>
-      <ul class="list-group list-group-flush mb-4">
-        <li class="list-group-item">Rutin membersihkan filter AC minimal sebulan sekali.</li>
-        <li class="list-group-item">Pastikan outdoor unit bersih dan tidak terhalang.</li>
-        <li class="list-group-item">Matikan AC saat tidak digunakan lama untuk hemat listrik.</li>
-        <li class="list-group-item">Gunakan suhu nyaman agar tidak membebani mesin.</li>
-        <li class="list-group-item">Jangan menghalangi aliran udara indoor unit.</li>
-      </ul>
-    </section>
-
-    <!-- Form Kontak -->
+    <!-- Kontak Kami -->
     <section id="kontak" class="mt-5">
-      <h3 class="mb-4 text-primary fw-semibold">Form Kontak</h3>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Nama Lengkap</label>
-          <input type="text" class="form-control" id="name" placeholder="Masukkan nama lengkap" required />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Alamat Email</label>
-          <input type="email" class="form-control" id="email" placeholder="Masukkan email" required />
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Pesan</label>
-          <textarea class="form-control" id="message" rows="4" placeholder="Tulis pesan Anda di sini" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Kirim</button>
-      </form>
-    </section>
-
-    <!-- Testimoni -->
-    <section class="mt-5">
-      <h3 class="mb-4 text-primary fw-semibold">Testimoni Pelanggan</h3>
-      <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <div class="card-body">
-              <p class="card-text">"Pelayanan cepat dan teknisi sangat profesional. AC saya kembali dingin seperti baru!"</p>
-              <h6 class="card-subtitle text-muted">– Andi, Medan Marelan</h6>
+      <h3 class="text-primary fw-bold mb-4">Kontak Kami</h3>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <form>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" required>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm h-100">
-            <div class="card-body">
-              <p class="card-text">"Harga terjangkau dan transparan. Saya sangat puas dengan Bintang Jaya AC."</p>
-              <h6 class="card-subtitle text-muted">– Sari, Helvetia</h6>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
             </div>
-          </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="pesan" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <h5 class="text-primary mb-4">Hubungi Kami</h3>
+          <p class="mb-1">📍 Jl.Pancing I LK IX Mabar Hilir, Medan</p>
+          <p class="mb-1">📞 0823-0425-7994</p>
+          <p class="mb-3">✉️ info@bintangjayaac18@gmail.com</p>
+          <a href="https://wa.me/6282304257994" target="_blank" class="btn btn-success">Chat WhatsApp Sekarang</a>
+          <iframe src="https://www.google.com/maps?q=medan&output=embed" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </section>
-
   </main>
 
   <!-- Footer -->
   <footer>
-    &copy; 2025 Bintang Jaya AC - All rights reserved.
+    &copy; 2025 Bintang Jaya AC. All rights reserved.
   </footer>
 
-  <!-- WhatsApp Floating -->
+  <!-- WhatsApp Button -->
   <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank" title="Chat WhatsApp">
     <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
   </a>
