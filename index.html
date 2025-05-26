@@ -4,159 +4,170 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bintang Jaya AC</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    /* Reset margin dan padding */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      line-height: 1.6;
-    }
-
-    header {
-      background-color: #0077cc; /* warna biru */
-      height: 300px;
+    /* Banner dengan gambar background dan overlay */
+    .banner {
+      height: 400px;
+      background: url('https://images.unsplash.com/photo-1590080877777-4a0d5eae2b8c?auto=format&fit=crop&w=1470&q=80') no-repeat center center/cover;
+      position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
       color: white;
-      /* Banner masih kosong, bisa ganti background-image di sini */
-      /* contoh: background-image: url('path/to/banner.jpg'); */
-      background-size: cover;
-      background-position: center;
     }
-
-    header h1 {
+    .banner::before {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 0;
+    }
+    .banner-text {
+      position: relative;
+      z-index: 1;
       font-size: 3rem;
       font-weight: 700;
-      text-shadow: 0 0 8px rgba(0,0,0,0.5);
-      padding: 0 15px;
       text-align: center;
+      animation: fadeIn 2s ease forwards;
+      opacity: 0;
     }
 
-    nav {
-      background-color: #004a99;
-      padding: 10px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      flex-wrap: wrap;
+    @keyframes fadeIn {
+      to { opacity: 1; }
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: color 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffcc00;
-    }
-
-    main {
-      max-width: 900px;
-      margin: 40px auto 60px;
-      padding: 0 20px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    main h2, main h3 {
-      color: #0077cc;
-      margin-bottom: 15px;
-      margin-top: 25px;
-    }
-
-    main p {
-      margin-bottom: 20px;
+    /* Artikel paragraph */
+    .article p {
       text-align: justify;
     }
-
+    /* Footer */
     footer {
-      text-align: center;
-      padding: 15px;
       background-color: #004a99;
       color: white;
-      font-size: 0.9rem;
-    }
-
-    @media(max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-        padding: 0 10px;
-        text-align: center;
-      }
-      nav {
-        flex-direction: column;
-        gap: 15px;
-      }
+      padding: 15px 0;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Bintang Jaya AC</h1>
-  </header>
-
-  <nav>
-    <a href="#">Beranda</a>
-    <a href="#">Layanan</a>
-    <a href="#">Tentang Kami</a>
-    <a href="#">Kontak</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Bintang Jaya AC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <main>
-    <h2>Selamat Datang di Bintang Jaya AC</h2>
-    <p>Kami adalah penyedia jasa service dan perbaikan AC terpercaya di Medan dan sekitarnya. Dengan pengalaman bertahun-tahun, kami berkomitmen memberikan layanan terbaik agar AC Anda selalu dalam kondisi prima dan memberikan kenyamanan maksimal bagi Anda dan keluarga.</p>
+  <!-- Banner -->
+  <section class="banner">
+    <div class="banner-text">
+      Bintang Jaya AC
+    </div>
+  </section>
 
-    <h3>Layanan Kami</h3>
-    <p>Bintang Jaya AC menyediakan berbagai layanan profesional yang meliputi:</p>
-    <ul>
-      <li><strong>Service dan perbaikan AC:</strong> Kami menangani berbagai merek dan tipe AC, mulai dari AC split, AC window, hingga AC central. Teknisi kami ahli dalam mendeteksi masalah dan memberikan solusi tepat agar AC Anda kembali dingin dan hemat energi.</li>
-      <li><strong>Pemasangan AC baru:</strong> Kami membantu pemasangan AC baru dengan teknik yang benar dan rapi, memastikan instalasi berjalan aman dan sesuai standar pabrik.</li>
-      <li><strong>Perawatan rutin:</strong> Perawatan berkala sangat penting untuk menjaga performa AC. Kami menawarkan paket perawatan meliputi pembersihan filter, pengecekan kebocoran, dan pengisian ulang freon.</li>
-      <li><strong>Penggantian suku cadang:</strong> Jika ada komponen AC yang rusak, kami menyediakan penggantian suku cadang asli agar AC tetap awet dan tahan lama.</li>
-    </ul>
+  <!-- Main Content -->
+  <main class="container my-5">
+    <article class="article">
+      <h2 class="mb-4 text-primary fw-bold">Selamat Datang di Bintang Jaya AC</h2>
+      <p>Kami adalah penyedia jasa service dan perbaikan AC terpercaya di Medan dan sekitarnya. Dengan pengalaman bertahun-tahun, kami berkomitmen memberikan layanan terbaik agar AC Anda selalu dalam kondisi prima dan memberikan kenyamanan maksimal bagi Anda dan keluarga.</p>
 
-    <h3>Kenapa Memilih Bintang Jaya AC?</h3>
-    <p>Beberapa alasan mengapa pelanggan mempercayakan kebutuhan AC-nya kepada kami:</p>
-    <ul>
-      <li><strong>Teknisi profesional dan berpengalaman:</strong> Semua teknisi kami sudah tersertifikasi dan terus mengikuti perkembangan teknologi AC terbaru.</li>
-      <li><strong>Harga transparan dan kompetitif:</strong> Kami memberikan estimasi biaya sebelum bekerja, tanpa biaya tersembunyi.</li>
-      <li><strong>Pelayanan cepat dan ramah:</strong> Kami mengutamakan kepuasan pelanggan dengan layanan yang cepat dan komunikatif.</li>
-      <li><strong>Garansi kerja:</strong> Setiap layanan yang kami berikan dilengkapi dengan garansi, sebagai jaminan kualitas.</li>
-    </ul>
+      <h3 class="mt-5 mb-3 text-primary fw-semibold">Layanan Kami</h3>
+      <ul class="list-group list-group-flush mb-4">
+        <li class="list-group-item">Service dan perbaikan AC: Menangani berbagai merek dan tipe AC, dari split hingga central.</li>
+        <li class="list-group-item">Pemasangan AC baru: Instalasi profesional sesuai standar.</li>
+        <li class="list-group-item">Perawatan rutin: Pembersihan, pengecekan kebocoran, pengisian freon.</li>
+        <li class="list-group-item">Penggantian suku cadang: Menggunakan suku cadang asli berkualitas.</li>
+      </ul>
 
-    <h3>Tips Merawat AC Agar Tetap Awet dan Efisien</h3>
-    <p>Selain menggunakan jasa profesional, Anda juga bisa melakukan beberapa langkah perawatan sederhana untuk menjaga performa AC, antara lain:</p>
-    <ul>
-      <li>Rutin membersihkan filter AC minimal sebulan sekali untuk menghindari penumpukan debu.</li>
-      <li>Pastikan area outdoor unit tidak terhalang dan bersih dari kotoran atau tanaman.</li>
-      <li>Matikan AC saat tidak digunakan dalam waktu lama untuk menghemat listrik.</li>
-      <li>Gunakan suhu yang nyaman dan tidak terlalu rendah agar tidak membebani mesin AC.</li>
-      <li>Jangan menempatkan barang yang menghalangi aliran udara dari indoor unit.</li>
-    </ul>
+      <h3 class="mt-4 mb-3 text-primary fw-semibold">Kenapa Memilih Kami?</h3>
+      <ul class="list-group list-group-flush mb-4">
+        <li class="list-group-item">Teknisi profesional dan berpengalaman dengan sertifikasi.</li>
+        <li class="list-group-item">Harga transparan dan kompetitif tanpa biaya tersembunyi.</li>
+        <li class="list-group-item">Pelayanan cepat, ramah, dan komunikatif.</li>
+        <li class="list-group-item">Garansi kerja sebagai jaminan kualitas layanan.</li>
+      </ul>
 
-    <h3>Hubungi Kami</h3>
-    <p>Jika Anda membutuhkan jasa service atau pemasangan AC yang cepat, terpercaya, dan berkualitas di Medan, jangan ragu menghubungi Bintang Jaya AC. Tim kami siap membantu Anda kapan saja.</p>
-    <p><strong>Telepon:</strong> 0812-3456-7890<br />
-    <strong>Email:</strong> info@bintangjayaac.shop<br />
-    <strong>Alamat:</strong> Jl. Contoh No.123, Medan</p>
+      <h3 class="mt-4 mb-3 text-primary fw-semibold">Tips Merawat AC</h3>
+      <ul class="list-group list-group-flush mb-4">
+        <li class="list-group-item">Rutin membersihkan filter AC minimal sebulan sekali.</li>
+        <li class="list-group-item">Pastikan outdoor unit bersih dan tidak terhalang.</li>
+        <li class="list-group-item">Matikan AC saat tidak digunakan lama untuk hemat listrik.</li>
+        <li class="list-group-item">Gunakan suhu nyaman agar tidak membebani mesin.</li>
+        <li class="list-group-item">Jangan menghalangi aliran udara indoor unit.</li>
+      </ul>
+
+      <h3 class="mt-4 mb-3 text-primary fw-semibold">Hubungi Kami</h3>
+      <p>Untuk layanan service dan pemasangan AC yang cepat, terpercaya, dan berkualitas di Medan, hubungi kami:</p>
+      <p><strong>Telepon:</strong> 0812-3456-7890<br />
+         <strong>Email:</strong> info@bintangjayaac.shop<br />
+         <strong>Alamat:</strong> Jl. Contoh No.123, Medan</p>
+    </article>
+
+    <!-- Form Kontak -->
+    <section class="mt-5">
+      <h3 class="mb-4 text-primary fw-semibold">Form Kontak</h3>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label">Nama Lengkap</label>
+          <input type="text" class="form-control" id="name" placeholder="Masukkan nama lengkap" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Alamat Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Masukkan email" required />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Pesan</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Tulis pesan Anda di sini" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Kirim</button>
+      </form>
+    </section>
+
+    <!-- Testimoni -->
+    <section class="mt-5">
+      <h3 class="mb-4 text-primary fw-semibold">Testimoni Pelanggan</h3>
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <p class="card-text">"Pelayanan cepat dan teknisi sangat profesional. AC saya kembali dingin seperti baru!"</p>
+              <h6 class="card-subtitle text-muted">– Andi, Medan Marelan</h6>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <div class="card-body">
+              <p class="card-text">"Harga terjangkau dan transparan. Saya sangat puas dengan Bintang Jaya AC."</p>
+              <h6 class="card-subtitle text-muted">– Sari, Helvetia</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <!-- Footer -->
   <footer>
     &copy; 2025 Bintang Jaya AC - All rights reserved.
   </footer>
 
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
