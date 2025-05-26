@@ -1,214 +1,386 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id-ID">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bintang Jaya AC</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bintang Jaya AC | Servis & Penjualan AC Profesional</title>
+    <meta name="description" content="Spesialis servis AC, pemasangan, dan penjualan AC berkualitas. Teknisi bersertifikat, garansi resmi, harga terjangkau.">
+    
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "HVACBusiness",
+      "name": "Bintang Jaya AC Shop",
+      "image": "https://bintangjayaac.shop/assets/img/logo-bintangjayaac.png",
+      "telephone": "+6281234567890",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Jl. Contoh No. 123",
+        "addressLocality": "Jakarta",
+        "addressRegion": "DKI Jakarta"
+      },
+      "openingHours": "Mo-Sa 08:00-17:00"
     }
-
-    header {
-      background-color: #003366;
-      color: white;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-    }
-
-    nav a {
-      color: white;
-      margin-left: 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .slider-container {
-      width: 100%;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .slider {
-      display: flex;
-      width: 300%;
-      animation: slide 12s infinite;
-    }
-
-    .slide {
-      width: 100%;
-      position: relative;
-    }
-
-    .slide img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .slide-text {
-      position: absolute;
-      top: 20%;
-      left: 10%;
-      color: white;
-      background-color: rgba(0,0,0,0.5);
-      padding: 20px;
-      border-radius: 10px;
-      max-width: 500px;
-    }
-
-    .slide-text h2 {
-      margin: 0;
-      font-size: 28px;
-    }
-
-    .slide-text p {
-      font-size: 16px;
-    }
-
-    .wa-button {
-      margin-top: 10px;
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .service {
-      background-color: #f0f0f0;
-      border-radius: 10px;
-      padding: 20px;
-      width: 250px;
-    }
-
-    .service h3 {
-      margin-top: 0;
-    }
-
-    footer {
-      background-color: #003366;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-    @keyframes slide {
-      0%   { transform: translateX(0%); }
-      33%  { transform: translateX(0%); }
-      34%  { transform: translateX(-100%); }
-      66%  { transform: translateX(-100%); }
-      67%  { transform: translateX(-200%); }
-      100% { transform: translateX(-200%); }
-    }
-
-    @media (max-width: 768px) {
-      .slide-text {
-        font-size: 14px;
-        top: 10%;
-        left: 5%;
-        padding: 15px;
-      }
-
-      .services {
-        flex-direction: column;
-        align-items: center;
-      }
-    }
-  </style>
+    </script>
 </head>
 <body>
-
-  <!-- Header -->
-  <header>
-    <div class="logo">BINTANG JAYA AC</div>
-    <nav>
-      <a href="#">Beranda</a>
-      <a href="#layanan">Layanan</a>
-      <a href="https://wa.me/6282304257994">Kontak</a>
-    </nav>
-  </header>
-
-  <!-- Slider -->
-  <div class="slider-container">
-    <div class="slider">
-      <div class="slide">
-        <img src="slide1.jpg" alt="Pasang AC">
-        <div class="slide-text">
-          <h2>Pasang AC Baru? Bintang Jaya AC Solusinya!</h2>
-          <p>Dapatkan pemasangan profesional & garansi terpercaya.</p>
-          <a href="https://wa.me/6282304257994" class="wa-button">Hubungi via WhatsApp</a>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="slide2.jpg" alt="Servis AC">
-        <div class="slide-text">
-          <h2>Servis AC Berkala Biar Dingin Maksimal</h2>
-          <p>Tim ahli siap memperbaiki dan merawat AC kamu.</p>
-          <a href="https://wa.me/6282304257994" class="wa-button">Hubungi via WhatsApp</a>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="slide3.jpg" alt="Cuci AC">
-        <div class="slide-text">
-          <h2>Cuci AC Bersih & Higienis</h2>
-          <p>Rasakan segarnya udara di rumah atau kantor kamu.</p>
-          <a href="https://wa.me/6282304257994" class="wa-button">Hubungi via WhatsApp</a>
-        </div>
-      </div>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
     </div>
-  </div>
 
-  <!-- Layanan -->
-  <section id="layanan">
-    <h2>Layanan Kami</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Pasang AC</h3>
-        <p>Pemasangan AC baru untuk rumah & kantor.</p>
-      </div>
-      <div class="service">
-        <h3>Servis AC</h3>
-        <p>Perbaikan dan perawatan AC dengan teknisi ahli.</p>
-      </div>
-      <div class="service">
-        <h3>Cuci AC</h3>
-        <p>Pencucian AC berkala agar tetap bersih dan dingin.</p>
-      </div>
-      <div class="service">
-        <h3>Jual Beli AC</h3>
-        <p>Jual beli AC baru dan second bergaransi.</p>
-      </div>
-    </div>
-  </section>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Bintang Jaya AC - Jl Pancing I LK IX, Mabar Hilir</p>
-    <p>WhatsApp: +62 823-0425-7994</p>
-  </footer>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="/" class="logo">
+                    <img src="/assets/img/logo-bintangjayaac.png" alt="Bintang Jaya AC" width="180">
+                </a>
+                
+                <div class="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Beranda</a></li>
+                        <li><a href="#services" class="nav-link">Layanan</a></li>
+                        <li><a href="#products" class="nav-link">Produk</a></li>
+                        <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+                        <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
+                        <li><a href="#contact" class="nav-link">Kontak</a></li>
+                    </ul>
+                    
+                    <div class="nav-cta">
+                        <a href="tel:+6281234567890" class="btn btn-secondary">
+                            <i class="fas fa-phone-alt"></i> (021) 123456
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
 
-</body>
-</html>
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text" data-aos="fade-right">
+                    <h1>Solusi AC Terbaik untuk Kenyamanan Anda</h1>
+                    <p class="lead">Layanan profesional servis, pemasangan, dan penjualan AC dengan garansi resmi dan harga kompetitif.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-calendar-check"></i> Jadwalkan Servis
+                        </a>
+                        <a href="https://wa.me/6281234567890" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i> Konsultasi via WA
+                        </a>
+                    </div>
+                    
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Teknisi Bersertifikat</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Garansi 100%</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Harga Terjangkau</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image" data-aos="fade-left">
+                    <img src="/assets/img/hero-ac-unit.png" alt="AC Unit" class="img-fluid">
+                    <div class="hero-badge">
+                        <span>10+</span>
+                        <small>Tahun Pengalaman</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle">Layanan Kami</span>
+                <h2>Solusi Lengkap untuk AC Anda</h2>
+                <p class="section-desc">Kami menyediakan berbagai layanan profesional untuk semua kebutuhan pendingin ruangan Anda.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Service Item 1 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Servis & Perbaikan</h3>
+                    <p>Perbaikan komprehensif untuk semua merk AC dengan sparepart original.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Bongkar pasang AC</li>
+                        <li><i class="fas fa-check"></i> Isi freon</li>
+                        <li><i class="fas fa-check"></i> Perbaikan komponen</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Pesan Sekarang <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Service Item 2 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-box-open"></i>
+                    </div>
+                    <h3>Penjualan AC Baru</h3>
+                    <p>AC berbagai merk ternama dengan harga terbaik dan garansi resmi.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> AC Split</li>
+                        <li><i class="fas fa-check"></i> AC Standing</li>
+                        <li><i class="fas fa-check"></i> AC Inverter</li>
+                    </ul>
+                    <a href="#products" class="service-link">Lihat Produk <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <!-- Service Item 3 -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Pemasangan Profesional</h3>
+                    <p>Jasa pemasangan AC standar industri untuk rumah dan bisnis.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Pemasangan baru</li>
+                        <li><i class="fas fa-check"></i> Relokasi AC</li>
+                        <li><i class="fas fa-check"></i> Perbaikan instalasi</li>
+                    </ul>
+                    <a href="#contact" class="service-link">Hubungi Kami <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="subtitle">Produk Kami</span>
+                <h2>AC Berkualitas dengan Harga Terbaik</h2>
+                <p class="section-desc">Pilihan produk AC terbaik dari merek ternama dengan garansi resmi.</p>
+            </div>
+            
+            <div class="products-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="split">AC Split</button>
+                <button class="filter-btn" data-filter="standing">AC Standing</button>
+                <button class="filter-btn" data-filter="inverter">Inverter</button>
+            </div>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card" data-aos="fade-up" data-filter="split inverter">
+                    <div class="product-badge">BESTSELLER</div>
+                    <div class="product-image">
+                        <img src="/assets/img/products/daikin-inverter.jpg" alt="Daikin Inverter">
+                    </div>
+                    <div class="product-info">
+                        <h3>Daikin FTKN25NV14</h3>
+                        <span class="product-category">AC Split Inverter 1/2 PK</span>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(128)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Rp4.850.000</span>
+                            <span class="original-price">Rp5.200.000</span>
+                        </div>
+                        <div class="product-features">
+                            <span><i class="fas fa-bolt"></i> Low Watt</span>
+                            <span><i class="fas fa-snowflake"></i> Cepat Dingin</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-outline btn-detail">
+                            <i class="fas fa-info-circle"></i> Detail
+                        </button>
+                        <button class="btn btn-primary btn-order">
+                            <i class="fas fa-shopping-cart"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100" data-filter="split">
+                    <div class="product-image">
+                        <img src="/assets/img/products/panasonic-lowwatt.jpg" alt="Panasonic Low Watt">
+                    </div>
+                    <div class="product-info">
+                        <h3>Panasonic CS-PU9XKQ</h3>
+                        <span class="product-category">AC Split 3/4 PK</span>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(95)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Rp3.750.000</span>
+                        </div>
+                        <div class="product-features">
+                            <span><i class="fas fa-bolt"></i> Hemat Listrik</span>
+                            <span><i class="fas fa-leaf"></i> Ramah Lingkungan</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-outline btn-detail">
+                            <i class="fas fa-info-circle"></i> Detail
+                        </button>
+                        <button class="btn btn-primary btn-order">
+                            <i class="fas fa-shopping-cart"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200" data-filter="standing">
+                    <div class="product-badge">NEW</div>
+                    <div class="product-image">
+                        <img src="/assets/img/products/midea-standing.jpg" alt="Midea Standing">
+                    </div>
+                    <div class="product-info">
+                        <h3>Midea MHS-09CM7HR</h3>
+                        <span class="product-category">AC Standing 1 PK</span>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(64)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="current-price">Rp6.200.000</span>
+                            <span class="original-price">Rp6.800.000</span>
+                        </div>
+                        <div class="product-features">
+                            <span><i class="fas fa-wind"></i> Powerful</span>
+                            <span><i class="fas fa-volume-mute"></i> Silent</span>
+                        </div>
+                    </div>
+                    <div class="product-actions">
+                        <button class="btn btn-outline btn-detail">
+                            <i class="fas fa-info-circle"></i> Detail
+                        </button>
+                        <button class="btn btn-primary btn-order">
+                            <i class="fas fa-shopping-cart"></i> Pesan
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <a href="#" class="btn btn-outline btn-lg">
+                    <i class="fas fa-list"></i> Lihat Semua Produk
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="/assets/img/about-team.jpg" alt="Tim Bintang Jaya AC" class="img-fluid">
+                    <div class="experience-badge">
+                        <span>10+</span>
+                        <small>Tahun Pengalaman</small>
+                    </div>
+                </div>
+                
+                <div class="about-text" data-aos="fade-left">
+                    <span class="subtitle">Tentang Kami</span>
+                    <h2>Bintang Jaya AC Shop</h2>
+                    <p>Sejak 2013, kami telah menjadi mitra terpercaya untuk servis dan penjualan AC di wilayah Jakarta dan sekitarnya. Dengan tim teknisi bersertifikat dan komitmen terhadap kualitas, kami siap memberikan solusi terbaik untuk kebutuhan pendingin ruangan Anda.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Profesional</h4>
+                                <p>Teknisi tersertifikasi dengan pengalaman lapangan</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Berkualitas</h4>
+                                <p>Menggunakan sparepart original dan alat modern</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-thumbs-up"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Terpercaya</h4>
+                                <p>Ribuan pelanggan puas selama 10 tahun</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-phone-alt"></i> Hubungi Kami
+                        </a>
+                        <a href="#" class="btn btn-outline">
+                            <i class="fas fa-book"></i> Portofolio
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section testimonials" id="testimonials">
+       
