@@ -2,238 +2,127 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bintang Jaya AC - Spesialis AC Medan</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bintang Jaya AC - Medan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
     }
-
-    header {
-      background-color: #005792;
-      color: white;
-      padding: 15px 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    .logo {
-      font-size: 24px;
+    .navbar-brand {
       font-weight: bold;
     }
-
-    nav a {
+    .hero {
+      background: url('https://images.unsplash.com/photo-1593369761159-86b8da484d98') center center/cover no-repeat;
       color: white;
-      margin-left: 15px;
-      text-decoration: none;
-      font-weight: 600;
+      padding: 100px 20px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
     }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .slider-container {
-      width: 100%;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .slider {
-      display: flex;
-      width: 300%;
-      animation: slide 12s infinite;
-    }
-
-    .slide {
-      width: 100%;
-      position: relative;
-    }
-
-    .slide img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .slide-text {
-      position: absolute;
-      top: 20%;
-      left: 10%;
-      color: white;
-      background-color: rgba(0,0,0,0.6);
-      padding: 20px;
-      border-radius: 12px;
-      max-width: 500px;
-    }
-
-    .slide-text h2 {
-      margin: 0;
-      font-size: 28px;
-    }
-
-    .slide-text p {
-      font-size: 16px;
-    }
-
-    .wa-button {
-      margin-top: 10px;
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 40px 20px;
-      text-align: center;
-    }
-
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .service {
-      background-color: white;
-      border: 1px solid #ddd;
-      border-radius: 10px;
-      padding: 20px;
-      width: 250px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      transition: transform 0.3s ease;
-    }
-
-    .service:hover {
-      transform: translateY(-5px);
-    }
-
-    .service h3 {
-      margin-top: 0;
-      color: #005792;
-    }
-
     footer {
-      background-color: #003B5B;
+      background-color: #004080;
       color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-
-    @keyframes slide {
-      0%   { transform: translateX(0%); }
-      33%  { transform: translateX(0%); }
-      34%  { transform: translateX(-100%); }
-      66%  { transform: translateX(-100%); }
-      67%  { transform: translateX(-200%); }
-      100% { transform: translateX(-200%); }
-    }
-
-    @media (max-width: 768px) {
-      .slide-text {
-        font-size: 14px;
-        top: 10%;
-        left: 5%;
-        padding: 15px;
-      }
-
-      .services {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      nav {
-        margin-top: 10px;
-      }
-
-      nav a {
-        display: block;
-        margin: 5px 0;
-      }
+      padding: 20px 0;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">BINTANG JAYA AC</div>
-    <nav>
-      <a href="#">Beranda</a>
-      <a href="#layanan">Layanan</a>
-      <a href="https://wa.me/6282304257994" target="_blank">Kontak</a>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Bintang Jaya AC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#layanan">Layanan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero text-center">
+    <div class="container">
+      <h1 class="display-4">Spesialis AC Terpercaya di Medan</h1>
+      <p class="lead">Melayani Medan Marelan, Mabar, Helvetia & Sekitarnya</p>
+      <a href="https://wa.me/6282304257994" class="btn btn-success btn-lg">Hubungi via WhatsApp</a>
+    </div>
   </header>
 
-  <!-- Slider -->
-  <div class="slider-container">
-    <div class="slider">
-      <div class="slide">
-        <img src="slide1.jpg" alt="Pasang AC">
-        <div class="slide-text">
-          <h2>Pasang AC Baru? Bintang Jaya Solusinya!</h2>
-          <p>Layanan cepat, rapi, dan bergaransi untuk rumah & kantor.</p>
-          <a href="https://wa.me/6282304257994" class="wa-button" target="_blank">Hubungi via WhatsApp</a>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="slide2.jpg" alt="Servis AC">
-        <div class="slide-text">
-          <h2>Servis AC Berkala Biar Dingin Maksimal</h2>
-          <p>Kami siap melayani perbaikan dan perawatan semua merek AC.</p>
-          <a href="https://wa.me/6282304257994" class="wa-button" target="_blank">Hubungi via WhatsApp</a>
-        </div>
-      </div>
-      <div class="slide">
-        <img src="slide3.jpg" alt="Cuci AC">
-        <div class="slide-text">
-          <h2>Cuci AC Bersih & Higienis</h2>
-          <p>AC bersih = udara sejuk dan sehat untuk keluarga.</p>
-          <a href="https://wa.me/6282304257994" class="wa-button" target="_blank">Hubungi via WhatsApp</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <main class="container py-5">
+    <section id="tentang" class="mb-5">
+      <h2>Tentang Kami</h2>
+      <p>Bintang Jaya AC adalah penyedia layanan AC terpercaya di Kota Medan. Kami melayani pemasangan, perawatan, dan penjualan AC untuk rumah, kantor, dan industri dengan teknisi berpengalaman dan harga terjangkau.</p>
+      <ul>
+        <li>Teknisi lokal profesional</li>
+        <li>Layanan cepat & garansi pengerjaan</li>
+        <li>Harga transparan, tanpa biaya tersembunyi</li>
+      </ul>
+    </section>
 
-  <!-- Layanan -->
-  <section id="layanan">
-    <h2>Layanan Kami</h2>
-    <div class="services">
-      <div class="service">
-        <h3>Pasang AC</h3>
-        <p>Pemasangan AC baru untuk rumah, kantor, dan ruko.</p>
+    <section id="layanan" class="mb-5">
+      <h2>Layanan Kami</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <ul>
+            <li>Service & Perawatan AC</li>
+            <li>Cuci AC profesional</li>
+            <li>Isi Freon R22, R32, R410A</li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li>Instalasi AC Baru</li>
+            <li>Jual Beli AC Bekas Berkualitas</li>
+            <li>Area layanan: Marelan, Mabar, Helvetia, Deli, Sunggal</li>
+          </ul>
+        </div>
       </div>
-      <div class="service">
-        <h3>Servis AC</h3>
-        <p>Servis kerusakan AC, isi freon, perbaikan unit indoor & outdoor.</p>
-      </div>
-      <div class="service">
-        <h3>Cuci AC</h3>
-        <p>Pencucian unit indoor dan outdoor AC Anda, bersih maksimal.</p>
-      </div>
-      <div class="service">
-        <h3>Jual Beli AC</h3>
-        <p>AC baru dan second, harga terjangkau dan garansi.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Bintang Jaya AC | Jl Pancing I LK IX, Mabar Hilir</p>
-    <p>WhatsApp: <a href="https://wa.me/6282304257994" style="color: #fff;">+62 823-0425-7994</a></p>
+    <section id="kontak" class="mb-5">
+      <h2>Kontak Kami</h2>
+      <p><strong>Alamat:</strong> Jl. Pancing I, Lingkungan IX, Kel. Mabar Hilir, Kec. Medan Deli, Kota Medan</p>
+      <p><strong>Telepon / WhatsApp:</strong> <a href="https://wa.me/6282304257994">0823-0425-7994</a></p>
+      <p><strong>Email:</strong> <a href="mailto:info@bintangjayaac.shop">info@bintangjayaac.shop</a></p>
+      <p><strong>Jam Operasional:</strong> Senin – Sabtu, 08.00 – 17.00 WIB</p>
+
+      <div class="mt-4">
+        <h4>Formulir Kontak Cepat</h4>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="name" placeholder="Nama Anda">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="email@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="pesan" class="form-label">Pesan</label>
+            <textarea class="form-control" id="pesan" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+      </div>
+
+      <div class="mt-5">
+        <h4>Lokasi Kami</h4>
+        <iframe src="https://www.google.com/maps?q=Jl.+Pancing+I,+Mabar+Hilir,+Medan+Deli&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="text-center">
+    <div class="container">
+      <p>&copy; 2025 Bintang Jaya AC | Solusi AC Medan Terpercaya</p>
+    </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
