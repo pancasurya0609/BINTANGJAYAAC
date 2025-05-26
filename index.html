@@ -7,20 +7,45 @@
   <title>BINTANG JAYA AC | Spesialis AC Medan</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <style>
-    body { margin: 0; font-family: 'Segoe UI', sans-serif; }
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; background: #f9f9f9; }
     header { background: #003049; color: white; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
     header img { height: 50px; }
     nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: bold; }
-    .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1603366615917-1fa6dad5c4f2?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover; color: white; text-align: center; padding: 100px 20px; }
+
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
+      url('https://images.unsplash.com/photo-1603366615917-1fa6dad5c4f2?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      color: white; text-align: center; padding: 120px 20px;
+    }
     .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
     .hero p { font-size: 1.2rem; max-width: 600px; margin: auto; }
-    .cta-btn { margin-top: 2rem; background: #f77f00; color: white; padding: 15px 25px; border: none; border-radius: 5px; font-size: 1.1rem; cursor: pointer; text-decoration: none; display: inline-block; }
+    .cta-btn {
+      margin-top: 2rem; background: #f77f00; color: white;
+      padding: 15px 30px; border: none; border-radius: 5px;
+      font-size: 1.1rem; text-decoration: none;
+      display: inline-block; box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    }
+
     .section { padding: 60px 20px; text-align: center; }
-    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; margin: auto; }
-    .service-box { padding: 20px; border-radius: 10px; background: #f1f1f1; transition: transform 0.3s ease; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-    .service-box img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 10px; }
+    .services {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem; max-width: 1000px; margin: auto;
+    }
+    .service-box {
+      padding: 20px; border-radius: 10px; background: #fff;
+      transition: transform 0.3s ease; box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .service-box img {
+      width: 100%; height: 150px; object-fit: cover;
+      border-radius: 8px; margin-bottom: 10px;
+    }
     .service-box:hover { transform: translateY(-5px); }
-    footer { background: #003049; color: white; text-align: center; padding: 2rem 1rem; margin-top: 40px; }
+
+    footer {
+      background: #003049; color: white;
+      text-align: center; padding: 2rem 1rem; margin-top: 40px;
+    }
+
     @media (max-width: 600px) {
       .hero h1 { font-size: 2rem; }
       .hero p { font-size: 1rem; }
@@ -39,7 +64,7 @@
   <section class="hero animate__animated animate__fadeIn">
     <h1>Selamat Datang di BINTANG JAYA AC</h1>
     <p>Spesialis pasang, servis, dan cuci AC terpercaya di Medan. Layanan cepat, profesional, dan bergaransi.</p>
-    <a href="https://wa.me/6282304257994" class="cta-btn">Hubungi Kami di WhatsApp</a>
+    <a href="https://wa.me/6282304257994" class="cta-btn">Hubungi via WhatsApp</a>
   </section>
 
   <section class="section" id="layanan">
@@ -48,31 +73,31 @@
       <div class="service-box">
         <img src="https://images.unsplash.com/photo-1611078489935-3ef9c05a3024?auto=format&fit=crop&w=500&q=60" alt="Pasang AC">
         <h3>Pasang AC</h3>
-        <p>Jasa instalasi AC baru atau pindahan dengan teknisi berpengalaman.</p>
+        <p>Instalasi AC baru atau bekas dengan teknisi profesional dan rapi.</p>
       </div>
       <div class="service-box">
         <img src="https://images.unsplash.com/photo-1609840113345-9bcf9e4f2b9e?auto=format&fit=crop&w=500&q=60" alt="Servis AC">
         <h3>Servis AC</h3>
-        <p>Perbaikan dan pengecekan AC dengan sparepart berkualitas.</p>
+        <p>Perbaikan AC bocor, tidak dingin, dan masalah lainnya dengan jaminan.</p>
       </div>
       <div class="service-box">
         <img src="https://images.unsplash.com/photo-1598966750219-2a58cc96ec79?auto=format&fit=crop&w=500&q=60" alt="Cuci AC">
         <h3>Cuci AC</h3>
-        <p>Membersihkan AC secara menyeluruh agar udara lebih sejuk dan sehat.</p>
+        <p>Pembersihan AC menyeluruh agar udara lebih bersih dan tahan lama.</p>
       </div>
       <div class="service-box">
         <img src="https://images.unsplash.com/photo-1624986233626-7b99f34f9d26?auto=format&fit=crop&w=500&q=60" alt="Jual Beli AC">
         <h3>Jual Beli AC</h3>
-        <p>Menjual AC baru dan bekas serta menerima tukar tambah.</p>
+        <p>Melayani penjualan AC baru/bekas dan tukar tambah dengan harga terbaik.</p>
       </div>
     </div>
   </section>
 
   <section class="section" id="kontak">
     <h2>Kontak Kami</h2>
-    <p>Alamat: Jl Pancing I LK IX, Mabar Hilir, Medan</p>
-    <p>WhatsApp: <a href="https://wa.me/6282304257994">+62 823-0425-7994</a></p>
-    <p>Jam Operasional: Setiap Hari 08.00 – 20.00</p>
+    <p><strong>Alamat:</strong> Jl Pancing I LK IX, Mabar Hilir, Medan</p>
+    <p><strong>WhatsApp:</strong> <a href="https://wa.me/6282304257994">+62 823-0425-7994</a></p>
+    <p><strong>Jam Operasional:</strong> Setiap Hari, 08.00 – 20.00</p>
   </section>
 
   <footer>
