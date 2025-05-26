@@ -1,135 +1,82 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Blog - BINTANG JAYA AC</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin:0; padding:0; background:#f4f4f4;
-            color: #333;
-        }
-        header {
-            background:#0d6efd;
-            color:#fff;
-            padding:20px 0;
-            text-align:center;
-        }
-        nav ul {
-            list-style:none;
-            margin:0; padding:0;
-            display:flex;
-            justify-content:center;
-            background:#003d99;
-        }
-        nav ul li {
-            margin:0 15px;
-        }
-        nav ul li a {
-            color:#fff;
-            text-decoration:none;
-            padding:14px 20px;
-            display:block;
-        }
-        nav ul li a:hover, nav ul li a[aria-current="page"] {
-            background:#0056b3;
-        }
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            padding: 20px;
-            background:#fff;
-            border-radius:8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        article {
-            margin-bottom: 40px;
-        }
-        article h2 {
-            color: #003d99;
-            margin-bottom: 10px;
-        }
-        article p {
-            line-height: 1.6;
-        }
-        footer {
-            background:#003d99;
-            color:#fff;
-            text-align:center;
-            padding:10px 0;
-            margin-top:40px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BINTANG JAYA AC melayani pasang, servis, cuci, dan jual beli AC di Medan dan sekitarnya. Hubungi kami untuk layanan cepat dan profesional!">
+  <title>BINTANG JAYA AC | Spesialis AC Medan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <style>
+    body { margin: 0; font-family: 'Segoe UI', sans-serif; }
+    header { background: #003049; color: white; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem; }
+    header img { height: 50px; }
+    nav a { color: white; margin-left: 20px; text-decoration: none; font-weight: bold; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1603366615917-1fa6dad5c4f2?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover; color: white; text-align: center; padding: 100px 20px; }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; max-width: 600px; margin: auto; }
+    .cta-btn { margin-top: 2rem; background: #f77f00; color: white; padding: 15px 25px; border: none; border-radius: 5px; font-size: 1.1rem; cursor: pointer; text-decoration: none; display: inline-block; }
+    .section { padding: 60px 20px; text-align: center; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; margin: auto; }
+    .service-box { padding: 20px; border-radius: 10px; background: #f1f1f1; transition: transform 0.3s ease; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .service-box img { width: 100%; height: 150px; object-fit: cover; border-radius: 8px; margin-bottom: 10px; }
+    .service-box:hover { transform: translateY(-5px); }
+    footer { background: #003049; color: white; text-align: center; padding: 2rem 1rem; margin-top: 40px; }
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2rem; }
+      .hero p { font-size: 1rem; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>BINTANG JAYA AC</h1>
-        <p>Blog & Tips Perawatan AC Terpercaya</p>
-    </header>
+  <header>
+    <img src="https://i.ibb.co/7JpCRcB/logo-bintang-jaya-ac.png" alt="Logo Bintang Jaya AC">
     <nav>
-        <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="tentang.html">Tentang Kami</a></li>
-            <li><a href="layanan.html">Layanan</a></li>
-            <li><a href="blog.html" aria-current="page">Blog</a></li>
-            <li><a href="kontak.html">Kontak</a></li>
-        </ul>
+      <a href="#layanan">Layanan</a>
+      <a href="#kontak">Kontak</a>
     </nav>
-    <div class="container">
+  </header>
 
-        <article>
-            <h2>Cara Merawat AC Agar Tetap Awet</h2>
-            <p>Rutin membersihkan filter dan melakukan servis berkala sangat penting untuk menjaga performa AC Anda. Membersihkan filter secara teratur membantu menghindari penumpukan debu yang dapat menghambat aliran udara dan membuat AC bekerja lebih keras.</p>
-            <p>Selain itu, servis berkala akan memastikan komponen AC seperti freon dan kompresor tetap dalam kondisi optimal. Perawatan yang baik tidak hanya memperpanjang usia AC tetapi juga menjaga kualitas udara yang Anda hirup tetap bersih dan sehat.</p>
-        </article>
+  <section class="hero animate__animated animate__fadeIn">
+    <h1>Selamat Datang di BINTANG JAYA AC</h1>
+    <p>Spesialis pasang, servis, dan cuci AC terpercaya di Medan. Layanan cepat, profesional, dan bergaransi.</p>
+    <a href="https://wa.me/6282304257994" class="cta-btn">Hubungi Kami di WhatsApp</a>
+  </section>
 
-        <article>
-            <h2>Pentingnya Cuci AC Secara Teratur</h2>
-            <p>Cuci AC secara rutin sangat dianjurkan untuk menghilangkan debu, jamur, dan bakteri yang menempel pada bagian dalam AC. Debu dan kotoran yang menumpuk dapat menyebabkan AC berfungsi kurang efisien dan udara yang dihasilkan menjadi kurang sehat.</p>
-            <p>Pembersihan menyeluruh menggunakan metode steam cleaning atau cuci dengan air bertekanan akan membantu menjaga kebersihan internal AC serta meningkatkan kualitas udara di ruangan Anda.</p>
-        </article>
-
-        <article>
-            <h2>Tips Memilih AC yang Tepat untuk Rumah Anda</h2>
-            <p>Memilih AC yang sesuai sangat penting untuk mendapatkan kenyamanan maksimal dan efisiensi energi. Pertimbangkan ukuran ruangan, kapasitas pendinginan (BTU), dan fitur tambahan seperti mode hemat energi atau inverter.</p>
-            <p>AC dengan kapasitas yang terlalu kecil akan bekerja keras dan cepat rusak, sementara kapasitas yang terlalu besar akan membuang-buang energi. Konsultasikan dengan teknisi profesional untuk menentukan pilihan terbaik sesuai kebutuhan dan budget Anda.</p>
-        </article>
-
-        <article>
-            <h2>Ciri-Ciri AC yang Perlu Diservis Segera</h2>
-            <p>Jika AC mulai mengeluarkan udara yang tidak dingin, meneteskan air, atau mengeluarkan suara bising, ini adalah tanda-tanda AC Anda perlu diservis. Melakukan servis secara cepat akan mencegah kerusakan yang lebih parah dan memperpanjang umur AC.</p>
-        </article>
-
-        <article>
-            <h2>Mengapa Freon AC Harus Dicek Secara Berkala</h2>
-            <p>Freon merupakan zat pendingin utama dalam AC. Kebocoran freon akan menyebabkan AC kehilangan kemampuan mendinginkan ruangan secara efektif. Oleh karena itu, pemeriksaan dan pengisian ulang freon secara berkala sangat penting untuk menjaga performa AC.</p>
-        </article>
-
-        <article>
-            <h2>Manfaat Menggunakan AC Inverter</h2>
-            <p>AC inverter menawarkan penghematan energi yang signifikan karena teknologi kompresor yang bekerja lebih stabil dan efisien. Selain itu, suhu ruangan dapat dijaga lebih konstan sehingga memberikan kenyamanan lebih bagi penghuninya.</p>
-        </article>
-
-        <article>
-            <h2>Perbedaan Cuci AC Biasa dan Cuci AC Steam</h2>
-            <p>Cuci AC biasa biasanya hanya membersihkan bagian luar dan filter, sementara cuci steam menggunakan uap panas untuk membunuh kuman, bakteri, dan jamur secara efektif. Metode steam cleaning sangat disarankan untuk Anda yang ingin menjaga kualitas udara dalam ruangan tetap sehat.</p>
-        </article>
-
-        <article>
-            <h2>Tips Menghemat Listrik Saat Menggunakan AC</h2>
-            <ul>
-                <li>Gunakan suhu ideal antara 24-26°C untuk efisiensi optimal.</li>
-                <li>Matikan AC jika ruangan kosong untuk menghindari pemborosan listrik.</li>
-                <li>Bersihkan filter secara rutin agar AC bekerja lebih efisien.</li>
-                <li>Tutup pintu dan jendela saat AC menyala agar udara dingin tidak keluar.</li>
-                <li>Gunakan mode hemat energi (eco mode) jika tersedia.</li>
-            </ul>
-        </article>
-
+  <section class="section" id="layanan">
+    <h2>Layanan Kami</h2>
+    <div class="services">
+      <div class="service-box">
+        <img src="https://images.unsplash.com/photo-1611078489935-3ef9c05a3024?auto=format&fit=crop&w=500&q=60" alt="Pasang AC">
+        <h3>Pasang AC</h3>
+        <p>Jasa instalasi AC baru atau pindahan dengan teknisi berpengalaman.</p>
+      </div>
+      <div class="service-box">
+        <img src="https://images.unsplash.com/photo-1609840113345-9bcf9e4f2b9e?auto=format&fit=crop&w=500&q=60" alt="Servis AC">
+        <h3>Servis AC</h3>
+        <p>Perbaikan dan pengecekan AC dengan sparepart berkualitas.</p>
+      </div>
+      <div class="service-box">
+        <img src="https://images.unsplash.com/photo-1598966750219-2a58cc96ec79?auto=format&fit=crop&w=500&q=60" alt="Cuci AC">
+        <h3>Cuci AC</h3>
+        <p>Membersihkan AC secara menyeluruh agar udara lebih sejuk dan sehat.</p>
+      </div>
+      <div class="service-box">
+        <img src="https://images.unsplash.com/photo-1624986233626-7b99f34f9d26?auto=format&fit=crop&w=500&q=60" alt="Jual Beli AC">
+        <h3>Jual Beli AC</h3>
+        <p>Menjual AC baru dan bekas serta menerima tukar tambah.</p>
+      </div>
     </div>
-    <footer>
-        <p>&copy; 2025 BINTANG JAYA AC. Semua Hak Dilindungi.</p>
-    </footer>
+  </section>
+
+  <section class="section" id="kontak">
+    <h2>Kontak Kami</h2>
+    <p>Alamat: Jl Pancing I LK IX, Mabar Hilir, Medan</p>
+    <p>WhatsApp: <a href="https://wa.me/6282304257994">+62 823-0425-7994</a></p>
+    <p>Jam Operasional: Setiap Hari 08.00 – 20.00</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 BINTANG JAYA AC. All rights reserved.</p>
+  </footer>
 </body>
 </html>
