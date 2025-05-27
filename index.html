@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bintang Jaya AC</title>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
     .carousel-item img {
@@ -87,7 +88,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Bintang Jaya AC</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
@@ -95,7 +97,6 @@
           <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
           <li class="nav-item"><a class="nav-link" href="#layanan">Tentang Kami</a></li>
           <li class="nav-item"><a class="nav-link" href="#tentang">Layanan</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
           <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
         </ul>
       </div>
@@ -116,10 +117,12 @@
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Sebelumnya</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Berikutnya</span>
     </button>
   </div>
 
@@ -130,6 +133,7 @@
       <p>Kami melayani service, perawatan, pemasangan, dan bongkar pasang AC rumah, kantor, ruko, dan bangunan lainnya. Bintang Jaya AC siap hadir di daerah Medan Marelan, Helvetia, Mabar, dan sekitarnya.</p>
 
       <h3 id="layanan" class="text-primary fw-semibold mt-5">Berpengalaman, Profesional, dan Terpercaya</h3>
+      <h3 class="text-primary fw-semibold mt-4">Keunggulan Kami</h3>
       <ul class="list-group list-group-flush">
         <li class="list-group-item">✅ Teknisi bersertifikat dan pengalaman lebih dari 5 tahun</li>
         <li class="list-group-item">✅ Jangkauan luas dan cepat tanggap</li>
@@ -137,12 +141,15 @@
         <li class="list-group-item">✅ Layanan konsultasi dan survei gratis</li>
       </ul>
       
-    <!-- Layanan Kami -->
-    <section id="tentang" class="layanan-kami container">
-      <h2 class="text-center mb-5 text-primary fw-semibold mt-5">Layanan Kami</h2>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="flip-card"><div class="flip-card-inner">
+  <!-- Layanan Kami Flip -->
+  <section id="layanan" class="layanan-kami container">
+    <h2 class="text-center mb-5 text-primary fw-semibold mt-5">Layanan Kami</h2>
+    <h2 class="text-primary fw-bold">Solusi Lengkap Untuk Semua Kebutuhan AC Anda</h2> 
+    <p> Di Bintang Jaya AC, kami menyediakan berbagai layanan berkualitas untuk menjaga performa AC anda:</p>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="flip-card">
+          <div class="flip-card-inner">
             <div class="flip-card-front">
               <div class="flip-icon">❄</div>
               <h5>Service AC</h5>
@@ -152,10 +159,13 @@
               <h5>Service AC</h5>
               <p>Pengecekan, pembersihan, dan perbaikan AC dari teknisi ahli kami.</p>
             </div>
-          </div></div>
+          </div>
         </div>
-        <div class="col">
-          <div class="flip-card"><div class="flip-card-inner">
+      </div>
+
+      <div class="col">
+        <div class="flip-card">
+          <div class="flip-card-inner">
             <div class="flip-card-front">
               <div class="flip-icon">🧰</div>
               <h5>Instalasi AC</h5>
@@ -165,10 +175,13 @@
               <h5>Instalasi AC</h5>
               <p>Instalasi rapi dan sesuai standar untuk hasil maksimal dan aman.</p>
             </div>
-          </div></div>
+          </div>
         </div>
-        <div class="col">
-          <div class="flip-card"><div class="flip-card-inner">
+      </div>
+
+      <div class="col">
+        <div class="flip-card">
+          <div class="flip-card-inner">
             <div class="flip-card-front">
               <div class="flip-icon">🔧</div>
               <h5>Pengisian Freon</h5>
@@ -178,10 +191,14 @@
               <h5>Pengisian Freon</h5>
               <p>Gunakan freon berkualitas sesuai kebutuhan AC Anda dengan teknisi terpercaya.</p>
             </div>
-          </div></div>
+          </div>
         </div>
-        <div class="col">
-          <div class="flip-card"><div class="flip-card-inner">
+      </div>
+    </div>
+
+    <div class="col">
+        <div class="flip-card">
+          <div class="flip-card-inner">
             <div class="flip-card-front">
               <div class="flip-icon">🪛</div>
               <h5>Pergantian Sparepart</h5>
@@ -191,51 +208,32 @@
               <h5>Pergantian Sparepart</h5>
               <p>Penggantian komponen berkualitas untuk meningkatkan umur AC anda.</p>
             </div>
-          </div></div>
+          </div>
         </div>
       </div>
-    </section>
-
-    <!-- Portofolio -->
-<section id="portofolio" class="py-5 bg-light">
-  <div class="container">
-    <h2 class="text-center mb-4">Portofolio Kami</h2>
-    <p class="text-center mb-5">Ahli Service & Maintenance AC Terpercaya</p>
-    <div class="row text-center">
-      <div class="col-md-4 mb-4">
-        <img src="GAMBAR/1.jpg" alt="Pemasangan AC">
-        <p class="mt-2">Servis AC</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="GAMBAR/2.jpg" alt="Perbaikan Outdoor AC">
-        <p class="mt-2">Pemasangan AC</p>
-      </div>
-      <div class="col-md-4 mb-4">
-        <img src="GAMBAR/3.jpg" alt="Cuci AC Dalam Ruangan">
-        <p class="mt-2">Cuci AC</p>
-      </div>
     </div>
-  </div>
-</section>
-    <!-- Kontak -->
-    <section id="kontak" class="container my-5 text-center">
-      <h3 class="text-primary fw-bold">Hubungi Kami</h3>
-      <p class="mb-1">📍 Jl. Pancing I LK IX, Mabar Hilir</p>
-      <p class="mb-1">📞 0823-0425-7994</p>
-      <p class="mb-3">✉ bintangjayaac18@gmail.com</p>
-      <iframe src="https://www.google.com/maps?q=medan&output=embed" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-      <br><br>
-      <a href="https://wa.me/6282304257994" target="_blank" class="btn btn-success">Chat WhatsApp Sekarang</a>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="container my-5 text-center">
+    <h3 class="text-primary fw-bold">Hubungi Kami</h3>
+    <p class="mb-1">📍 Jl.Pancing I LK IX Mabar Hilir </p>
+    <p class="mb-1">📞 0823-0425-7994</p>
+    <p class="mb-3">✉ bintangjayaac18@gmail.com</p>
+    <iframe src="https://www.google.com/maps?q=medan&output=embed" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe> </div>
+      </div>
     </section>
   </main>
-
+    <a href="https://wa.me/6282304257994" target="_blank" class="btn btn-success">Chat WhatsApp Sekarang</a>
+  </section>  
+      
   <!-- Footer -->
   <footer>
     &copy; 2025 Bintang Jaya AC - All rights reserved.
   </footer>
 
   <!-- WhatsApp Floating Button -->
-  <a href="https://wa.me/6282304257994" class="whatsapp-float" target="_blank" title="Chat WhatsApp">
+  <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank" title="Chat WhatsApp">
     <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
   </a>
 
