@@ -1,4 +1,11 @@
-WhatsApp_GAMBAR_2025-05-23_14-01-12_c4c2bebb.jpg
-WhatsApp_GAMBAR_2025-05-26_10-23-23_32894386.jpg
-WhatsApp_GAMBAR_2025-05-26_10-23-23_7f494db9.jpg
-WhatsApp_GAMBAR_2025-05-23_14-01-12_d95eaf56.jpg
+<img src="GAMBAR/banner1.jpg" alt="Banner 1">
+<img src="GAMBAR/banner2.jpg" alt="Banner 2">
+<img src="GAMBAR/banner3.jpg" alt="Banner 3">
+
+<img src="GAMBAR/ac1.jpg" alt="Portofolio 1">
+<img src="GAMBAR/ac2.jpg" alt="Portofolio 2">
+<img src="GAMBAR/ac3.jpg" alt="Portofolio 3">
+<img src="GAMBAR/ac4.jpg" alt="Portofolio 4">
+
+<!-- WhatsApp icon bisa pakai url online -->
+<img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp">
