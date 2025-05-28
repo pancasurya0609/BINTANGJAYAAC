@@ -1,77 +1,133 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8" />
-  <title>Jasa Service AC Profesional di Medan – Bintang Jaya AC</title>
-  <meta name="description" content="Bintang Jaya AC melayani jasa service AC, instalasi AC, pengisian freon, dan perawatan AC terpercaya di Medan Marelan, Mabar, dan Helvetia. Hubungi teknisi AC profesional kami sekarang!">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="BINTANG JAYA AC - Layanan Pasang, Service, Cuci, dan Jual Beli AC di Medan. Area layanan mencakup Marelan, Mabar, Helvetia, dan sekitarnya.">
+  <meta name="keywords" content="Service AC Medan, Jasa AC Marelan, Cuci AC Mabar, Pasang AC Helvetia">
+  <meta name="author" content="BINTANG JAYA AC">
+  <title>Jasa Service & Pasang AC Medan | BINTANG JAYA AC</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
-    .carousel-item img { height: 400px; object-fit: cover; }
-    .article p { text-align: justify; }
-    footer { background-color: #004a99; color: white; padding: 15px 0; text-align: center; }
-    .whatsapp-float {
-      position: fixed; bottom: 20px; right: 20px; z-index: 999;
-      background-color: white; border-radius: 50%; padding: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: all 0.3s ease;
-    }
-    .whatsapp-float:hover { transform: scale(1.1); }
-    .layanan-kami { padding: 60px 0; background: #f8f9fa; }
-    .flip-card { background-color: transparent; width: 100%; height: 300px; perspective: 1000px; margin-bottom: 30px; }
-    .flip-card-inner {
-      position: relative; width: 100%; height: 100%;
-      transition: transform 0.6s; transform-style: preserve-3d;
-    }
-    .flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
-    .flip-card-front, .flip-card-back {
-      position: absolute; width: 100%; height: 100%;
-      backface-visibility: hidden; border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      display: flex; align-items: center; justify-content: center;
-      flex-direction: column; padding: 20px;
-    }
-    .flip-card-front { background-color: #ffffff; }
-    .flip-card-back { background-color: #007bff; color: white; transform: rotateY(180deg); }
-    .flip-icon { font-size: 48px; margin-bottom: 15px; }
-    .social-icons a { margin: 0 10px; color: #fff; font-size: 24px; }
-    .faq-item summary { cursor: pointer; font-weight: bold; margin-top: 10px; }
+    body { font-family: 'Segoe UI', sans-serif; }
+    .hero { background: url('https://via.placeholder.com/1600x600?text=BINTANG+JAYA+AC') center/cover no-repeat; height: 60vh; color: white; display: flex; align-items: center; justify-content: center; text-align: center; }
+    .hero h1 { font-size: 3rem; background: rgba(0, 0, 0, 0.6); padding: 1rem; border-radius: 10px; }
+    .wa-float { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; padding: 12px 20px; border-radius: 50px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); font-size: 16px; z-index: 1000; text-decoration: none; }
+    .wa-float i { margin-right: 8px; }
+    footer { background: #f8f9fa; padding: 2rem 0; text-align: center; }
   </style>
 </head>
+
 <body>
-
-<!-- SEO Blog Section -->
-<section class="container py-5">
-  <h2 class="text-primary text-center mb-4">Service AC Medan – Layanan Profesional Bintang Jaya AC</h2>
-  <div class="article">
-    <p><strong>Bintang Jaya AC</strong> adalah solusi terbaik untuk Anda yang mencari <strong>jasa service AC Medan</strong> terpercaya. Kami melayani berbagai kebutuhan AC, mulai dari service rutin, cuci AC, isi freon, hingga bongkar pasang AC untuk wilayah Medan Marelan, Mabar, Helvetia, dan sekitarnya.</p>
-    <p>Kami memiliki teknisi berpengalaman yang siap datang ke lokasi Anda dengan cepat dan memberikan layanan terbaik. Anda tidak perlu khawatir soal kualitas, karena kami memberikan garansi untuk setiap pekerjaan yang kami lakukan.</p>
-    <h3>Kenapa Memilih Bintang Jaya AC?</h3>
-    <ul>
-      <li>Respon cepat dan bisa dipanggil ke rumah/kantor Anda</li>
-      <li>Harga transparan dan terjangkau</li>
-      <li>Garansi kerja & teknisi berpengalaman</li>
-      <li>Melayani area Medan Marelan, Mabar, Helvetia, dan sekitarnya</li>
-    </ul>
-    <h3>Layanan Unggulan Kami</h3>
-    <p>Kami menyediakan layanan:</p>
-    <ul>
-      <li><strong>Service AC</strong> – Mengatasi AC tidak dingin, bocor, atau mati total</li>
-      <li><strong>Cuci AC</strong> – Membersihkan bagian dalam AC agar performa kembali optimal</li>
-      <li><strong>Isi Freon</strong> – Pengisian freon R32/R410 dengan alat resmi</li>
-      <li><strong>Pasang AC Baru & Bekas</strong> – Instalasi dan penjualan AC</li>
-    </ul>
-    <p>Segera hubungi kami melalui <a href="https://wa.me/6282304257994" target="_blank">WhatsApp</a> atau kunjungi alamat kami di Jl Pancing I LK IX, Mabar Hilir, Medan.</p>
+  <!-- Hero -->
+  <div class="hero">
+    <h1>Jasa Service & Pasang AC Profesional di Medan</h1>
   </div>
-</section>
 
-<!-- WhatsApp Floating Button -->
-<a href="https://wa.me/6282304257994" class="whatsapp-float" target="_blank">
-  <img src="https://img.icons8.com/ios-filled/50/25D366/whatsapp--v1.png" width="50" alt="WhatsApp">
-</a>
+  <!-- Konten -->
+  <section class="container my-5">
+    <div class="row text-center mb-4">
+      <h2>Layanan Kami</h2>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card h-100 shadow">
+          <div class="card-body">
+            <i class="fas fa-tools fa-2x mb-3"></i>
+            <h5 class="card-title">Servis AC</h5>
+            <p class="card-text">Perbaikan AC bocor, tidak dingin, dan masalah teknis lainnya.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 shadow">
+          <div class="card-body">
+            <i class="fas fa-snowflake fa-2x mb-3"></i>
+            <h5 class="card-title">Cuci AC</h5>
+            <p class="card-text">Cuci AC profesional, bersih maksimal dan hemat listrik.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 shadow">
+          <div class="card-body">
+            <i class="fas fa-plus-circle fa-2x mb-3"></i>
+            <h5 class="card-title">Pasang AC Baru</h5>
+            <p class="card-text">Instalasi AC split baru dengan standar teknisi berpengalaman.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card h-100 shadow">
+          <div class="card-body">
+            <i class="fas fa-exchange-alt fa-2x mb-3"></i>
+            <h5 class="card-title">Jual Beli AC</h5>
+            <p class="card-text">Beli AC second berkualitas & jual unit lama Anda dengan mudah.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<!-- Footer -->
-<footer>
-  <p>© 2025 BINTANG JAYA AC | Jl Pancing I LK IX, Mabar Hilir</p>
-</footer>
+  <!-- Area Layanan -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h3 class="text-center mb-4">Area Layanan Kami</h3>
+      <p class="text-center">Kami melayani area: <strong>Marelan</strong>, <strong>Mabar</strong>, <strong>Helvetia</strong>, <strong>Medan Labuhan</strong>, <strong>Sunggal</strong>, dan sekitarnya.</p>
+    </div>
+  </section>
 
+  <!-- Tentang Kami -->
+  <section class="container py-5">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Tentang BINTANG JAYA AC</h3>
+        <p>BINTANG JAYA AC adalah spesialis jasa pasang, servis, dan cuci AC di Medan. Kami memiliki teknisi berpengalaman, harga terjangkau, dan pelayanan cepat ke rumah atau kantor Anda. Fokus utama kami adalah kepuasan pelanggan dengan hasil kerja yang rapi dan bergaransi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <h3 class="text-center mb-4">Pertanyaan Umum</h3>
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">Berapa biaya servis AC?</button></h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Biaya servis AC mulai dari Rp 60.000 tergantung jenis kerusakan dan tipe AC.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">Apakah bisa panggilan ke rumah?</button></h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Ya, kami melayani panggilan ke rumah dan kantor area Medan & sekitarnya.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">Apakah ada garansi?</button></h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">Kami memberikan garansi untuk semua pekerjaan servis dan instalasi.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Button -->
+  <a href="https://wa.me/6282304257994" class="wa-float" target="_blank">
+    <i class="fab fa-whatsapp"></i> Chat WhatsApp
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 BINTANG JAYA AC | Jl Pancing I LK IX, Mabar Hilir</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
