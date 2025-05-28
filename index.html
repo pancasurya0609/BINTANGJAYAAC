@@ -7,100 +7,74 @@
   <meta name="description" content="Bintang Jaya AC melayani jasa service AC, instalasi AC, pengisian freon, dan perawatan AC terpercaya di Medan Marelan, Mabar, dan Helvetia. Hubungi teknisi AC profesional kami sekarang!" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    header img {
+    .header-image {
       width: 100%;
-      height: auto;
-      max-height: 400px;
+      height: 300px;
       object-fit: cover;
-      border-radius: 0 0 15px 15px;
+      border-bottom: 4px solid #007bff;
     }
-    header {
+    .article p {
+      text-align: justify;
+    }
+    footer {
+      background-color: #004a99;
+      color: white;
+      padding: 15px 0;
       text-align: center;
-      margin-bottom: 20px;
     }
-    header h1 {
-      font-weight: 700;
-      color: #004a99;
-      margin-top: 15px;
-    }
-    .carousel-item img { height: 400px; object-fit: cover; }
-    .article p { text-align: justify; }
-    footer { background-color: #004a99; color: white; padding: 15px 0; text-align: center; }
     .whatsapp-float {
-      position: fixed; bottom: 20px; right: 20px; z-index: 999;
-      background-color: white; border-radius: 50%; padding: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2); transition: all 0.3s ease;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      background-color: white;
+      border-radius: 50%;
+      padding: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
     }
-    .whatsapp-float:hover { transform: scale(1.1); }
-    .layanan-kami { padding: 60px 0; background: #f8f9fa; }
-    .flip-card { background-color: transparent; width: 100%; height: 300px; perspective: 1000px; margin-bottom: 30px; }
-    .flip-card-inner {
-      position: relative; width: 100%; height: 100%;
-      transition: transform 0.6s; transform-style: preserve-3d;
+    .whatsapp-float:hover {
+      transform: scale(1.1);
     }
-    .flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
-    .flip-card-front, .flip-card-back {
-      position: absolute; width: 100%; height: 100%;
-      backface-visibility: hidden; border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      display: flex; align-items: center; justify-content: center;
-      flex-direction: column; padding: 20px;
+    .layanan-kami {
+      padding: 60px 0;
+      background: #f8f9fa;
     }
-    .flip-card-front { background-color: #ffffff; }
-    .flip-card-back { background-color: #007bff; color: white; transform: rotateY(180deg); }
-    .flip-icon { font-size: 48px; margin-bottom: 15px; }
-    .social-icons a { margin: 0 10px; color: #fff; font-size: 24px; }
-    .faq-item summary { cursor: pointer; font-weight: bold; margin-top: 10px; }
+    .blog-post {
+      margin-bottom: 2rem;
+    }
+    .blog-post h4 {
+      color: #007bff;
+      font-weight: 700;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://images.unsplash.com/photo-1709432767122-d3cb5326911a?w=1200&auto=format&fit=crop&q=80" alt="Teknisi pasang AC di Medan oleh Bintang Jaya AC" />
-    <h1>Jasa Service AC Profesional dan Terpercaya di Medan</h1>
-  </header>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
       <a class="navbar-brand fw-bold" href="#">Bintang Jaya AC</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link active" href="#">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#hero">Beranda</a></li>
           <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
-          <li class="nav-item"><a class="nav-link" href="#layanan">Layanan Kami</a></li>
-          <li class="nav-item"><a class="nav-link" href="#portofolio">Portofolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
           <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Banner Carousel -->
-  <div id="bannerCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Carousel banner layanan AC">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://plus.unsplash.com/premium_photo-1682126012378-859ca7a9f4cf?w=1200&auto=format&fit=crop&q=80" class="d-block w-100" alt="Ilustrasi pendingin ruangan AC modern" />
-      </div>
-      <div class="carousel-item">
-        <img src="https://images.unsplash.com/photo-1709432767122-d3cb5326911a?w=1200&auto=format&fit=crop&q=80" class="d-block w-100" alt="Teknisi sedang servis AC profesional" />
-      </div>
-      <div class="carousel-item">
-        <img src="https://plus.unsplash.com/premium_photo-1683134512538-7b390d0adc9e?w=1200&auto=format&fit=crop&q=80" class="d-block w-100" alt="AC terpasang rapi di rumah pelanggan Medan" />
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#bannerCarousel" data-bs-slide="prev" aria-label="Sebelumnya">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#bannerCarousel" data-bs-slide="next" aria-label="Selanjutnya">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
+  <!-- Header Image -->
+  <img src="https://images.unsplash.com/photo-1590080877777-f8a9d0715e0a?auto=format&fit=crop&w=1350&q=80" alt="Ilustrasi AC dan layanan servis" class="header-image" />
 
-  <!-- Hero Section with H1 (duplicate removed, replaced by header) -->
-  <section class="text-center my-5 container">
+  <!-- Hero Section with H1 -->
+  <section id="hero" class="text-center my-5 container">
+    <h1>Jasa Service AC Profesional dan Terpercaya di Medan</h1>
     <p>Bintang Jaya AC menyediakan layanan lengkap service AC, instalasi AC, pengisian freon, dan jual beli AC baru maupun bekas untuk area Medan Marelan, Mabar, dan Helvetia.</p>
   </section>
 
@@ -134,78 +108,44 @@
     </div>
   </section>
 
-  <!-- Layanan Kami-->
-  <section id="layanan" class="layanan-kami">
-    <h3 class="text-center mb-5 fw-bold" style="color:#004a99;">Layanan Kami</h3>
-    <div class="container">
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <div class="flip-icon">&#128295;</div>
-                <h5>Service AC</h5>
-                <p>Kami memberikan service lengkap untuk semua jenis AC dengan teknisi berpengalaman.</p>
-              </div>
-              <div class="flip-card-back">
-                <h5>Service AC</h5>
-                <p>Perbaikan cepat, penggantian sparepart, dan perawatan rutin agar AC awet dan dingin maksimal.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <div class="flip-icon">&#9986;</div>
-                <h5>Bongkar Pasang AC</h5>
-                <p>Tim ahli kami siap melakukan bongkar pasang AC dengan rapi dan aman.</p>
-              </div>
-              <div class="flip-card-back">
-                <h5>Bongkar Pasang AC</h5>
-                <p>Pengaturan ulang penempatan AC sesuai kebutuhan, tanpa merusak dinding atau instalasi.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <div class="flip-icon">&#128230;</div>
-                <h5>Pengisian Freon</h5>
-                <p>Pengisian freon AC menggunakan alat modern dan freon berkualitas.</p>
-              </div>
-              <div class="flip-card-back">
-                <h5>Pengisian Freon</h5>
-                <p>Pastikan AC Anda selalu dingin optimal dengan pengisian ulang freon tepat waktu.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <!-- Blog Section -->
+  <section id="blog" class="container py-5">
+    <h3 class="text-primary mb-4">Blog Terbaru</h3>
+
+    <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+      <h4 itemprop="headline">Tips Merawat AC Agar Awet dan Tetap Dingin</h4>
+      <p itemprop="articleBody">Rutin membersihkan filter dan melakukan service AC minimal 6 bulan sekali sangat penting untuk menjaga performa AC agar tetap optimal dan hemat listrik.</p>
+    </article>
+
+    <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+      <h4 itemprop="headline">Kenapa Isi Freon AC Harus Dilakukan Oleh Profesional?</h4>
+      <p itemprop="articleBody">Pengisian freon yang tepat memerlukan peralatan khusus dan keahlian agar AC tidak bocor dan bekerja maksimal. Kami menyediakan layanan isi freon bergaransi.</p>
+    </article>
+
+    <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+      <h4 itemprop="headline">Manfaat Service AC Rutin untuk Kesehatan dan Efisiensi Energi</h4>
+      <p itemprop="articleBody">Service AC secara rutin membantu menjaga kualitas udara dan mencegah kerusakan komponen, sehingga lebih hemat energi dan sehat untuk keluarga Anda.</p>
+    </article>
   </section>
 
   <!-- Kontak -->
-  <section id="kontak" class="container py-5">
-    <h3 class="mb-4 fw-bold" style="color: #004a99;">Hubungi Kami</h3>
-    <p>Butuh jasa service AC atau konsultasi? Hubungi teknisi kami langsung via WhatsApp:</p>
-    <a href="https://wa.me/6282304257994" target="_blank" rel="noopener" class="btn btn-success btn-lg">Chat WhatsApp</a>
+  <section id="kontak" class="bg-primary text-white text-center py-5">
+    <h3>Hubungi Kami</h3>
+    <p>Jl Pancing I LK IX, Mabar Hilir, Medan</p>
+    <p>Telp: +62 823-0425-7994</p>
+    <p>Email: info@bintangjayaac.shop</p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Bintang Jaya AC. Semua hak cipta dilindungi.</p>
-    <p>
-      <a href="https://www.google.com/maps/place/Jl+Pancing+I+LK+IX,+Mabar+Hilir" target="_blank" rel="noopener" style="color: #fff;">Alamat: Jl Pancing I LK IX, Mabar Hilir, Medan</a>
-    </p>
+    <div class="container">
+      <p>&copy; 2025 Bintang Jaya AC. Semua hak cipta dilindungi.</p>
+    </div>
   </footer>
 
-  <!-- Tombol WhatsApp Mengambang -->
-  <a href="https://wa.me/6282304257994" target="_blank" rel="noopener" aria-label="Chat WhatsApp Bintang Jaya AC" class="whatsapp-float">
-    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp Icon" width="40" height="40" />
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/6282304257994" target="_blank" class="whatsapp-float" aria-label="Hubungi Bintang Jaya AC lewat WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="Logo WhatsApp" width="40" height="40" />
   </a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
