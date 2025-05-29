@@ -3,24 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="BINTANG JAYA AC menyediakan jasa service AC Medan cepat, bergaransi, dan profesional. Servis AC rumah, kantor, isi freon, bongkar pasang AC." />
-  <meta name="keywords" content="service AC Medan, jasa servis AC, cuci AC, isi freon, bongkar pasang AC, BINTANG JAYA AC" />
-  
+  <meta name="description" content="BINTANG JAYA AC menyediakan jasa service AC Medan cepat, bergaransi, dan profesional. Servis AC rumah, kantor, isi freon, bongkar pasang AC.">
   <title>Service AC Medan - BINTANG JAYA AC</title>
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:title" content="Service AC Medan - BINTANG JAYA AC" />
-  <meta property="og:description" content="Jasa service AC Medan cepat, bergaransi, dan profesional. Cuci AC, isi freon, bongkar pasang AC." />
-  <meta property="og:image" content="https://bintangjayaac.shop/cover-image.jpg" />
-  <meta property="og:url" content="https://bintangjayaac.shop/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Service AC Medan - BINTANG JAYA AC" />
-  <meta name="twitter:description" content="Jasa service AC Medan cepat, bergaransi, dan profesional. Cuci AC, isi freon, bongkar pasang AC." />
-  <meta name="twitter:image" content="https://bintangjayaac.shop/cover-image.jpg" />
-
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -28,6 +12,7 @@
       padding: 0;
       background: #f8f9fa;
       color: #333;
+      overflow-x: hidden;
     }
     header {
       background: #003f91;
@@ -36,26 +21,43 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      transition: background-color 0.3s ease;
+    }
+    header.scrolled {
+      background-color: #002663;
     }
     nav a {
       color: white;
       margin-left: 1rem;
       text-decoration: none;
       font-weight: bold;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffa500;
     }
     .hero {
       background: url(https://www.shutterstock.com/image-photo/air-conditioner-home-room-ac-600nw-2206075655.jpg) center/cover no-repeat;
       color: white;
       text-align: center;
       padding: 5rem 2rem;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards;
+      animation-delay: 0.3s;
     }
     .hero h1 {
       font-size: 2.5rem;
       margin-bottom: 1rem;
+      text-shadow: 0 0 10px rgba(0,0,0,0.7);
     }
     .hero p {
       font-size: 1.2rem;
       margin-bottom: 2rem;
+      text-shadow: 0 0 8px rgba(0,0,0,0.6);
     }
     .cta-btn {
       background: #ffa500;
@@ -65,10 +67,26 @@
       font-size: 1rem;
       text-decoration: none;
       border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255,165,0,0.5);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+    }
+    .cta-btn:hover {
+      background: #e69500;
+      box-shadow: 0 6px 15px rgba(230,149,0,0.7);
+      transform: translateY(-3px);
     }
     .section {
       padding: 3rem 2rem;
       text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
     .services {
       display: flex;
@@ -82,6 +100,12 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
       padding: 2rem;
       width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+    }
+    .service-box:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
     }
     footer {
       background: #003f91;
@@ -102,46 +126,35 @@
       text-align: center;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
       text-decoration: none;
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+    form input, form textarea {
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    form input:focus, form textarea:focus {
+      outline: none;
+      border-color: #003f91;
+      box-shadow: 0 0 5px #003f91;
+    }
+
+    /* Animations */
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "BINTANG JAYA AC",
-    "image": "https://bintangjayaac.shop/logo.png",
-    "telephone": "+6282304257994",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Jl. PASAR 3B MABAR HILIR LK X MEDAN DELI",
-      "addressLocality": "Medan",
-      "addressRegion": "Sumatera Utara",
-      "postalCode": "20235",
-      "addressCountry": "ID"
-    },
-    "url": "https://bintangjayaac.shop/",
-    "description": "Jasa service AC Medan cepat, bergaransi, dan profesional. Cuci AC, isi freon, bongkar pasang AC.",
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "08:00",
-      "closes": "17:00"
-    }
-  }
-  </script>
-
 </head>
 <body>
 
-<header>
+<header id="header">
   <div><strong>BINTANG JAYA AC</strong></div>
   <nav>
     <a href="#beranda">Beranda</a>
@@ -155,7 +168,6 @@
   <h1>Service AC Medan Cepat & Bergaransi</h1>
   <p>Kami melayani cuci AC, isi freon, bongkar pasang, dan perbaikan AC rumah/kantor di Medan</p>
   <a href="https://wa.me/6282304257994" class="cta-btn">Hubungi via WhatsApp</a>
-  <img src="https://www.shutterstock.com/image-photo/air-conditioner-home-room-ac-600nw-2206075655.jpg" alt="Service AC Medan BINTANG JAYA AC - teknisi profesional dan bergaransi" style="display:none;" />
 </section>
 
 <section class="section" id="layanan">
@@ -213,7 +225,7 @@
     <input type="text" name="kontak" required style="width: 100%; padding: 0.5rem;"><br><br>
     <label>Pesan:</label><br>
     <textarea name="pesan" rows="5" required style="width: 100%; padding: 0.5rem;"></textarea><br><br>
-    <button type="submit" style="background: #003f91; color: white; padding: 0.7rem 1.5rem; border: none; border-radius: 6px;">Kirim</button>
+    <button type="submit" class="cta-btn">Kirim</button>
   </form>
 </section>
 
@@ -231,17 +243,45 @@
     <li><strong>Gunakan timer untuk menghemat listrik</strong><br>Jangan biarkan AC menyala 24 jam nonstop, ini bisa memperpendek umur mesin.</li>
   </ol>
   <p>
-    Dengan perawatan yang tepat, AC Anda akan awet, hemat listrik, dan memberikan udara yang sejuk setiap hari.
+    Ingin AC Anda tetap dingin dan hemat listrik? Percayakan perawatan AC Anda kepada <strong>BINTANG JAYA AC</strong>. Hubungi kami sekarang juga untuk <strong>service AC Medan</strong> terbaik!
   </p>
+  <a href="https://wa.me/6282304257994" class="cta-btn">Hubungi Sekarang</a>
 </article>
 
 <footer>
-  &copy; 2025 BINTANG JAYA AC - Jasa Service AC Medan Cepat & Bergaransi
+  <p>&copy; 2025 BINTANG JAYA AC. All Rights Reserved.</p>
 </footer>
 
-<a href="https://wa.me/6282304257994" class="whatsapp-float" aria-label="Hubungi kami via WhatsApp" target="_blank" rel="noopener noreferrer">
-  &#128172;
-</a>
+<a href="https://wa.me/6282304257994" class="whatsapp-float" aria-label="Hubungi via WhatsApp">💬</a>
+
+<script>
+  // Fade in sections when scrolled into view
+  const sections = document.querySelectorAll('.section');
+  const options = {
+    threshold: 0.1
+  };
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, options);
+  sections.forEach(section => {
+    observer.observe(section);
+  });
+
+  // Header background change on scroll
+  const header = document.getElementById('header');
+  window.addEventListener('scroll', () => {
+    if(window.scrollY > 50) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
 
 </body>
 </html>
