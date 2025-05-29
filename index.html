@@ -3,11 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="BINTANG JAYA AC menyediakan jasa service AC Medan cepat, bergaransi, dan profesional. Servis AC rumah, kantor, isi freon, bongkar pasang AC.">
+  <meta name="description" content="BINTANG JAYA AC menyediakan jasa service AC Medan cepat, bergaransi, dan profesional. Servis AC rumah, kantor, isi freon, bongkar pasang AC." />
+  <meta name="keywords" content="service AC Medan, jasa servis AC, cuci AC, isi freon, bongkar pasang AC, BINTANG JAYA AC" />
+  
   <title>Service AC Medan - BINTANG JAYA AC</title>
 
-  <!-- Animate.css CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Service AC Medan - BINTANG JAYA AC" />
+  <meta property="og:description" content="Jasa service AC Medan cepat, bergaransi, dan profesional. Cuci AC, isi freon, bongkar pasang AC." />
+  <meta property="og:image" content="https://bintangjayaac.shop/cover-image.jpg" />
+  <meta property="og:url" content="https://bintangjayaac.shop/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Service AC Medan - BINTANG JAYA AC" />
+  <meta name="twitter:description" content="Jasa service AC Medan cepat, bergaransi, dan profesional. Cuci AC, isi freon, bongkar pasang AC." />
+  <meta name="twitter:image" content="https://bintangjayaac.shop/cover-image.jpg" />
 
   <style>
     body {
@@ -31,9 +43,6 @@
       text-decoration: none;
       font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
     .hero {
       background: url(https://www.shutterstock.com/image-photo/air-conditioner-home-room-ac-600nw-2206075655.jpg) center/cover no-repeat;
       color: white;
@@ -56,13 +65,6 @@
       font-size: 1rem;
       text-decoration: none;
       border-radius: 8px;
-      cursor: pointer;
-      display: inline-block;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .cta-btn:hover {
-      transform: scale(1.1);
-      box-shadow: 0 4px 10px rgba(255,165,0,0.7);
     }
     .section {
       padding: 3rem 2rem;
@@ -100,22 +102,42 @@
       text-align: center;
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
       text-decoration: none;
-      cursor: pointer;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      z-index: 1000;
-    }
-    .whatsapp-float:hover {
-      transform: scale(1.2);
-      box-shadow: 0 6px 15px rgba(37,211,102,0.9);
-    }
-    form input, form textarea {
-      font-family: inherit;
-      font-size: 1rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      box-sizing: border-box;
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "BINTANG JAYA AC",
+    "image": "https://bintangjayaac.shop/logo.png",
+    "telephone": "+6282304257994",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. PASAR 3B MABAR HILIR LK X MEDAN DELI",
+      "addressLocality": "Medan",
+      "addressRegion": "Sumatera Utara",
+      "postalCode": "20235",
+      "addressCountry": "ID"
+    },
+    "url": "https://bintangjayaac.shop/",
+    "description": "Jasa service AC Medan cepat, bergaransi, dan profesional. Cuci AC, isi freon, bongkar pasang AC.",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    }
+  }
+  </script>
+
 </head>
 <body>
 
@@ -130,9 +152,10 @@
 </header>
 
 <section class="hero" id="beranda">
-  <h1 class="animate__animated animate__jackInTheBox">Service AC Medan Cepat & Bergaransi</h1>
+  <h1>Service AC Medan Cepat & Bergaransi</h1>
   <p>Kami melayani cuci AC, isi freon, bongkar pasang, dan perbaikan AC rumah/kantor di Medan</p>
-  <a href="https://wa.me/6282304257994" class="cta-btn animate__animated animate__rubberBand animate__delay-1s">Hubungi via WhatsApp</a>
+  <a href="https://wa.me/6282304257994" class="cta-btn">Hubungi via WhatsApp</a>
+  <img src="https://www.shutterstock.com/image-photo/air-conditioner-home-room-ac-600nw-2206075655.jpg" alt="Service AC Medan BINTANG JAYA AC - teknisi profesional dan bergaransi" style="display:none;" />
 </section>
 
 <section class="section" id="layanan">
@@ -190,7 +213,7 @@
     <input type="text" name="kontak" required style="width: 100%; padding: 0.5rem;"><br><br>
     <label>Pesan:</label><br>
     <textarea name="pesan" rows="5" required style="width: 100%; padding: 0.5rem;"></textarea><br><br>
-    <button type="submit" class="cta-btn" style="width: 100%;">Kirim</button>
+    <button type="submit" style="background: #003f91; color: white; padding: 0.7rem 1.5rem; border: none; border-radius: 6px;">Kirim</button>
   </form>
 </section>
 
@@ -208,16 +231,17 @@
     <li><strong>Gunakan timer untuk menghemat listrik</strong><br>Jangan biarkan AC menyala 24 jam nonstop, ini bisa memperpendek umur mesin.</li>
   </ol>
   <p>
-    Ingin AC Anda tetap dingin dan hemat listrik? Percayakan perawatan AC Anda kepada <strong>BINTANG JAYA AC</strong>. Hubungi kami sekarang juga untuk <strong>service AC Medan</strong> terbaik!
+    Dengan perawatan yang tepat, AC Anda akan awet, hemat listrik, dan memberikan udara yang sejuk setiap hari.
   </p>
-  <a href="https://wa.me/6282304257994" class="cta-btn animate__animated animate__heartBeat animate__infinite">Hubungi Sekarang</a>
 </article>
 
 <footer>
-  <p>&copy; 2025 BINTANG JAYA AC. All Rights Reserved.</p>
+  &copy; 2025 BINTANG JAYA AC - Jasa Service AC Medan Cepat & Bergaransi
 </footer>
 
-<a href="https://wa.me/6282304257994" class="whatsapp-float animate__animated animate__bounce animate__infinite animate__delay-2s" aria-label="Chat via WhatsApp">💬</a>
+<a href="https://wa.me/6282304257994" class="whatsapp-float" aria-label="Hubungi kami via WhatsApp" target="_blank" rel="noopener noreferrer">
+  &#128172;
+</a>
 
 </body>
 </html>
