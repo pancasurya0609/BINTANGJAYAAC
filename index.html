@@ -7,7 +7,7 @@
   <title>Service AC Medan - BINTANG JAYA AC</title>
 
   <!-- Animate.css CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
   <style>
     body {
@@ -31,6 +31,9 @@
       text-decoration: none;
       font-weight: bold;
     }
+    nav a:hover {
+      text-decoration: underline;
+    }
     .hero {
       background: url(https://www.shutterstock.com/image-photo/air-conditioner-home-room-ac-600nw-2206075655.jpg) center/cover no-repeat;
       color: white;
@@ -53,15 +56,13 @@
       font-size: 1rem;
       text-decoration: none;
       border-radius: 8px;
-      font-weight: bold;
       cursor: pointer;
-
-      /* Animasi hover */
+      display: inline-block;
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
     .cta-btn:hover {
       transform: scale(1.1);
-      box-shadow: 0 4px 15px rgba(255, 165, 0, 0.7);
+      box-shadow: 0 4px 10px rgba(255,165,0,0.7);
     }
     .section {
       padding: 3rem 2rem;
@@ -100,13 +101,19 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.2);
       text-decoration: none;
       cursor: pointer;
-
-      /* Animasi hover */
       transition: transform 0.3s ease, box-shadow 0.3s ease;
+      z-index: 1000;
     }
     .whatsapp-float:hover {
       transform: scale(1.2);
-      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.8);
+      box-shadow: 0 6px 15px rgba(37,211,102,0.9);
+    }
+    form input, form textarea {
+      font-family: inherit;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      box-sizing: border-box;
     }
   </style>
 </head>
@@ -123,9 +130,9 @@
 </header>
 
 <section class="hero" id="beranda">
-  <h1 class="animate__animated animate__fadeIn">Service AC Medan Cepat & Bergaransi</h1>
+  <h1 class="animate__animated animate__jackInTheBox">Service AC Medan Cepat & Bergaransi</h1>
   <p>Kami melayani cuci AC, isi freon, bongkar pasang, dan perbaikan AC rumah/kantor di Medan</p>
-  <a href="https://wa.me/6282304257994" class="cta-btn animate__animated animate__fadeIn animate__delay-1s">Hubungi via WhatsApp</a>
+  <a href="https://wa.me/6282304257994" class="cta-btn animate__animated animate__rubberBand animate__delay-1s">Hubungi via WhatsApp</a>
 </section>
 
 <section class="section" id="layanan">
@@ -183,7 +190,7 @@
     <input type="text" name="kontak" required style="width: 100%; padding: 0.5rem;"><br><br>
     <label>Pesan:</label><br>
     <textarea name="pesan" rows="5" required style="width: 100%; padding: 0.5rem;"></textarea><br><br>
-    <button type="submit" style="background: #003f91; color: white; padding: 0.7rem 1.5rem; border: none; border-radius: 6px; cursor: pointer;">Kirim</button>
+    <button type="submit" class="cta-btn" style="width: 100%;">Kirim</button>
   </form>
 </section>
 
@@ -203,14 +210,14 @@
   <p>
     Ingin AC Anda tetap dingin dan hemat listrik? Percayakan perawatan AC Anda kepada <strong>BINTANG JAYA AC</strong>. Hubungi kami sekarang juga untuk <strong>service AC Medan</strong> terbaik!
   </p>
-  <a href="https://wa.me/6282304257994" class="cta-btn animate__animated animate__pulse animate__infinite">Hubungi Sekarang</a>
+  <a href="https://wa.me/6282304257994" class="cta-btn animate__animated animate__heartBeat animate__infinite">Hubungi Sekarang</a>
 </article>
 
 <footer>
   <p>&copy; 2025 BINTANG JAYA AC. All Rights Reserved.</p>
 </footer>
 
-<a href="https://wa.me/6282304257994" class="whatsapp-float animate__animated animate__fadeInUp animate__delay-2s">💬</a>
+<a href="https://wa.me/6282304257994" class="whatsapp-float animate__animated animate__bounce animate__infinite animate__delay-2s" aria-label="Chat via WhatsApp">💬</a>
 
 </body>
 </html>
