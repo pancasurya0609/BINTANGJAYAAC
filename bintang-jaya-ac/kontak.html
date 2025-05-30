@@ -1,45 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <title>Kontak - BINTANG JAYA AC</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontak BINTANG JAYA AC untuk layanan service AC Medan. Hubungi via WhatsApp, telepon, atau email.">
+  <title>Kontak BINTANG JAYA AC - Service AC Medan</title>
+  <style>
+    body { font-family: 'Segoe UI', sans-serif; margin: 0; background: #f5f6fa; color: #333; }
+    header, footer { background: #003f91; color: white; padding: 1rem; text-align: center; }
+    nav a { color: white; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    .section { max-width: 800px; margin: 2rem auto; padding: 2rem; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    h2 { color: #003f91; }
+    ul { list-style: none; padding: 0; font-size: 1.1rem; }
+    ul li { margin-bottom: 0.8rem; }
+    .btn-wa {
+      display: inline-block;
+      background: #25D366;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      font-size: 24px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      text-decoration: none;
+    }
+    form {
+      margin-top: 2rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin: 0.5rem 0 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #003f91;
+      color: white;
+      padding: 0.7rem 1.5rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
+
 <header>
-  <div class="logo">BINTANG JAYA AC</div>
+  <h1>BINTANG JAYA AC</h1>
   <nav>
     <a href="index.html">Beranda</a>
-    <a href="tentang.html">Tentang Kami</a>
     <a href="layanan.html">Layanan</a>
-    <a href="#">Produk</a>
-    <a href="blog.html">Blog</a>
+    <a href="tentang.html">Tentang</a>
     <a href="kontak.html">Kontak</a>
   </nav>
 </header>
-<section>
-  <h1>Kontak Kami</h1>
-  <p>Hubungi kami untuk konsultasi, pemesanan, atau pertanyaan seputar AC.</p>
-</section>
-<section style="max-width: 600px; margin: auto; background: #f8faff; padding: 20px; border-radius: 8px;">
-  <form action="#" method="post">
-    <label for="name">Nama:</label><br />
-    <input type="text" id="name" name="name" required style="width: 100%; padding: 8px; margin-bottom: 10px;" /><br />
-    <label for="email">Email:</label><br />
-    <input type="email" id="email" name="email" required style="width: 100%; padding: 8px; margin-bottom: 10px;" /><br />
-    <label for="message">Pesan:</label><br />
-    <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 8px; margin-bottom: 10px;"></textarea><br />
-    <button type="submit" class="btn">Kirim Pesan</button>
+
+<section class="section">
+  <h2>Kontak Kami</h2>
+  <p>Hubungi kami untuk pemesanan layanan service AC di wilayah Medan dan sekitarnya:</p>
+  <ul>
+    <li>📍 Alamat: Jl. PASAR 3B MABAR HILIR LK X MEDAN DELI</li>
+    <li>📞 Telepon/WA: <a href="https://wa.me/6282304257994" target="_blank">0823-0425-7994</a></li>
+    <li>📧 Email: bintangjayaac18@gmail.com</li>
+    <li>🕒 Jam Operasional: Senin–Sabtu, 08.00 – 17.00 WIB</li>
+  </ul>
+
+  <a href="https://wa.me/6282304257994" class="btn-wa" target="_blank">Chat via WhatsApp</a>
+
+  <form action="mailto:bintangjayaac18@gmail.com" method="POST" enctype="text/plain">
+    <h3>Kirim Pesan Langsung</h3>
+    <label>Nama:</label>
+    <input type="text" name="nama" required>
+    <label>No. HP / WhatsApp:</label>
+    <input type="text" name="kontak" required>
+    <label>Pesan:</label>
+    <textarea name="pesan" rows="5" required></textarea>
+    <button type="submit">Kirim Pesan</button>
   </form>
-  <hr style="margin: 20px 0;" />
-  <p><strong>Alamat:</strong> Jl PANCING I LK IX MABAR HILIR</p>
-  <p><strong>WhatsApp:</strong> <a href="https://wa.me/6282304257994">+62 823-0425-7994</a></p>
-  <p><strong>Jam Operasional:</strong> Senin - Sabtu, 08.00 - 17.00 WIB</p>
-  <a href="https://wa.me/6282304257994" class="btn" style="display: inline-block; margin-top: 10px;">Chat WhatsApp</a>
 </section>
+
+<a href="https://wa.me/6282304257994" class="whatsapp-float" aria-label="WhatsApp Bintang Jaya AC">💬</a>
+
 <footer>
-  <p>&copy; 2025 BINTANG JAYA AC | Jl PANCING I LK IX MABAR HILIR</p>
+  &copy; 2025 BINTANG JAYA AC. Semua Hak Dilindungi.
 </footer>
+
 </body>
 </html>
