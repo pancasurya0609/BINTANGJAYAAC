@@ -2,309 +2,76 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="BINTANG JAYA AC menyediakan jasa service AC Medan cepat, bergaransi, dan profesional. Servis AC rumah, kantor, isi freon, bongkar pasang AC.">
-  <title>Service AC Medan - BINTANG JAYA AC</title>
-
-  <!-- Schema Markup JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "BINTANG JAYA AC",
-    "image": "https://bintangjayaac.shop/logo.png",
-    "@id": "https://bintangjayaac.shop/",
-    "url": "https://bintangjayaac.shop/",
-    "telephone": "+6282304257994",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Jl. PASAR 3B MABAR HILIR LK X MEDAN DELI",
-      "addressLocality": "Medan",
-      "postalCode": "20152",
-      "addressCountry": "ID"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": -3.5860,
-      "longitude": 98.6722
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday"
-      ],
-      "opens": "08:00",
-      "closes": "17:00"
-    },
-    "sameAs": [
-      "https://www.facebook.com/bintangjayaac",
-      "https://instagram.com/bintangjayaac"
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Apakah BINTANG JAYA AC melayani service AC rumah dan kantor?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ya, kami melayani service AC untuk rumah dan kantor dengan teknisi profesional dan bergaransi."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Berapa lama waktu pengerjaan service AC?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Waktu pengerjaan biasanya 1-2 jam tergantung jenis dan kondisi AC."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Apakah ada garansi setelah service AC?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Ya, kami memberikan garansi untuk semua layanan service AC."
-        }
-      }
-    ]
-  }
-  </script>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BINTANG JAYA AC melayani jasa pasang AC, service AC, cuci AC, dan jual beli AC baru & bekas di Medan. Teknisi berpengalaman, harga bersahabat.">
+  <meta name="keywords" content="service AC Medan, pasang AC Medan, cuci AC Medan, jual beli AC Medan, BINTANG JAYA AC">
+  <meta name="author" content="BINTANG JAYA AC">
+  <title>BINTANG JAYA AC | Jasa Service & Pasang AC Medan</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
-    /* Basic reset & font */
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0; padding: 0;
-      background: #f8f9fa;
-      color: #333;
-      line-height: 1.6;
-    }
-    /* Header styling */
-    header {
-      background: #003f91;
-      color: white;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav a {
-      color: white;
-      margin-left: 1.2rem;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: #ffa500;
-    }
-    /* Hero section */
-    .hero {
-      background: url(https://www.shutterstock.com/image-photo/air-conditioner-home-room-ac-600nw-2206075655.jpg) center/cover no-repeat;
-      color: white;
-      text-align: center;
-      padding: 5rem 2rem;
-      position: relative;
-      overflow: hidden;
-    }
-    /* Simple fade-in animation */
-    .hero h1, .hero p, .cta-btn {
-      opacity: 0;
-      animation: fadeInUp 1s forwards;
-    }
-    .hero h1 {
-      animation-delay: 0.3s;
-      font-size: 2.8rem;
-      margin-bottom: 1rem;
-      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
-    }
-    .hero p {
-      animation-delay: 0.6s;
-      font-size: 1.3rem;
-      margin-bottom: 2rem;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
-    }
-    .cta-btn {
-      animation-delay: 0.9s;
-      background: #ffa500;
-      color: white;
-      padding: 0.8rem 1.8rem;
-      border: none;
-      font-size: 1.1rem;
-      border-radius: 8px;
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-      box-shadow: 0 4px 8px rgba(255,165,0,0.5);
-      transition: background 0.3s ease;
-    }
-    .cta-btn:hover {
-      background: #e59400;
-    }
-    /* Keyframes */
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    /* Sections */
-    .section {
-      padding: 3rem 2rem;
-      text-align: center;
-      max-width: 1000px;
-      margin: auto;
-    }
-    /* Services */
-    .services {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
-    }
-    .service-box {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 2rem;
-      width: 300px;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .service-box:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
-    }
-    /* Footer */
-    footer {
-      background: #003f91;
-      color: white;
-      text-align: center;
-      padding: 2rem 1rem;
-      margin-top: 3rem;
-    }
-    /* Whatsapp floating button */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      padding: 15px;
-      border-radius: 50%;
-      font-size: 26px;
-      text-align: center;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-      text-decoration: none;
-      transition: background 0.3s ease;
-      z-index: 999;
-    }
-    .whatsapp-float:hover {
-      background: #1ebe57;
-    }
-    /* Responsive */
-    @media(max-width: 768px){
-      .services {
-        flex-direction: column;
-        align-items: center;
-      }
-      header {
-        flex-direction: column;
-        gap: 0.8rem;
-      }
-    }
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background-color: #007bff; color: white; padding: 20px 0; text-align: center; }
+    nav { background-color: #0056b3; text-align: center; padding: 10px; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .hero { background: url('ac-installation.jpg') center/cover no-repeat; padding: 100px 20px; color: white; text-align: center; }
+    .hero h1 { font-size: 36px; margin-bottom: 10px; }
+    .hero p { font-size: 18px; }
+    .section { padding: 40px 20px; max-width: 1200px; margin: auto; }
+    .btn-whatsapp { display: inline-block; background: #25d366; color: white; padding: 10px 20px; text-decoration: none; border-radius: 8px; margin-top: 20px; }
+    footer { background-color: #f8f9fa; text-align: center; padding: 20px; font-size: 14px; color: #333; }
   </style>
 </head>
 <body>
+  <header>
+    <h1>BINTANG JAYA AC</h1>
+    <p>Solusi Terbaik untuk Pasang, Service & Cuci AC di Medan</p>
+  </header>
+  <nav>
+    <a href="index.html">Beranda</a>
+    <a href="layanan.html">Layanan</a>
+    <a href="tentang.html">Tentang</a>
+    <a href="blog.html">Blog</a>
+    <a href="kontak.html">Kontak</a>
+  </nav>
+  <section class="hero">
+    <h1>Spesialis Service & Pasang AC di Medan</h1>
+    <p>Layanan cepat, bergaransi & teknisi terpercaya. Jual beli AC juga tersedia!</p>
+    <a href="https://wa.me/6282304257994" class="btn-whatsapp">Chat via WhatsApp</a>
+  </section>
 
-<header>
-  <div><strong>BINTANG JAYA AC</strong></div>
-<nav>
-  <a href="index.html">Beranda</a>
-  <a href="layanan.html">Layanan</a>
-  <a href="tentang.html">Tentang</a>
-  <a href="kontak.html">Kontak</a>
-  <a href="blog.html">Blog</a>
-</nav>
-</header>
+  <section class="section">
+    <h2>Layanan Kami</h2>
+    <ul>
+      <li><strong>Pasang AC Baru & Bekas</strong> – Instalasi cepat & rapi.</li>
+      <li><strong>Service AC</strong> – Perbaikan & perawatan AC berkala.</li>
+      <li><strong>Cuci AC</strong> – Pembersihan AC agar tetap dingin & hemat listrik.</li>
+      <li><strong>Jual Beli AC</strong> – Tersedia AC berbagai merek & kondisi.</li>
+    </ul>
+    <p><a href="layanan.html">Lihat semua layanan</a></p>
+  </section>
 
-<section class="hero" id="beranda">
-  <h1>Service AC Medan Cepat & Bergaransi</h1>
-  <p>Kami melayani cuci AC, isi freon, bongkar pasang, dan perbaikan AC rumah/kantor di Medan</p>
-  <a href="https://wa.me/6282304257994" class="cta-btn" target="_blank" rel="noopener">Hubungi via WhatsApp</a>
-</section>
+  <section class="section" style="background-color: #f0f8ff;">
+    <h2>Kenapa Memilih BINTANG JAYA AC?</h2>
+    <ul>
+      <li>Teknisi berpengalaman & bersertifikat</li>
+      <li>Pelayanan cepat & ramah</li>
+      <li>Harga transparan tanpa biaya tersembunyi</li>
+      <li>Garansi layanan & sparepart</li>
+    </ul>
+  </section>
 
-<section class="section" id="layanan">
-  <h2>Layanan Unggulan Kami</h2>
-  <div class="services">
-    <div class="service-box">
-      <h3>Service AC Rumah</h3>
-      <p>Perawatan dan perbaikan AC di Medan untuk rumah tinggal Anda.</p>
-    </div>
-    <div class="service-box">
-      <h3>Isi Freon AC</h3>
-      <p>Layanan isi freon R32,R22,R410A dengan teknisi berpengalaman.</p>
-    </div>
-    <div class="service-box">
-      <h3>Bongkar Pasang AC</h3>
-      <p>Jasa pasang dan pindah AC aman, cepat, dan rapi.</p>
-    </div>
-  </div>
-</section>
+  <section class="section">
+    <h2>Testimoni Pelanggan</h2>
+    <blockquote>
+      "Service AC cepat dan rapi. AC saya sekarang dingin kembali! – <strong>Rizky, Medan</strong>"
+    </blockquote>
+    <blockquote>
+      "Pasang AC di rumah baru sangat memuaskan, teknisinya sopan dan profesional. – <strong>Lina, Medan Johor</strong>"
+    </blockquote>
+  </section>
 
-<section class="section" id="tentang">
-  <h2>Tentang Kami</h2>
-  <p>
-    BINTANG JAYA AC adalah penyedia jasa <strong>service AC Medan</strong> dengan teknisi berpengalaman dan pelayanan yang ramah.
-    Kami telah melayani ratusan pelanggan di wilayah Medan Marelan, Mabar, Helvetia, dan sekitarnya.
-  </p>
-  <p>
-    Kami percaya bahwa kenyamanan Anda adalah prioritas kami. Dari cuci AC hingga pemasangan baru, kami selalu memberikan solusi cepat, rapi, dan bergaransi.
-  </p>
-  <p>
-    Keunggulan kami:
-  </p>
-  <ul style="max-width: 600px; margin: auto; text-align: left; list-style-type: disc; padding-left: 1.2rem;">
-    ✅ Layanan cepat dan tepat waktu</li>
-    ✅ Teknisi profesional & bersertifikat</li>
-    ✅ Harga terjangkau & transparan</li>
-    ✅ Jangkauan luas di seluruh Medan</li>
-  </ul>
-</section>
-
-<section class="section" id="kontak">
-  <h2>Kontak Kami</h2>
-  <p>Silakan hubungi kami untuk pemesanan jasa service AC di Medan:</p>
-  <ul style="list-style: none; padding: 0; font-size: 1.1rem;">
-    <li>📍 Alamat: Jl. PASAR 3B MABAR HILIR LK X MEDAN DELI</li>
-    <li>📞 Telepon/WA: <a href="https://wa.me/6282304257994" target="_blank" rel="noopener">0823-0425-7994</a></li>
-    <li>📧 Email: info@bintangjayaac18@gmail.com</li>
-  </ul>
-</section>
-
-<!-- Tombol WA floating -->
-<a href="https://wa.me/6282304257994" class="whatsapp-float" target="_blank" aria-label="Hubungi via WhatsApp">📱</a>
-
-<footer>
-  &copy; 2025 BINTANG JAYA AC - Jasa Service AC Medan. All rights reserved.
-</footer>
-
+  <footer>
+    <p>&copy; 2025 BINTANG JAYA AC | Jasa Service dan Pasang AC di Medan</p>
+  </footer>
 </body>
 </html>
