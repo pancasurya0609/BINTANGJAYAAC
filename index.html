@@ -345,15 +345,24 @@
 
   <footer>
     <p>© 2025 BINTANG JAYA AC. All Rights Reserved.</p>
-    <!-- Tombol WhatsApp Bergerak -->
-  <a href="https://wa.me/6282304257994" class="wa-float" title="Hubungi via WhatsApp" target="_blank">
-    <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" />
-  </a>
+    <!-- GetButton.io widget -->
+  <script type="text/javascript">
+    (function () {
+      var options = {
+        whatsapp: "6282304257994", // Ganti dengan nomor WhatsApp Anda
+        call_to_action: "Chat via WhatsApp",
+        position: "right", // 'right' or 'left'
+      };
+      var proto = document.location.protocol, host = "getbutton.io", url = proto + "//static." + host;
+      var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+      s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+      var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+  </script>
+  <!-- /GetButton.io widget -->
 
 </body>
 </html>
-  </footer>
-
 
   <!-- AOS Animate On Scroll JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
