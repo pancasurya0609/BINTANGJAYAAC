@@ -459,20 +459,14 @@
   <footer>
     <p>© 2025 BINTANG JAYA AC. All Rights Reserved.</p>
     <!-- GetButton.io widget -->
-  <button onclick="kirimWA()" 
-style="background:#25D366;color:#fff;padding:15px 25px;border:none;border-radius:50px;cursor:pointer;font-size:16px;display:flex;align-items:center;gap:8px;">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="20">
-    Hubungi Kami Sekarang!
-</button>
-
-<script>
-function kirimWA() {
-    let nomor = "6281234567890"; // ganti dengan nomor WA kamu (format internasional)
-    let pesan = "Halo admin, saya ingin bertanya..."; // pesan default
-    let url = `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`;
-    window.open(url, "_blank");
-}
-</script>
+  <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
+        <script>
+          var wa_btnSetting = {"btnColor":"#16c068","ctaText":"WhatsApp Us","cornerRadius":40,"marginBottom":20,"marginLeft":20,"marginRight":20,"btnPosition":"right","whatsAppNumber":"082304257994","welcomeMessage":"Hello","zIndex":999999,"btnColorScheme":"light"};
+          window.onload = () => {
+            _waEmbed(wa_btnSetting);
+          };
+        </script>
+      
 
   <!-- /GetButton.io widget -->
     
