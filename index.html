@@ -119,6 +119,70 @@
       font-weight: 700;
     }
 
+    .section-layanan {
+  max-width: 700px;
+  margin: auto;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.section-layanan h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #222;
+}
+.section-layanan p.desc {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #444;
+}
+.layanan-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+.number-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #1a3a80;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 18px;
+  flex-shrink: 0;
+}
+.layanan-item h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #1a1a1a;
+}
+.layanan-item p {
+  margin: 6px 0 0;
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 600px) {
+  .layanan-item {
+    align-items: center;
+  }
+  .number-circle {
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    margin-right: 14px;
+  }
+  .section-layanan h2 {
+    font-size: 24px;
+  }
+}
+</style>
     /* Section box with shadow and rounded corners */
     section.box {
       background: #3498db;
