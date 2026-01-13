@@ -354,6 +354,74 @@
   box-shadow: 0 12px 30px rgba(231,76,60,0.45);
 }
 
+    .complaint-section {
+  max-width: 700px;
+  margin: 80px auto;
+  padding: 40px 30px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+}
+
+.complaint-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.complaint-desc {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.complaint-section input,
+.complaint-section textarea {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+
+.complaint-section textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.complaint-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.complaint-buttons button {
+  flex: 1;
+  padding: 14px;
+  border-radius: 30px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-wa {
+  background: linear-gradient(135deg, #25d366, #1ebe5d);
+  color: #ffffff;
+}
+
+.btn-email {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  color: #ffffff;
+}
+
+.complaint-buttons button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+}
+
+
 
     /* Tentang Section with icons */
     .features {
@@ -679,14 +747,23 @@
     </section>
 
   
-  <div class="faq-cta">
-    <p>Masih punya pertanyaan?</p>
-    <a href="mailto:bintangjayaac@gmail.com?subject=Pertanyaan%20Jasa%20AC&body=Halo%20Bintang%20Jaya%20AC,%0ASaya%20ingin%20bertanya%20tentang%20jasa%20AC." 
-       class="faq-button">
-      Kirim Pertanyaan via Gmail
-    </a>
-  </div>
+  <section class="complaint-section">
+  <h2 class="complaint-title">Kotak Keluhan & Saran</h2>
+  <p class="complaint-desc">
+    Kami sangat menghargai masukan Anda. Silakan sampaikan keluhan atau saran agar layanan kami semakin baik.
+  </p>
+
+  <form onsubmit="sendComplaint(event)">
+    <input type="text" id="name" placeholder="Nama Anda" required>
+    <textarea id="message" placeholder="Tulis keluhan atau saran Anda di sini..." required></textarea>
+
+    <div class="complaint-buttons">
+      <button type="submit" class="btn-wa">Kirim via WhatsApp</button>
+      <button type="button" class="btn-email" onclick="sendEmail()">Kirim via Email</button>
+    </div>
+  </form>
 </section>
+
 
 
 
