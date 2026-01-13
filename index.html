@@ -171,6 +171,33 @@
 .why-us-note {
   margin-top: 20px;
 }
+    .icon-list {
+  list-style: none;
+  padding: 0;
+}
+
+.icon-list li {
+  position: relative;
+  padding-left: 34px;
+  margin-bottom: 14px;
+}
+
+.icon-list li::before {
+  content: "✓";
+  width: 22px;
+  height: 22px;
+  background: #2ecc71;
+  color: #fff;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 14px;
+}
+
 
 
     /* Testimonials */
