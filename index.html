@@ -764,6 +764,31 @@
   </form>
 </section>
 
+      <script>
+function sendComplaint(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const message = document.getElementById("message").value;
+
+  const waNumber = "6282304257994"; // GANTI nomor WA kamu
+  const text = `Halo Bintang Jaya AC,%0ANama: ${name}%0AKeluhan/Saran:%0A${message}`;
+
+  window.open(`https://wa.me/${waNumber}?text=${text}`, "_blank");
+}
+
+function sendEmail() {
+  const name = document.getElementById("name").value;
+  const message = document.getElementById("message").value;
+
+  const email = "pancaaneee@gmail.com"; // GANTI email kamu
+  const subject = "Keluhan / Saran Pelanggan";
+  const body = `Nama: ${name}\n\nKeluhan / Saran:\n${message}`;
+
+  window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+</script>
+
 
 
 
