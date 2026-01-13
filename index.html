@@ -171,32 +171,88 @@
 .why-us-note {
   margin-top: 20px;
 }
-    .icon-list {
+ .icon-list.premium {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
 }
 
-.icon-list li {
+.icon-list.premium li {
   position: relative;
-  padding-left: 34px;
-  margin-bottom: 14px;
+  background: #ffffff;
+  padding: 22px 20px 22px 58px;
+  border-radius: 14px;
+  font-weight: 600;
+  color: #333;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
-.icon-list li::before {
+/* ICON CENTANG */
+.icon-list.premium li::before {
   content: "✓";
-  width: 22px;
-  height: 22px;
-  background: #2ecc71;
-  color: #fff;
+  position: absolute;
+  left: 20px;
+  top: 22px;
+  width: 26px;
+  height: 26px;
+  background: linear-gradient(135deg, #2ecc71, #27ae60);
+  color: #ffffff;
   border-radius: 50%;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  left: 0;
-  top: 2px;
   font-size: 14px;
+  font-weight: bold;
+  transition: all 0.35s ease;
 }
+
+/* GARIS AKSEN */
+.icon-list.premium li::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 14px;
+  background: linear-gradient(
+    135deg,
+    rgba(231, 76, 60, 0.15),
+    rgba(231, 76, 60, 0)
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+/* HOVER EFFECT */
+.icon-list.premium li:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+}
+
+.icon-list.premium li:hover::before {
+  background: linear-gradient(135deg, #e74c3c, #c0392b);
+  transform: scale(1.1) rotate(6deg);
+}
+
+.icon-list.premium li:hover::after {
+  opacity: 1;
+}
+
+/* RESPONSIVE (MOBILE) */
+@media (max-width: 600px) {
+  .icon-list.premium li {
+    padding: 18px 16px 18px 52px;
+  }
+
+  .icon-list.premium li::before {
+    left: 16px;
+    top: 18px;
+  }
+}
+
 
 
 
@@ -406,7 +462,7 @@
   <section class="why-us">
   <h2 class="why-us-title">Kenapa Pilih Bintang Jaya AC?</h2>
 
-  <ul class="icon-list">
+  <ul class="icon-list premium">
     <li>Teknisi AC profesional & berpengalaman</li>
     <li>Layanan panggilan ke lokasi pelanggan</li>
     <li>Harga jelas sebelum pengerjaan</li>
@@ -472,7 +528,7 @@
 <section class="why-us">
   <h2 class="why-us-title">Area Layanan Jasa AC Medan</h2>
 
-  <ul class="icon-list">
+  <ul class="icon-list premium">
     <li>📍 Mabar Hilir</li>
     <li>📍 Percut Sei Tuan</li>
     <li>📍 Tembung</li>
