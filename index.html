@@ -3,10 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="BINTANG JAYA AC - Spesialis Pasang, Servis, dan Cuci AC di Medan dengan teknisi profesional dan bergaransi." />
+  
+  <!-- SEO Title & Description Teroptimasi -->
+  <title>JASA SERVICE & PASANG AC MEDAN | BINTANG JAYA AC</title>
+  <meta name="description" content="Jasa service AC, cuci AC, isi freon, dan bongkar pasang AC panggilan di Medan & sekitarnya. Teknisi profesional, respon cepat 24 jam, dan bergaransi 30 hari." />
   <meta name="keywords" content="Pasang AC Medan, Servis AC Medan, Cuci AC Medan, Tukang AC Medan, Tukang AC Mabar, BINTANG JAYA AC" />
- <title>JASA SERVICE & PASANG AC MEDAN | TEKNISI AC TERPERCAYA DAN BERGARANSI</title>
-<meta name="description" content="Service AC panggilan Medan terpercaya & bergaransi. Pasang AC, cuci AC, isi freon, dan perbaikan cepat. Hubungi teknisi kami sekarang!.">
+
+  <!-- Open Graph untuk WhatsApp Share -->
+  <meta property="og:title" content="BINTANG JAYA AC - Service AC Medan Terpercaya" />
+  <meta property="og:description" content="Layanan service, cuci, dan bongkar pasang AC bergaransi di Medan." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bintangjayaac.shop/" />
+
   <!-- AOS Animate On Scroll CSS -->
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 
@@ -70,12 +78,6 @@
       font-weight: 500;
     }
 
-    hero-text h1 {
-     font-size: 4em;
-     margin: 0;
-     text-shadow: 4px 4px black;
-    }
-
     .hubungi-box {
       text-decoration: none;
       background-color: #FFA500;
@@ -119,7 +121,6 @@
       font-weight: 700;
     }
 
-    /* Section box with shadow and rounded corners */
     section.box {
       background: #3498db;
       padding: 30px 30px 40px;
@@ -145,7 +146,7 @@
       box-shadow: 0 5px 12px rgba(0,0,0,0.06);
       font-weight: 600;
       font-size: 18px;
-      color: #004a99;
+      color: #ffffff;
       text-align: center;
       transition: transform 0.3s ease;
       cursor: default;
@@ -156,107 +157,69 @@
     }
 
     .why-us {
-  padding: 60px 20px;   /* INI YANG PALING PENTING */
-  margin: 60px 0;       /* jarak dengan section lain */
-}
+      padding: 60px 20px;
+      margin: 60px 0;
+    }
 
-.why-us-title {
-  margin-bottom: 30px;
-}
+    .why-us-title {
+      margin-bottom: 30px;
+      text-align: center;
+    }
 
-.why-us-list {
-  margin-bottom: 25px;
-}
+    .icon-list.premium {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 18px;
+    }
 
-.why-us-note {
-  margin-top: 20px;
-}
- .icon-list.premium {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 18px;
-}
+    .icon-list.premium li {
+      position: relative;
+      background: #ffffff;
+      padding: 22px 20px 22px 58px;
+      border-radius: 14px;
+      font-weight: 600;
+      color: #333;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+      transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow: hidden;
+    }
 
-.icon-list.premium li {
-  position: relative;
-  background: #ffffff;
-  padding: 22px 20px 22px 58px;
-  border-radius: 14px;
-  font-weight: 600;
-  color: #333;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
-  overflow: hidden;
-}
+    .icon-list.premium li::before {
+      content: "✓";
+      position: absolute;
+      left: 20px;
+      top: 22px;
+      width: 26px;
+      height: 26px;
+      background: linear-gradient(135deg, #2ecc71, #27ae60);
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: bold;
+      transition: all 0.35s ease;
+    }
 
-/* ICON CENTANG */
-.icon-list.premium li::before {
-  content: "✓";
-  position: absolute;
-  left: 20px;
-  top: 22px;
-  width: 26px;
-  height: 26px;
-  background: linear-gradient(135deg, #2ecc71, #27ae60);
-  color: #ffffff;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: bold;
-  transition: all 0.35s ease;
-}
+    .icon-list.premium li::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 14px;
+      background: linear-gradient(135deg, rgba(231, 76, 60, 0.15), rgba(231, 76, 60, 0));
+      opacity: 0;
+      transition: opacity 0.35s ease;
+    }
 
-/* GARIS AKSEN */
-.icon-list.premium li::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 14px;
-  background: linear-gradient(
-    135deg,
-    rgba(231, 76, 60, 0.15),
-    rgba(231, 76, 60, 0)
-  );
-  opacity: 0;
-  transition: opacity 0.35s ease;
-}
+    .icon-list.premium li:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+    }
 
-/* HOVER EFFECT */
-.icon-list.premium li:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
-}
-
-.icon-list.premium li:hover::before {
-  background: linear-gradient(135deg, #e74c3c, #c0392b);
-  transform: scale(1.1) rotate(6deg);
-}
-
-.icon-list.premium li:hover::after {
-  opacity: 1;
-}
-
-/* RESPONSIVE (MOBILE) */
-@media (max-width: 600px) {
-  .icon-list.premium li {
-    padding: 18px 16px 18px 52px;
-  }
-
-  .icon-list.premium li::before {
-    left: 16px;
-    top: 18px;
-  }
-}
-
-
-
-
-    /* Testimonials */
     .testimonials .testimonial {
       background: #e6f0ff;
       padding: 20px 25px;
@@ -265,7 +228,6 @@
       box-shadow: 0 4px 12px rgba(0,0,0,0.04);
       font-style: italic;
       color: #333;
-      position: relative;
     }
     .testimonials .testimonial h4 {
       margin-top: 12px;
@@ -274,156 +236,79 @@
       color: #007bff;
     }
 
-    /* FAQ */
-    .faq h3 {
-      font-weight: 700;
-      cursor: pointer;
-      margin-bottom: 6px;
-      color: #0056b3;
-      position: relative;
-    }
-    .faq p {
-      margin-top: 0;
+    .faq-item {
+      background: #ffffff;
+      padding: 22px 24px;
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
       margin-bottom: 20px;
-      line-height: 1.5;
-      color: #444;
     }
-
-    .faq-section {
-  max-width: 900px;
-  margin: 80px auto;
-  padding: 0 20px;
-}
-
-.faq-title {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 40px;
-}
-
-.faq-item {
-  background: #ffffff;
-  padding: 22px 24px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-  margin-bottom: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.faq-item:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
-}
-
-.faq-item h3 {
-  margin-bottom: 10px;
-  font-size: 18px;
-  color: #e74c3c;
-}
-
-.faq-item p {
-  margin: 0;
-  color: #555;
-  line-height: 1.6;
-}
-
-.faq-cta {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.faq-cta p {
-  margin-bottom: 16px;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.faq-button {
-  display: inline-block;
-  padding: 14px 26px;
-  background: linear-gradient(135deg, #e74c3c, #c0392b);
-  color: #ffffff;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.faq-button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(231,76,60,0.45);
-}
+    .faq-item h3 {
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #e74c3c;
+    }
+    .faq-item p {
+      margin: 0;
+      color: #555;
+      line-height: 1.6;
+    }
 
     .complaint-section {
-  max-width: 700px;
-  margin: 80px auto;
-  padding: 40px 30px;
-  background: #ffffff;
-  border-radius: 18px;
-  box-shadow: 0 20px 45px rgba(0,0,0,0.12);
-}
+      max-width: 700px;
+      margin: 80px auto;
+      padding: 40px 30px;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.12);
+    }
+    .complaint-title {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .complaint-desc {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+    }
+    .complaint-section input,
+    .complaint-section textarea {
+      width: 100%;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+      border-radius: 10px;
+      border: 1px solid #ddd;
+      font-size: 15px;
+      box-sizing: border-box;
+    }
+    .complaint-section textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+    .complaint-buttons {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .complaint-buttons button {
+      flex: 1;
+      padding: 14px;
+      border-radius: 30px;
+      font-weight: 600;
+      cursor: pointer;
+      border: none;
+      transition: all 0.3s ease;
+    }
+    .btn-wa {
+      background: linear-gradient(135deg, #25d366, #1ebe5d);
+      color: #ffffff;
+    }
+    .btn-email {
+      background: linear-gradient(135deg, #e74c3c, #c0392b);
+      color: #ffffff;
+    }
 
-.complaint-title {
-  text-align: center;
-  font-size: 28px;
-  margin-bottom: 10px;
-}
-
-.complaint-desc {
-  text-align: center;
-  color: #666;
-  margin-bottom: 30px;
-}
-
-.complaint-section input,
-.complaint-section textarea {
-  width: 100%;
-  padding: 14px 16px;
-  margin-bottom: 16px;
-  border-radius: 10px;
-  border: 1px solid #ddd;
-  font-size: 15px;
-}
-
-.complaint-section textarea {
-  min-height: 120px;
-  resize: vertical;
-}
-
-.complaint-buttons {
-  display: flex;
-  gap: 14px;
-  flex-wrap: wrap;
-}
-
-.complaint-buttons button {
-  flex: 1;
-  padding: 14px;
-  border-radius: 30px;
-  font-weight: 600;
-  cursor: pointer;
-  border: none;
-  transition: all 0.3s ease;
-}
-
-.btn-wa {
-  background: linear-gradient(135deg, #25d366, #1ebe5d);
-  color: #ffffff;
-}
-
-.btn-email {
-  background: linear-gradient(135deg, #e74c3c, #c0392b);
-  color: #ffffff;
-}
-
-.complaint-buttons button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 12px 30px rgba(0,0,0,0.2);
-}
-
-
-
-    /* Tentang Section with icons */
     .features {
       display: flex;
       gap: 30px;
@@ -437,10 +322,6 @@
       padding: 20px;
       box-shadow: 0 5px 16px rgba(0,0,0,0.06);
       text-align: center;
-      transition: transform 0.3s ease;
-    }
-    .feature-item:hover {
-      transform: translateY(-8px);
     }
     .feature-icon {
       width: 60px;
@@ -448,83 +329,7 @@
       margin-bottom: 15px;
       fill: #007bff;
     }
-    .feature-item h4 {
-      margin-bottom: 10px;
-      color: #004a99;
-      font-weight: 700;
-    }
-    .feature-item p {
-      color: #333;
-      font-size: 16px;
-      line-height: 1.5;
-    }
 
-   /* Footer Style */
-.footer {
-  background-color: #111;
-  color: #ddd;
-  padding: 60px 20px 20px;
-  font-family: "Poppins", sans-serif;
-}
-
-.footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-container h2 {
-  color: #fff;
-  margin-bottom: 15px;
-  font-size: 1.2rem;
-}
-
-.footer-about,
-.footer-links,
-.footer-social {
-  flex: 1 1 250px;
-  margin: 10px;
-}
-
-.footer-about p {
-  line-height: 1.6;
-  color: #bbb;
-}
-
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-links ul li {
-  margin-bottom: 10px;
-}
-
-.footer-links ul li a {
-  color: #bbb;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.footer-links ul li a:hover {
-  color: #00bcd4;
-}
-
-.social-icons a {
-  display: inline-block;
-  color: #bbb;
-  font-size: 1.2rem;
-  margin-right: 10px;
-  transition: color 0.3s ease;
-}
-
-.social-icons a:hover {
-  color: #00bcd4;
-}
-
-    /* Responsive */
     @media (max-width: 768px) {
       ul.service-list {
         flex-direction: column;
@@ -537,6 +342,7 @@
   </style>
 </head>
 <body>
+
   <header>
     <h1>BINTANG JAYA AC</h1>
     <p>Spesialis Pasang, Servis, dan Cuci AC di Medan</p>
@@ -550,8 +356,8 @@
     <a href="kontak.html">Kontak</a>
   </nav>
 
-  <!-- Hero -->
-  <div class="hero" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="300">
+  <!-- Hero Banner -->
+  <div class="hero" data-aos="fade-in" data-aos-duration="1000">
     <div>
       <h1>Jasa Service & Pasang AC Medan Terpercaya</h1>
       <p>Teknisi AC Panggilan – Cepat, Profesional & Bergaransi</p>
@@ -559,30 +365,28 @@
     </div>
   </div>
 
-
-    <main class="box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="150">
+  <main class="container">
+    <section class="box" data-aos="fade-up" data-aos-duration="800">
       <h2 class="section-title">Siapa itu BINTANG JAYA AC?</h2>
       <div class="features">
         <div class="feature-item">
-          <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-2-.9-2-2v-6a2 2 0 1 1 4 0v6c0 1.1-.9 2-2 2zm10-3h-3a1 1 0 0 1 0-2h3v-3h-2a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1v4c0 1.1-.9 2-2 2z"/></svg>
+          <svg class="feature-icon" viewBox="0 0 24 24"><path d="M7 18c-1.1 0-2-.9-2-2v-6a2 2 0 1 1 4 0v6c0 1.1-.9 2-2 2zm10-3h-3a1 1 0 0 1 0-2h3v-3h-2a1 1 0 1 1 0-2h2a1 1 0 0 1 1 1v4c0 1.1-.9 2-2 2z"/></svg>
           <h4>Profesional & Berpengalaman</h4>
           <p>Kami memiliki teknisi AC berpengalaman yang siap membantu masalah Anda dengan cepat dan tepat.</p>
         </div>
         <div class="feature-item">
-          <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm16 0h2v-2h-2v2zM8 6h8v2H8zM4 10h16v4H4z"/></svg>
+          <svg class="feature-icon" viewBox="0 0 24 24"><path d="M3 13h2v-2H3v2zm16 0h2v-2h-2v2zM8 6h8v2H8zM4 10h16v4H4z"/></svg>
           <h4>Layanan Lengkap</h4>
           <p>Dari pemasangan, perawatan, hingga perbaikan AC, kami menyediakan solusi lengkap untuk kenyamanan Anda.</p>
         </div>
         <div class="feature-item">
-          <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>
+          <svg class="feature-icon" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/></svg>
           <h4>Garansi & Harga Terjangkau</h4>
           <p>Memberikan garansi 30 hari dan harga yang bersahabat sesuai kualitas layanan yang kami berikan.</p>
         </div>
       </div>
-
     </section>
-    
-<section class="container">
+
     <section class="box" data-aos="fade-up" data-aos-duration="800">
       <h2 class="section-title">Layanan Unggulan Kami</h2>
       <ul class="service-list">
@@ -593,107 +397,85 @@
       </ul>
     </section>
 
-  <section class="why-us">
-  <h2 class="why-us-title">Kenapa Pilih Bintang Jaya AC?</h2>
-
-  <ul class="icon-list premium">
-    <li>Teknisi AC profesional & berpengalaman</li>
-    <li>Layanan panggilan ke lokasi pelanggan</li>
-    <li>Harga jelas sebelum pengerjaan</li>
-    <li>Garansi pekerjaan</li>
-    <li>Bisa untuk rumah, kantor & usaha</li>
-    <li>Area layanan Medan & sekitarnya</li>
-  </ul>
-
-  <p class="why-us-note">
-    <strong>Kami berkomitmen memberikan jasa AC yang jujur, cepat, dan berkualitas.</strong>
-  </p>
-</section>
-  </section>
-
-
-
-<section style="background-color: #f1f1f1; border-radius: 10px; padding: 2em; box-shadow: 0 2px 8px rgba(0,0,0,0.05); max-width: 900px; margin: auto;">
-
-  <!-- Bagian teks -->
-  <div style="flex: 1; min-width: 250px; text-align: center;">
-    <h2 style="margin-top: 0; font-size: 1.5em;"> <strong>Layanan Kami</strong></h2>
-    <div class="faq">
-        <div class="faq-item">
-    <p>Berikut beberapa layanan yang kami tawarkan untuk membantu menyelesaikan masalah pada AC Anda.</p>
-        </div>
-
-    <h3 style="list-style: none; padding-left: 0; line-height: 1.5; font-size: 1.20em; margin: 0;">
-      <h3> <strong>Service AC</strong></h3>
-      <div class="faq-item">
-      <p>AC bau, filter kotor, air menetes? Kami siap menerima panggilan service rutin.</p>
-      <p>
-
-      <h3> <strong>Perawatan & Perbaikan AC</strong></h3>
-        <div class="faq-item">
-      <p>Tim teknisi handal kami siap memperbaiki segala permasalahan pada mesin AC Anda.</p>
-        </div>
-
-      <h3> <strong>Pergantian Sparepart</strong></h3>
-        <div class="faq-item">
-      <p>Kami melayani penggantian sparepart yang rusak dengan yang baru dan asli.</p>
-      </div>
-
-      <h3> <strong>Instalasi & Bongkar Pasang AC</strong></h3>
-        <div class="faq-item">
-      <p>Kami menangani instalasi untuk proyek besar maupun rumah tangga.</p>
-    </div>
-
-      <h3> <strong>Konsultasi Gratis & Garansi Pengerjaan</strong></h3>
-        <div class="faq-item">
-      <p>Untuk masalah pada AC Anda, kami siap memberikan solusi terbaik.</p>
-    </ul>
-  </div>
-
-  <!-- Bagian gambar di bawah -->
-  <div style="text-align: center; margin-top: 2em;">
-    <img src="https://i.postimg.cc/wxR8L7Wk/Putih-dan-Oren-Minimalis-Pending-Ruangan-Kiriman-Instagram.png" 
-         alt="Gambar Layanan AC" 
-         style="max-width: 100%; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
-  </div>
+    <section class="why-us">
+      <h2 class="why-us-title">Kenapa Pilih Bintang Jaya AC?</h2>
+      <ul class="icon-list premium">
+        <li>Teknisi AC profesional & berpengalaman</li>
+        <li>Layanan panggilan ke lokasi pelanggan</li>
+        <li>Harga jelas sebelum pengerjaan</li>
+        <li>Garansi pekerjaan</li>
+        <li>Bisa untuk rumah, kantor & usaha</li>
+        <li>Area layanan Medan & sekitarnya</li>
+      </ul>
+      <p style="text-align: center; margin-top: 20px;">
+        <strong>Kami berkomitmen memberikan jasa AC yang jujur, cepat, dan berkualitas.</strong>
+      </p>
     </section>
 
+    <section style="background-color: #f1f1f1; border-radius: 10px; padding: 2em; max-width: 900px; margin: auto;">
+      <h2 style="text-align: center; font-size: 1.5em; margin-top: 0;"><strong>Layanan Kami</strong></h2>
+      <p style="text-align: center;">Berikut beberapa layanan yang kami tawarkan untuk membantu menyelesaikan masalah pada AC Anda.</p>
 
-<section class="why-us">
-  <h2 class="why-us-title">Area Layanan Jasa AC Medan</h2>
+      <div class="faq-item">
+        <h3><strong>Service AC</strong></h3>
+        <p>AC bau, filter kotor, air menetes? Kami siap menerima panggilan service rutin.</p>
+      </div>
 
-  <ul class="icon-list premium">
-    <li>📍 Mabar Hilir</li>
-    <li>📍 Percut Sei Tuan</li>
-    <li>📍 Tembung</li>
-    <li>📍 Helvetia</li>
-    <li>📍 Marelan</li>
-    <li>📍 Medan Krakatau</li>
-  </ul>
+      <div class="faq-item">
+        <h3><strong>Perawatan & Perbaikan AC</strong></h3>
+        <p>Tim teknisi handal kami siap memperbaiki segala permasalahan pada mesin AC Anda.</p>
+      </div>
 
-  <p class="why-us-note">
-    <strong>Jika lokasi kamu belum tercantum, hubungi kami untuk konfirmasi.</strong>
-  </p>
-</section>
+      <div class="faq-item">
+        <h3><strong>Pergantian Sparepart</strong></h3>
+        <p>Kami melayani penggantian sparepart yang rusak dengan yang baru dan asli.</p>
+      </div>
 
-       
+      <div class="faq-item">
+        <h3><strong>Instalasi & Bongkar Pasang AC</strong></h3>
+        <p>Kami menangani instalasi untuk proyek besar maupun rumah tangga.</p>
+      </div>
 
-    
-    <section class="box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+      <div class="faq-item">
+        <h3><strong>Konsultasi Gratis & Garansi Pengerjaan</strong></h3>
+        <p>Untuk masalah pada AC Anda, kami siap memberikan solusi terbaik.</p>
+      </div>
+
+      <div style="text-align: center; margin-top: 2em;">
+        <img src="https://i.postimg.cc/wxR8L7Wk/Putih-dan-Oren-Minimalis-Pending-Ruangan-Kiriman-Instagram.png" alt="Gambar Layanan AC" style="max-width: 100%; border-radius: 20px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+      </div>
+    </section>
+
+    <section class="why-us">
+      <h2 class="why-us-title">Area Layanan Jasa AC Medan</h2>
+      <ul class="icon-list premium">
+        <li>📍 Mabar Hilir</li>
+        <li>📍 Percut Sei Tuan</li>
+        <li>📍 Tembung</li>
+        <li>📍 Helvetia</li>
+        <li>📍 Marelan</li>
+        <li>📍 Medan Krakatau</li>
+      </ul>
+      <p style="text-align: center; margin-top: 20px;">
+        <strong>Jika lokasi kamu belum tercantum, hubungi kami untuk konfirmasi.</strong>
+      </p>
+    </section>
+
+    <section class="box" data-aos="fade-up" data-aos-duration="800">
       <h2 class="section-title">Testimoni Pelanggan</h2>
       <div class="testimonials">
-        <div class="testimonial" data-aos="fade-right" data-aos-delay="350">
+        <div class="testimonial">
           <p>"AC saya langsung dingin kembali setelah diservis. Mantap dan cepat!"</p>
           <h4>- Rudi, Medan</h4>
         </div>
-        <div class="testimonial" data-aos="fade-left" data-aos-delay="450">
+        <div class="testimonial">
           <p>"Teknisi ramah dan harga terjangkau. Sangat recommended."</p>
           <h4>- Linda, Medan</h4>
         </div>
       </div>
     </section>
 
-    <section class="box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="450">
+    <section class="box" data-aos="fade-up" data-aos-duration="800">
       <h2 class="section-title">Pertanyaan Umum</h2>
       <div class="faq">
         <div class="faq-item">
@@ -704,167 +486,84 @@
           <h3>Apakah ada garansi?</h3>
           <p>Ya, kami memberikan garansi 30 hari untuk semua layanan servis dan pemasangan.</p>
         </div>
-         <div class="faq-item">
+        <div class="faq-item">
           <h3>Apakah melayani panggilan ke rumah?</h3>
-           <p>Ya, teknisi kami siap datang ke lokasi Anda.</p>
+          <p>Ya, teknisi kami siap datang ke lokasi Anda.</p>
+        </div>
       </div>
     </section>
 
-    <section class="box" data-aos="fade-up" data-aos-duration="800" data-aos-delay="600">
+    <section class="box" data-aos="fade-up" data-aos-duration="800">
       <h2 class="section-title">Kenapa Perawatan AC Itu Penting?</h2>
-      <div class="faq">
-        <div class="faq-item">
-      <p>Perawatan AC secara berkala sangat penting untuk memastikan kinerja AC tetap optimal dan tahan lama. Di kota Medan yang panas dan lembap, penggunaan AC hampir setiap hari menjadi kebutuhan utama bagi banyak rumah tangga dan perkantoran.
-        </p>
-      <p>Jika AC tidak dirawat dengan baik, maka kinerja pendinginan bisa menurun, tagihan listrik membengkak, dan umur AC jadi lebih pendek.
-      </p>
-          
-      <p>Salah satu perawatan penting adalah mencuci AC secara rutin. Debu yang menumpuk di filter dan evaporator membuat aliran udara menjadi terhambat dan memaksa mesin bekerja lebih keras.
-      </p>
-      
-      <p>Selain itu, cairan freon juga perlu dicek secara berkala karena kebocoran freon bisa menyebabkan AC tidak dingin.
-      </p>
-          </div>
-          <div class="faq-item">
-        <b>BINTANG JAYA AC</b> menyediakan layanan cuci AC, isi freon, dan servis menyeluruh dengan teknisi berpengalaman.
-        </p>
-      <p>Kami juga memberikan konsultasi gratis mengenai perawatan AC yang sesuai dengan kondisi rumah atau kantor Anda.</p> Semua layanan kami bergaransi dan tersedia untuk wilayah Medan dan sekitarnya.
-      </p>
-      
-      <p>Jadi, jangan tunda lagi! Jadwalkan perawatan AC Anda bersama <b>BINTANG JAYA AC</b> agar kenyamanan dan kesehatan udara dalam ruangan tetap terjaga.
-      </p>
-          </div>
-        </div>
+      <div class="faq-item">
+        <p>Perawatan AC secara berkala sangat penting untuk memastikan kinerja AC tetap optimal dan tahan lama. Di kota Medan yang panas dan lembap, penggunaan AC hampir setiap hari menjadi kebutuhan utama bagi banyak rumah tangga dan perkantoran.</p>
+        <p>Jika AC tidak dirawat dengan baik, maka kinerja pendinginan bisa menurun, tagihan listrik membengkak, dan umur AC jadi lebih pendek.</p>
+        <p>Salah satu perawatan penting adalah mencuci AC secara rutin. Debu yang menumpuk di filter dan evaporator membuat aliran udara menjadi terhambat dan memaksa mesin bekerja lebih keras.</p>
+        <p>Selain itu, cairan freon juga perlu dicek secara berkala karena kebocoran freon bisa menyebabkan AC tidak dingin.</p>
+      </div>
+      <div class="faq-item">
+        <p><b>BINTANG JAYA AC</b> menyediakan layanan cuci AC, isi freon, dan servis menyeluruh dengan teknisi berpengalaman.</p>
+        <p>Kami juga memberikan konsultasi gratis mengenai perawatan AC yang sesuai dengan kondisi rumah atau kantor Anda. Semua layanan kami bergaransi dan tersedia untuk wilayah Medan dan sekitarnya.</p>
+        <p>Jadi, jangan tunda lagi! Jadwalkan perawatan AC Anda bersama <b>BINTANG JAYA AC</b> agar kenyamanan dan kesehatan udara dalam ruangan tetap terjaga.</p>
+      </div>
     </section>
 
-      <section class="hero" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500">
-    <div>
-    <h1 class="center">Anda Sedang Mencari Jasa Service AC Di Medan ?</h1>
-    <p class="center"><b>Bintang Jaya AC</b> Kami siap melayani service AC panggilan ke rumah hotel apartemen segala merk dan type AC untuk maintenance , bongkar pasang, pasang baru, pindah lokasi dan lainnya</p>
-    <a href="https://wa.me/6282304257994" target="_blank" class="btn">Silahkan hubungi</a>
-          </div>
-        </div>
+    <section class="hero" data-aos="fade-in" data-aos-duration="1000">
+      <div>
+        <h1>Anda Sedang Mencari Jasa Service AC Di Medan?</h1>
+        <p><b>Bintang Jaya AC</b> siap melayani service AC panggilan ke rumah, hotel, apartemen segala merk dan tipe AC untuk maintenance, bongkar pasang, pasang baru, pindah lokasi dan lainnya.</p>
+        <a href="https://wa.me/6282304257994" target="_blank" class="btn">Silahkan Hubungi</a>
+      </div>
     </section>
 
-  
-  <section class="complaint-section">
-  <h2 class="complaint-title">Kotak Keluhan & Saran</h2>
-  <p class="complaint-desc">
-    Kami sangat menghargai masukan Anda. Silakan sampaikan keluhan atau saran agar layanan kami semakin baik.
-  </p>
+    <section class="complaint-section">
+      <h2 class="complaint-title">Kotak Keluhan & Saran</h2>
+      <p class="complaint-desc">Kami sangat menghargai masukan Anda. Silakan sampaikan keluhan atau saran agar layanan kami semakin baik.</p>
+      <form onsubmit="sendComplaint(event)">
+        <input type="text" id="name" placeholder="Nama Anda" required>
+        <textarea id="message" placeholder="Tulis keluhan atau saran Anda di sini..." required></textarea>
+        <div class="complaint-buttons">
+          <button type="submit" class="btn-wa">Kirim via WhatsApp</button>
+          <button type="button" class="btn-email" onclick="sendEmail()">Kirim via Email</button>
+        </div>
+      </form>
+    </section>
 
-  <form onsubmit="sendComplaint(event)">
-    <input type="text" id="name" placeholder="Nama Anda" required>
-    <textarea id="message" placeholder="Tulis keluhan atau saran Anda di sini..." required></textarea>
+    <section style="padding: 2em 0; max-width: 800px; margin: auto;">
+      <h2 style="text-align: center; margin-bottom: 1em;">📞 <strong>Kontak Kami</strong></h2>
+      <div style="background-color: #f9f9f9; border-radius: 10px; padding: 2em; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <p>📍 <strong>Alamat:</strong><br>Jl. Pancing I LK IX, Mabar Hilir, Kab. Deli Serdang, Sumatera Utara</p>
+        <p>☎️ <strong>Telepon / SMS:</strong><br><a href="tel:082304257994" style="text-decoration: none; color: #007BFF; font-weight: bold;">0823-0425-7994</a></p>
+        <p>💬 <strong>WhatsApp:</strong><br><a href="https://wa.me/6282304257994" target="_blank" style="text-decoration: none; color: green; font-weight: bold;">Klik untuk Chat di WhatsApp</a></p>
+        <p>⏰ <strong>Jam Operasional:</strong><br>Layanan panggilan <strong>24 jam</strong> ke rumah, kantor, hotel, sekolah, dan lainnya di area <strong>Medan dan sekitarnya</strong>.</p>
+      </div>
+    </section>
 
-    <div class="complaint-buttons">
-      <button type="submit" class="btn-wa">Kirim via WhatsApp</button>
-      <button type="button" class="btn-email" onclick="sendEmail()">Kirim via Email</button>
+    <div class="map-container">
+      <img src="https://media.istockphoto.com/id/1511329781/id/foto/ac-kabel-dan-teknisi-man-ac-perbaikan-pemeliharaan-atau-bekerja-pada-generator-tenaga-listrik.jpg?s=612x612&w=0&k=20&c=hta8N1dNpMtdMXVCmlqf33AIg-r6GPt5zH_WFKffuXw=" alt="Teknisi AC sedang bekerja" style="width: 100%; height: auto; border-radius: 12px; margin-top: 20px;" />
     </div>
-  </form>
-</section>
 
-      <script>
-function sendComplaint(event) {
-  event.preventDefault();
-
-  const name = document.getElementById("name").value;
-  const message = document.getElementById("message").value;
-
-  const waNumber = "6282304257994"; // GANTI nomor WA kamu
-  const text = `Halo Bintang Jaya AC,%0ANama: ${name}%0AKeluhan/Saran:%0A${message}`;
-
-  window.open(`https://wa.me/${waNumber}?text=${text}`, "_blank");
-}
-
-function sendEmail() {
-  const name = document.getElementById("name").value;
-  const message = document.getElementById("message").value;
-
-  const email = "pancaaneee@gmail.com"; // GANTI email kamu
-  const subject = "Keluhan / Saran Pelanggan";
-  const body = `Nama: ${name}\n\nKeluhan / Saran:\n${message}`;
-
-  window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-}
-</script>
-
-
-
-
-      
-<section style="padding: 2em; max-width: 800px; margin: auto; font-family: sans-serif;">
-  <h2 style="text-align: center; margin-bottom: 1em;">📞 <strong>Kontak Kami</strong></h2>
-  
-  <div style="background-color: linear-gradient(180deg, #0d1b2a, #000); border-radius: 10px; padding: 2em; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-    <p style="margin-bottom: 1em;">
-      📍 <strong>Alamat:</strong><br>
-      Jl. Pancing I LK IX, Mabar Hilir, Kab. Deli Serdang, Sumatera Utara
-    </p>
-
-    <p style="margin-bottom: 1em;">
-      ☎️ <strong>Telepon / SMS:</strong><br>
-      <a href="tel:082304257994" style="text-decoration: none; color: #007BFF; font-weight: bold;">0823-0425-7994</a>
-    </p>
-
-    <p style="margin-bottom: 1em;">
-      💬 <strong>WhatsApp:</strong><br>
-      <a href="https://wa.me/6282304257994" target="_blank" style="text-decoration: none; color: green; font-weight: bold;">
-        Klik untuk Chat di WhatsApp
-      </a>
-    </p>
-
-    <p style="margin-bottom: 0;">
-      ⏰ <strong>Jam Operasional:</strong><br>
-      Layanan panggilan <strong>24 jam</strong> ke rumah, kantor, hotel, sekolah, dan lainnya di area <strong>Medan dan sekitarnya</strong>.
-    </p>
-  </div>
-</section>
-     <div class="map-container">
-     <img 
-       src="https://media.istockphoto.com/id/1511329781/id/foto/ac-kabel-dan-teknisi-man-ac-perbaikan-pemeliharaan-atau-bekerja-pada-generator-tenaga-listrik.jpg?s=612x612&w=0&k=20&c=hta8N1dNpMtdMXVCmlqf33AIg-r6GPt5zH_WFKffuXw=" 
-       alt="Teknisi AC sedang bekerja"
-       style="width: 100%; height: auto; border-radius: 12px; margin-top: 20px;" />
-
+    <div class="section" id="lokasi" style="margin-top: 40px;">
+      <h2>Alamat Kami</h2>
+      <p>Jalan Suasa Selatan, Pasar 3, Mabar Hilir, Medan</p>
+      <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15952.598864385024!2d98.6951131!3d3.6474873!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMzgnNTAuOSJOIDk4wrA0Mic1Mi40IkU!5e0!3m2!1sen!2sid!4v1717380000000!5m2!1sen!2sid" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
-  <main>
+  </main>
 
-    
-  <!-- Map -->
-  <div class="section" id="lokasi" style="margin-top: 40px;">
-  <h2>Alamat Kami</h2>
-  <p>Jalan Suasa Selatan, Pasar 3, Mabar Hilir, Medan</p>
-
-  <div style="border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-    <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15952.598864385024!2d98.6951131!3d3.6474873!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMzgnNTAuOSJOIDk4wrA0Mic1Mi40IkU!5e0!3m2!1sen!2sid!4v1717380000000!5m2!1sen!2sid" 
-      width="100%" 
-      height="300" 
-      style="border:0;" 
-      allowfullscreen="" 
-      loading="lazy" 
-      referrerpolicy="no-referrer-when-downgrade">
-    </iframe>
-  </div>
-</div>
-
-</body>
-</html>
-     
   <footer>
     <p>© 2025 BINTANG JAYA AC. All Rights Reserved.</p>
-    <!-- GetButton.io widget -->
+  </footer>
+
+  <!-- WhatsApp Widget -->
   <script async src='https://d2mpatx37cqexb.cloudfront.net/delightchat-whatsapp-widget/embeds/embed.min.js'></script>
-        <script>
-          var wa_btnSetting = {"btnColor":"#16c068","ctaText":"Silahkan Hubungi Kami!","cornerRadius":40,"marginBottom":30,"marginLeft":25,"marginRight":25,"btnPosition":"right","whatsAppNumber":"6282304257994","btnColorScheme":"light"};
-          window.onload = () => {
-            _waEmbed(wa_btnSetting);
-          };
-        </script>
-  <!-- /GetButton.io widget -->
-    
-</body>
-</html>
+  <script>
+    var wa_btnSetting = {"btnColor":"#16c068","ctaText":"Silahkan Hubungi Kami!","cornerRadius":40,"marginBottom":30,"marginLeft":25,"marginRight":25,"btnPosition":"right","whatsAppNumber":"6282304257994","btnColorScheme":"light"};
+    window.onload = () => {
+      _waEmbed(wa_btnSetting);
+    };
+  </script>
 
   <!-- AOS Animate On Scroll JS -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
@@ -875,7 +574,25 @@ function sendEmail() {
       duration: 700,
     });
   </script>
+
+  <script>
+    function sendComplaint(event) {
+      event.preventDefault();
+      const name = document.getElementById("name").value;
+      const message = document.getElementById("message").value;
+      const waNumber = "6282304257994";
+      const text = `Halo Bintang Jaya AC,%0ANama: ${name}%0AKeluhan/Saran:%0A${message}`;
+      window.open(`https://wa.me/${waNumber}?text=${text}`, "_blank");
+    }
+
+    function sendEmail() {
+      const name = document.getElementById("name").value;
+      const message = document.getElementById("message").value;
+      const email = "pancaaneee@gmail.com";
+      const subject = "Keluhan / Saran Pelanggan";
+      const body = `Nama: ${name}\n\nKeluhan / Saran:\n${message}`;
+      window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    }
+  </script>
 </body>
 </html>
-
-    
