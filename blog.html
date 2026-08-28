@@ -4,65 +4,242 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Blog BINTANG JAYA AC – Tips merawat AC agar tetap dingin dan hemat listrik. Layanan service AC terbaik di Medan.">
-  <title>Blog Service AC Medan - BINTANG JAYA AC</title>
+  <title>Blog & Tips Service AC Medan - BINTANG JAYA AC</title>
+  
+  <!-- Font Poppins & FontAwesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
+    * {
+      box-sizing: border-box;
       margin: 0;
-      background: #f4f4f4;
+      padding: 0;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f0f4f8;
       color: #333;
+      line-height: 1.6;
     }
-    header, footer {
-      background: #3498db;
-      color: white;
-      text-align: center;
-      padding: 1rem;
+
+    /* Header & Navigation */
+    header { 
+      background: linear-gradient(135deg, #0056b3, #3498db); 
+      color: white; 
+      padding: 1.5rem 1rem; 
+      text-align: center; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-      font-weight: bold;
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
     }
-    nav a:hover {
+    nav a { 
+      color: #e0f2fe; 
+      margin: 0 0.8rem; 
+      text-decoration: none; 
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover, nav a.active {
       color: #25D366;
     }
-    .section {
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
+
+    /* Page Banner Header */
+    .hero-banner {
+      text-align: center;
+      padding: 2.5rem 1rem 1rem;
+    }
+    .hero-banner h2 {
+      color: #0056b3;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero-banner p {
+      color: #666;
+      font-size: 1rem;
+    }
+
+    /* Main Container Grid Layout */
+    .container {
+      max-width: 1100px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+    }
+
+    /* Article Card Main */
+    .article-card {
       background: white;
+      border-radius: 16px;
+      padding: 2.5rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+    .meta-tag {
+      display: inline-block;
+      background: #e6f0fa;
+      color: #0056b3;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .article-title {
+      color: #0056b3;
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+    .author-info {
+      font-size: 0.85rem;
+      color: #777;
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .article-content p {
+      margin-bottom: 1.2rem;
+      color: #444;
+    }
+    .article-content ol {
+      margin: 1rem 0 1.5rem 1.2rem;
+    }
+    .article-content li {
+      margin-bottom: 1rem;
+      color: #444;
+    }
+
+    /* Banner CTA WhatsApp Di Dalam Artikel */
+    .cta-box {
+      background: linear-gradient(135deg, #e6f0fa, #ffffff);
+      border-left: 5px solid #25D366;
+      padding: 1.5rem;
       border-radius: 10px;
       margin-top: 2rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
     }
-    h2 {
-      color: #3498db;
-      margin-bottom: 1rem;
+    .cta-box h4 {
+      color: #0056b3;
+      margin-bottom: 0.5rem;
     }
     .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
       background: #25D366;
       color: white;
-      padding: 0.8rem 1.5rem;
+      padding: 0.8rem 1.4rem;
       text-decoration: none;
-      border-radius: 6px;
-      display: inline-block;
-      margin-top: 1rem;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-top: 0.8rem;
+      box-shadow: 0 4px 12px rgba(37, 211, 102, 0.25);
+      transition: background 0.3s, transform 0.2s;
     }
-    ol li {
+    .cta-btn:hover {
+      background: #1eb854;
+      transform: translateY(-2px);
+    }
+
+    /* Sidebar Content */
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .sidebar-widget {
+      background: white;
+      padding: 1.8rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+    .sidebar-widget h3 {
+      font-size: 1.1rem;
+      color: #0056b3;
       margin-bottom: 1rem;
+      border-bottom: 2px solid #e6f0fa;
+      padding-bottom: 0.5rem;
     }
+    .recent-post-item {
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px dashed #eee;
+    }
+    .recent-post-item:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .recent-post-item a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      transition: color 0.3s;
+    }
+    .recent-post-item a:hover {
+      color: #0056b3;
+    }
+    .recent-post-item span {
+      display: block;
+      font-size: 0.75rem;
+      color: #888;
+      margin-top: 0.2rem;
+    }
+
+    /* Floating WhatsApp Button */
     .whatsapp-float {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      bottom: 24px;
+      right: 24px;
       background: #25D366;
       color: white;
-      padding: 15px;
+      width: 56px;
+      height: 56px;
       border-radius: 50%;
-      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
       text-decoration: none;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      z-index: 99;
+      transition: transform 0.2s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      background: #1e293b;
+      color: #94a3b8;
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Breakdown */
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        display: inline-block;
+        margin: 0.3rem 0.5rem;
+      }
+      .article-card {
+        padding: 1.5rem;
+      }
     }
   </style>
 </head>
@@ -74,31 +251,91 @@
     <a href="index.html">Beranda</a>
     <a href="layanan.html">Layanan</a>
     <a href="tentang.html">Tentang</a>
-    <a href="blog.html">Blog</a>
+    <a href="blog.html" class="active">Blog</a>
     <a href="kontak.html">Kontak</a>
   </nav>
 </header>
 
-<section class="section">
-  <h2>Tips Merawat AC Agar Tetap Dingin Sepanjang Tahun</h2>
-  <p><em>Ditulis oleh BINTANG JAYA AC – Spesialis Service AC Medan</em></p>
-  <p>
-    Banyak pelanggan kami di Medan mengeluhkan AC yang tidak lagi dingin setelah beberapa bulan pemakaian. Berikut adalah tips dari teknisi kami agar AC Anda tetap bekerja optimal:
-  </p>
-  <ol>
-    <li><strong>Bersihkan filter AC setiap 2 minggu.</strong><br>Debu yang menumpuk membuat udara tidak mengalir sempurna dan membebani kinerja AC.</li>
-    <li><strong>Gunakan AC dalam ruangan tertutup rapat.</strong><br>Pastikan jendela dan pintu tertutup agar udara dingin tidak keluar dan AC tidak bekerja berlebihan.</li>
-    <li><strong>Lakukan cuci AC setiap 3 bulan.</strong><br>Cuci AC secara berkala mencegah kotoran menumpuk pada evaporator dan kondensor.</li>
-    <li><strong>Periksa tekanan freon secara rutin.</strong><br>Freon yang kurang membuat AC tidak dingin dan bisa merusak kompresor.</li>
-    <li><strong>Gunakan timer atau fitur eco mode.</strong><br>Fitur ini membantu menghemat listrik dan memperpanjang umur AC Anda.</li>
-  </ol>
-  <p>
-    Jangan tunggu AC rusak atau tidak dingin! Hubungi tim <strong>BINTANG JAYA AC</strong> untuk service AC panggilan ke rumah, kantor, atau kos Anda di Medan.
-  </p>
-  <a href="https://wa.me/6282304257994" class="cta-btn">Hubungi Sekarang via WhatsApp</a>
-</section>
+<div class="hero-banner">
+  <h2>Blog & Edukasi AC</h2>
+  <p>Seputar tips perawatan, solusi masalah AC, dan panduan hemat listrik untuk Anda di Medan.</p>
+</div>
 
-<a href="https://wa.me/6282304257994" class="whatsapp-float" aria-label="WhatsApp Bintang Jaya AC">💬</a>
+<main class="container">
+  <!-- Area Artikel Utama -->
+  <section class="main-content">
+    
+    <!-- Artikel 1 (Artikel Utama Anda) -->
+    <article class="article-card">
+      <span class="meta-tag"><i class="fa-solid fa-screwdriver-wrench"></i> Tips Perawatan</span>
+      <h2 class="article-title">Tips Merawat AC Agar Tetap Dingin Sepanjang Tahun</h2>
+      <div class="author-info">
+        <i class="fa-solid fa-user-gear"></i> Ditulis oleh BINTANG JAYA AC &bull; <i class="fa-solid fa-location-dot"></i> Spesialis Service AC Medan
+      </div>
+      
+      <div class="article-content">
+        <p>Banyak pelanggan kami di Medan mengeluhkan AC yang tidak lagi dingin setelah beberapa bulan pemakaian. Kondisi cuaca yang cukup hangat membuat AC bekerja lebih ekstra. Berikut adalah tips langsung dari teknisi kami agar AC Anda tetap bekerja optimal:</p>
+        
+        <ol>
+          <li><strong>Bersihkan filter AC setiap 2 minggu.</strong><br>Debu yang menumpuk pada filter membuat aliran udara tersumbat dan membebani kinerja kompresor.</li>
+          <li><strong>Gunakan AC dalam ruangan tertutup rapat.</strong><br>Pastikan jendela dan pintu tertutup agar udara dingin tidak terbuang keluar dan beban kerja AC tetap ringan.</li>
+          <li><strong>Lakukan cuci AC berkala setiap 3 bulan.</strong><br>Pembersihan rutin oleh teknisi berpengalaman mencegah penumpukan kotoran pada evaporator dan kondensor.</li>
+          <li><strong>Periksa tekanan freon secara rutin.</strong><br>Kekurangan freon bisa menyebabkan AC terasa sekadar keluar angin dan berisiko merusak kompresor jika dibiarkan.</li>
+          <li><strong>Gunakan timer atau fitur Eco Mode.</strong><br>Fitur ini sangat bermanfaat untuk menghemat penggunaan listrik harian dan menjaga daya tahan komponen AC.</li>
+        </ol>
+
+        <!-- CTA Box Dalam Artikel -->
+        <div class="cta-box">
+          <h4>Punya Masalah AC di Rumah atau Kantor?</h4>
+          <p>Jangan tunggu hingga rusak parah! Hubungi tim <strong>BINTANG JAYA AC</strong> untuk pengerjaan service panggilan di wilayah Medan dan sekitarnya.</p>
+          <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20membaca%20blog%20dan%20ingin%20service%20AC" class="cta-btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i> Hubungi Sekarang via WhatsApp
+          </a>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+  <!-- Sidebar Kanan: Artikel Lain & Info Tambahan -->
+  <aside class="sidebar">
+    
+    <!-- Widget Artikel Terbaru -->
+    <div class="sidebar-widget">
+      <h3>Artikel Lainnya</h3>
+      
+      <div class="recent-post-item">
+        <a href="#">5 Ciri-Ciri AC Rumah Anda Kekurangan Freon</a>
+        <span><i class="fa-regular fa-clock"></i> Tips Layanan AC</span>
+      </div>
+
+      <div class="recent-post-item">
+        <a href="#">Penyebab AC Meneteskan Air di Dalam Ruangan</a>
+        <span><i class="fa-regular fa-clock"></i> Solusi Kerusakan</span>
+      </div>
+
+      <div class="recent-post-item">
+        <a href="#">Cara Memilih Ukuran PK AC Sesuai Luas Ruangan</a>
+        <span><i class="fa-regular fa-clock"></i> Panduan Pembelian</span>
+      </div>
+    </div>
+
+    <!-- Widget Bantuan Cepat -->
+    <div class="sidebar-widget" style="background: #0056b3; color: white;">
+      <h3 style="color: white; border-bottom: 2px solid rgba(255,255,255,0.2);">Butuh Service Cepat?</h3>
+      <p style="font-size: 0.9rem; margin-bottom: 1rem;">Kami melayani area Medan Deli dan sekitarnya. Panggilan cepat dan bergaransi!</p>
+      <a href="https://wa.me/6282304257994" target="_blank" style="display: block; text-align: center; background: #25D366; color: white; padding: 0.7rem; border-radius: 8px; text-decoration: none; font-weight: 600;">
+        <i class="fa-brands fa-whatsapp"></i> Chat WhatsApp
+      </a>
+    </div>
+
+  </aside>
+</main>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/6282304257994" class="whatsapp-float" aria-label="WhatsApp Bintang Jaya AC" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
 
 <footer>
   <p>&copy; 2025 BINTANG JAYA AC. Semua Hak Dilindungi.</p>
