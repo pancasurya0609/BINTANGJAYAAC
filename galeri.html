@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Galeri Dokumentasi BINTANG JAYA AC Medan. Foto pengerjaan cuci AC, perbaikan, dan instalasi.">
+  <title>Galeri Dokumentasi - BINTANG JAYA AC Medan</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    :root { --primary: #0284c7; --primary-dark: #0369a1; --accent: #25D366; --dark: #0f172a; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.6; padding-bottom: 70px; }
+    
+    .top-bar { background: var(--dark); color: #fff; text-align: center; padding: 0.6rem; font-size: 0.85rem; font-weight: 600; }
+    .top-bar span { color: #38bdf8; }
+
+    header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 1rem 1.5rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+    .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 8px; text-decoration: none; }
+    nav a { color: #475569; margin-left: 1.2rem; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+    nav a:hover, nav a.active { color: var(--primary); }
+
+    .page-header { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: white; padding: 3rem 1rem; text-align: center; }
+    .page-header h1 { font-size: 2rem; font-weight: 800; }
+    .page-header p { opacity: 0.9; font-size: 0.95rem; margin-top: 0.5rem; }
+
+    .container { max-width: 1100px; margin: 0 auto; padding: 3rem 1rem; }
+    
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
+    .gallery-card { background: white; border-radius: 16px; overflow: hidden; border: 1px solid #e2e8f0; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .gallery-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+    
+    .gallery-img-wrapper { position: relative; width: 100%; height: 220px; overflow: hidden; background: #e2e8f0; }
+    .gallery-img-wrapper img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+    .gallery-card:hover .gallery-img-wrapper img { transform: scale(1.05); }
+    
+    .gallery-badge { position: absolute; top: 12px; left: 12px; background: rgba(15, 23, 42, 0.8); color: white; font-size: 0.75rem; font-weight: 700; padding: 0.3rem 0.8rem; border-radius: 20px; backdrop-filter: blur(4px); }
+
+    .gallery-info { padding: 1.25rem; }
+    .gallery-info h3 { font-size: 1.05rem; color: var(--dark); margin-bottom: 0.4rem; font-weight: 700; }
+    .gallery-info p { font-size: 0.85rem; color: #64748b; margin-bottom: 1rem; }
+    
+    .btn-wa-gallery { display: flex; align-items: center; justify-content: center; gap: 0.5rem; background: var(--accent); color: white; text-decoration: none; padding: 0.6rem 1rem; border-radius: 8px; font-weight: 700; font-size: 0.85rem; }
+
+    .sticky-bottom { position: fixed; bottom: 0; left: 0; right: 0; background: white; display: flex; border-top: 1px solid #e2e8f0; z-index: 999; }
+    .sticky-btn { flex: 1; text-align: center; padding: 0.85rem; text-decoration: none; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+    .btn-call-sticky { background: var(--primary); color: white; }
+    .btn-wa-sticky { background: var(--accent); color: white; }
+
+    footer { background: var(--dark); color: #94a3b8; padding: 3rem 1rem 2rem; font-size: 0.9rem; margin-top: 3rem; }
+    .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+    .footer-col h4 { color: white; margin-bottom: 1rem; font-size: 1.1rem; }
+    .footer-col p { margin-bottom: 0.5rem; font-size: 0.85rem; }
+
+    @media (max-width: 768px) { nav { display: none; } }
+  </style>
+</head>
+<body>
+
+<div class="top-bar">⚡ Respon Cepat Panggilan 15 Menit — <span>Medan Deli, Marelan & Sekitarnya</span></div>
+
+<header>
+  <div class="nav-container">
+    <a href="index.html" class="logo"><i class="fa-solid fa-snowflake"></i> BINTANG JAYA AC</a>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="layanan.html">Layanan</a>
+      <a href="galeri.html" class="active">Galeri</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </div>
+</header>
+
+<div class="page-header">
+  <h1>Galeri Hasil Pekerjaan</h1>
+  <p>Dokumentasi pengerjaan service, pencucian, dan instalasi AC oleh BINTANG JAYA AC Medan.</p>
+</div>
+
+<main class="container">
+  <div class="gallery-grid">
+
+    <div class="gallery-card">
+      <div class="gallery-img-wrapper">
+        <span class="gallery-badge">Cuci AC</span>
+        <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=600&q=80" alt="Pembersihan Evaporator Indoor AC">
+      </div>
+      <div class="gallery-info">
+        <h3>Pembersihan Evaporator Indoor</h3>
+        <p>Pembersihan rutin unit indoor AC rumah agar angin kembali kencang dan dingin.</p>
+        <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20mau%20pesan%20service" class="btn-wa-gallery" target="_blank"><i class="fa-brands fa-whatsapp"></i> Pesan Layanan Ini</a>
+      </div>
+    </div>
+
+    <div class="gallery-card">
+      <div class="gallery-img-wrapper">
+        <span class="gallery-badge">Isi Freon</span>
+        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Pengecekan dan Pengisian Freon">
+      </div>
+      <div class="gallery-info">
+        <h3>Pengisian Freon R32</h3>
+        <p>Proses pengecekan tekanan PSI dan pengisian freon unit outdoor AC.</p>
+        <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20mau%20isi%20freon" class="btn-wa-gallery" target="_blank"><i class="fa-brands fa-whatsapp"></i> Pesan Layanan Ini</a>
+      </div>
+    </div>
+
+    <div class="gallery-card">
+      <div class="gallery-img-wrapper">
+        <span class="gallery-badge">Bongkar Pasang</span>
+        <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?auto=format&fit=crop&w=600&q=80" alt="Instalasi AC Baru">
+      </div>
+      <div class="gallery-info">
+        <h3>Instalasi & Pemasangan Bracket</h3>
+        <p>Pemasangan unit outdoor baru lengkap dengan pipa penyangga kokoh.</p>
+        <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20mau%20bongkar%20pasang%20AC" class="btn-wa-gallery" target="_blank"><i class="fa-brands fa-whatsapp"></i> Pesan Layanan Ini</a>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<div class="sticky-bottom">
+  <a href="tel:082304257994" class="sticky-btn btn-call-sticky"><i class="fa-solid fa-phone"></i> Telepon</a>
+  <a href="https://wa.me/6282304257994" class="sticky-btn btn-wa-sticky" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat WhatsApp</a>
+</div>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>BINTANG JAYA AC</h4>
+      <p>Jasa perbaikan, pembersihan, dan pemasangan AC panggilan di Medan.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Kontak Kami</h4>
+      <p><i class="fa-solid fa-phone"></i> 0823-0425-7994</p>
+      <p><i class="fa-solid fa-location-dot"></i> Jl. Pasar 3B Mabar Hilir Lk X, Medan Deli</p>
+    </div>
+  </div>
+  <div style="text-align: center; border-top: 1px solid #334155; padding-top: 1.5rem; font-size: 0.8rem;">
+    &copy; 2026 BINTANG JAYA AC. All rights reserved.
+  </div>
+</footer>
+
+</body>
+</html>
