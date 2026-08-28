@@ -3,45 +3,284 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Hubungi BINTANG JAYA AC: layanan pasang, service, dan cuci AC di Medan. Klik tombol WhatsApp untuk konsultasi dan pemesanan.">
-  <meta name="keywords" content="kontak BINTANG JAYA AC, teknisi AC Medan, pasang AC Medan, service AC Medan">
-  <title>Kontak Kami | BINTANG JAYA AC</title>
+  <meta name="description" content="Tentang BINTANG JAYA AC – Penyedia jasa service, cuci, pasang, dan jual beli AC berpengalaman di Medan Deli dan sekitarnya.">
+  <meta name="keywords" content="tentang bintang jaya ac, profil service ac medan, teknisi ac medan deli">
+  <title>Tentang Kami | BINTANG JAYA AC Medan</title>
+  
+  <!-- Font Poppins & FontAwesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
   <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; }
-    header, footer { background-color: #3498db; color: white; padding: 15px 0; }
-    nav { background-color: #3498db; padding: 10px; }
-    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
-    .container { padding: 60px 20px; max-width: 600px; margin: auto; }
-    h2 { color: #3498db; }
-    p { margin-bottom: 20px; }
-    .btn-whatsapp { display: inline-block; background: #25d366; color: white; padding: 15px 25px; font-size: 18px; text-decoration: none; border-radius: 10px; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body { 
+      font-family: 'Poppins', sans-serif; 
+      background: #f0f4f8; 
+      color: #333; 
+      line-height: 1.6;
+    }
+
+    /* Header & Navigation */
+    header { 
+      background: linear-gradient(135deg, #0056b3, #3498db); 
+      color: white; 
+      padding: 1.5rem 1rem; 
+      text-align: center; 
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.3rem;
+      letter-spacing: 1px;
+    }
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a { 
+      color: #e0f2fe; 
+      margin: 0 0.8rem; 
+      text-decoration: none; 
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    nav a:hover, nav a.active {
+      color: #25D366;
+    }
+
+    /* Banner Judul */
+    .hero-banner {
+      text-align: center;
+      padding: 2.5rem 1rem 1rem;
+    }
+    .hero-banner h2 {
+      color: #0056b3;
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero-banner p {
+      color: #666;
+      font-size: 1rem;
+    }
+
+    /* Container Main Layout */
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto 4rem;
+      padding: 0 1rem;
+    }
+
+    .card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+      margin-bottom: 2rem;
+    }
+
+    .card h3 {
+      color: #0056b3;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #e6f0fa;
+      padding-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #555;
+      margin-bottom: 1rem;
+      font-size: 0.98rem;
+    }
+
+    /* Grid Nilai Utama / Keunggulan */
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+
+    .value-box {
+      background: #f8fafc;
+      padding: 1.5rem;
+      border-radius: 12px;
+      border-left: 4px solid #0056b3;
+    }
+
+    .value-box h4 {
+      color: #222;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .value-box p {
+      font-size: 0.88rem;
+      color: #666;
+      margin: 0;
+    }
+
+    /* Call To Action Banner */
+    .cta-banner {
+      background: linear-gradient(135deg, #0056b3, #3498db);
+      color: white;
+      padding: 2.5rem 2rem;
+      border-radius: 16px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0, 86, 179, 0.2);
+    }
+    .cta-banner h3 {
+      font-size: 1.5rem;
+      margin-bottom: 0.8rem;
+      border-bottom: none;
+      padding-bottom: 0;
+      color: white;
+    }
+    .cta-banner p {
+      margin-bottom: 1.5rem;
+      font-size: 1rem;
+      color: #e0f2fe;
+    }
+    .btn-whatsapp-main { 
+      display: inline-flex; 
+      align-items: center;
+      gap: 0.5rem;
+      background: #25d366; 
+      color: white; 
+      padding: 0.9rem 1.8rem; 
+      text-decoration: none; 
+      border-radius: 8px; 
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
+      transition: transform 0.2s, background 0.3s;
+    }
+    .btn-whatsapp-main:hover {
+      background: #1eb854;
+      transform: translateY(-2px);
+    }
+
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #25D366;
+      color: white;
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
+      text-decoration: none;
+      z-index: 99;
+      transition: transform 0.2s;
+    }
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer { 
+      background: #1e293b; 
+      color: #94a3b8; 
+      padding: 1.5rem; 
+      text-align: center; 
+      font-size: 0.9rem;
+    }
+
+    /* Responsive Breakdown */
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.5rem;
+      }
+      nav a {
+        display: inline-block;
+        margin: 0.3rem 0.5rem;
+      }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Kontak BINTANG JAYA AC</h1>
-    <p>Layanan Cepat & Responsif via WhatsApp</p>
-  </header>
 
+<header>
+  <h1>BINTANG JAYA AC</h1>
+  <p>Jasa Service, Cuci, & Pasang AC Terpercaya di Medan</p>
   <nav>
     <a href="index.html">Beranda</a>
     <a href="layanan.html">Layanan</a>
-    <a href="tentang.html">Tentang</a>
+    <a href="tentang.html" class="active">Tentang</a>
     <a href="blog.html">Blog</a>
     <a href="kontak.html">Kontak</a>
   </nav>
+</header>
 
-  <div class="container">
-    <h2>Butuh Bantuan atau Ingin Booking Layanan?</h2>
-    <p>Kami siap melayani Anda di seluruh wilayah Medan dan sekitarnya. Klik tombol di bawah ini untuk langsung terhubung dengan teknisi kami:</p>
-    <a href="https://wa.me/6282304257994" class="btn-whatsapp">Chat via WhatsApp Sekarang</a>
+<div class="hero-banner">
+  <h2>Profil Usaha Kami</h2>
+  <p>Mengenal lebih dekat layanan profesional pendingin ruangan BINTANG JAYA AC.</p>
+</div>
 
-    <p style="margin-top: 40px;">Alamat: Jl Pancing I LK IX, Mabar Hilir, Medan</p>
-    <p>Telepon: +62 823-0425-7994</p>
+<main class="container">
+  <!-- Card Profil Utama -->
+  <section class="card">
+    <h3>Tentang BINTANG JAYA AC</h3>
+    <p><strong>BINTANG JAYA AC</strong> adalah penyedia jasa layanan pendingin udara (AC) profesional yang berlokasi di Medan Deli, Kota Medan. Kami bergerak di bidang perbaikan, perawatan berkala (cuci AC), bongkar pasang, serta jual beli dan tukar tambah unit AC baru maupun bekas.</p>
+    <p>Dengan komitmen memberikan pelayanan terbaik, teknisi kami dilatih untuk bekerja secara teliti, rapi, jujur, dan efisien. Kami siap melayani kebutuhan pendingin udara untuk hunian pribadi, kos-kosan, ruko, kantor, hingga fasilitas umum di seluruh wilayah Medan dan sekitarnya.</p>
+  </section>
+
+  <!-- Card Visi & Misi / Keunggulan Layanan -->
+  <section class="card">
+    <h3>Komitmen & Layanan Kami</h3>
+    <p>Kami memahami betapa pentingnya kenyamanan udara dingin bagi aktivitas Anda harian. Oleh karena itu, prinsip kerja kami senantiasa berfokus pada:</p>
+
+    <div class="values-grid">
+      <div class="value-box">
+        <h4><i class="fa-solid fa-square-check" style="color: #0056b3;"></i> Transparansi</h4>
+        <p>Pengecekan kerusakan dilakukan secara jujur tanpa adanya biaya yang tersembunyi.</p>
+      </div>
+
+      <div class="value-box">
+        <h4><i class="fa-solid fa-clock-rotate-left" style="color: #0056b3;"></i> Ketepatan Waktu</h4>
+        <p>Respon cepat dan kedatangan teknisi sesuai jadwal yang disepakati bersama pelanggan.</p>
+      </div>
+
+      <div class="value-box">
+        <h4><i class="fa-solid fa-shield-halved" style="color: #0056b3;"></i> Jaminan Garansi</h4>
+        <p>Setiap pengerjaan service dan perbaikan dilengkapi dengan garansi layanan demi kepuasan Anda.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section CTA Bottom -->
+  <div class="cta-banner">
+    <h3>Butuh Teknisi AC Berpengalaman Hari Ini?</h3>
+    <p>Hubungi BINTANG JAYA AC untuk penjadwalan service atau pemesanan layanan.</p>
+    <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20ingin%20bertanya%20layanan" class="btn-whatsapp-main" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i> Hubungi WhatsApp Kami
+    </a>
   </div>
+</main>
 
-  <footer>
-    <p>&copy; 2025 BINTANG JAYA AC | Kontak Teknisi Pasang & Service AC Medan</p>
-  </footer>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/6282304257994" class="whatsapp-float" aria-label="WhatsApp Bintang Jaya AC" target="_blank">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<footer>
+  <p>&copy; 2025 BINTANG JAYA AC | Spesialis Pasang & Service AC Medan</p>
+</footer>
+
 </body>
 </html>
