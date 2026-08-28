@@ -3,320 +3,180 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Layanan BINTANG JAYA AC: pasang AC, service AC, cuci AC, dan jual beli AC di Medan dengan teknisi berpengalaman dan harga bersahabat.">
-  <meta name="keywords" content="layanan service AC Medan, pasang AC Medan, cuci AC Medan, jual beli AC Medan">
-  <title>Layanan Kami | BINTANG JAYA AC Medan</title>
-  
-  <!-- Font Poppins & FontAwesome Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Daftar Layanan & Tarif Service AC Medan - BINTANG JAYA AC. Layanan cuci AC, perbaikan bocor, bongkar pasang, isi freon, dan jual beli AC bekas.">
+  <title>Layanan & Tarif - BINTANG JAYA AC Medan</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body { 
-      font-family: 'Poppins', sans-serif; 
-      background: #f0f4f8; 
-      color: #333; 
-      line-height: 1.6;
-    }
+    :root { --primary: #0284c7; --primary-dark: #0369a1; --accent: #25D366; --dark: #0f172a; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f8fafc; color: #1e293b; line-height: 1.6; padding-bottom: 70px; }
+    
+    .top-bar { background: var(--dark); color: #fff; text-align: center; padding: 0.6rem; font-size: 0.85rem; font-weight: 600; }
+    .top-bar span { color: #38bdf8; }
 
-    /* Header & Navigation */
-    header { 
-      background: linear-gradient(135deg, #0056b3, #3498db); 
-      color: white; 
-      padding: 1.5rem 1rem; 
-      text-align: center; 
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-    header h1 {
-      font-size: 1.8rem;
-      margin-bottom: 0.3rem;
-      letter-spacing: 1px;
-    }
-    header p {
-      font-size: 0.95rem;
-      opacity: 0.9;
-    }
-    nav {
-      margin-top: 1rem;
-    }
-    nav a { 
-      color: #e0f2fe; 
-      margin: 0 0.8rem; 
-      text-decoration: none; 
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    nav a:hover, nav a.active {
-      color: #25D366;
-    }
+    header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 1rem 1.5rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+    .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 8px; text-decoration: none; }
+    nav a { color: #475569; margin-left: 1.2rem; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+    nav a:hover, nav a.active { color: var(--primary); }
 
-    /* Banner Judul */
-    .hero-banner {
-      text-align: center;
-      padding: 2.5rem 1rem 1rem;
-    }
-    .hero-banner h2 {
-      color: #0056b3;
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    .hero-banner p {
-      color: #666;
-      font-size: 1rem;
-    }
+    .page-header { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: white; padding: 3rem 1rem; text-align: center; }
+    .page-header h1 { font-size: 2rem; font-weight: 800; }
+    .page-header p { opacity: 0.9; font-size: 0.95rem; margin-top: 0.5rem; }
 
-    /* Layout Main Container Grid */
-    .container { 
-      max-width: 1100px; 
-      margin: 2rem auto 4rem; 
-      padding: 0 1rem; 
-    }
+    .container { max-width: 1100px; margin: 0 auto; padding: 3rem 1rem; }
+    
+    .service-detail-card { background: white; border-radius: 16px; border: 1px solid #e2e8f0; padding: 2rem; margin-bottom: 2rem; display: flex; gap: 1.5rem; align-items: flex-start; }
+    .service-detail-icon { width: 60px; height: 60px; background: #e0f2fe; color: var(--primary); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }
+    .service-detail-content h3 { font-size: 1.25rem; color: var(--dark); margin-bottom: 0.5rem; }
+    .service-detail-content p { color: #64748b; font-size: 0.9rem; margin-bottom: 1rem; }
+    .service-detail-content ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.5rem; font-size: 0.88rem; color: #334155; }
+    .service-detail-content ul li { display: flex; align-items: center; gap: 0.5rem; }
+    .service-detail-content ul li i { color: var(--accent); }
 
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 1.8rem;
-      margin-bottom: 3rem;
-    }
+    .btn-wa-inline { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent); color: white; text-decoration: none; padding: 0.6rem 1.2rem; border-radius: 8px; font-weight: 700; font-size: 0.85rem; margin-top: 1rem; }
 
-    /* Service Card Styles */
-    .layanan-card { 
-      background: white; 
-      padding: 2rem; 
-      border-radius: 16px; 
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: transform 0.3s, box-shadow 0.3s;
-    }
-    .layanan-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
-    }
-    .icon-box {
-      width: 60px;
-      height: 60px;
-      background: #e6f0fa;
-      color: #0056b3;
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.6rem;
-      margin-bottom: 1.2rem;
-    }
-    .layanan-card h3 { 
-      color: #0056b3; 
-      font-size: 1.3rem;
-      margin-bottom: 0.8rem;
-    }
-    .layanan-card p {
-      color: #555;
-      font-size: 0.95rem;
-      margin-bottom: 1.5rem;
-      flex-grow: 1;
-    }
+    .sticky-bottom { position: fixed; bottom: 0; left: 0; right: 0; background: white; display: flex; border-top: 1px solid #e2e8f0; z-index: 999; }
+    .sticky-btn { flex: 1; text-align: center; padding: 0.85rem; text-decoration: none; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+    .btn-call-sticky { background: var(--primary); color: white; }
+    .btn-wa-sticky { background: var(--accent); color: white; }
 
-    /* Button WhatsApp Per Layanan */
-    .btn-card-wa {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      background: #eefbf3;
-      color: #1eb854;
-      border: 1px solid #25D366;
-      padding: 0.7rem 1rem;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: 600;
-      font-size: 0.9rem;
-      transition: all 0.3s;
-    }
-    .btn-card-wa:hover {
-      background: #25D366;
-      color: white;
-    }
+    footer { background: var(--dark); color: #94a3b8; padding: 3rem 1rem 2rem; font-size: 0.9rem; margin-top: 3rem; }
+    .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
+    .footer-col h4 { color: white; margin-bottom: 1rem; font-size: 1.1rem; }
+    .footer-col p { margin-bottom: 0.5rem; font-size: 0.85rem; }
 
-    /* Banner Bottom Call to Action */
-    .cta-banner {
-      background: linear-gradient(135deg, #0056b3, #3498db);
-      color: white;
-      padding: 2.5rem 2rem;
-      border-radius: 16px;
-      text-align: center;
-      box-shadow: 0 10px 25px rgba(0, 86, 179, 0.2);
-    }
-    .cta-banner h3 {
-      font-size: 1.5rem;
-      margin-bottom: 0.8rem;
-    }
-    .cta-banner p {
-      margin-bottom: 1.5rem;
-      font-size: 1rem;
-      color: #e0f2fe;
-    }
-    .btn-whatsapp-main { 
-      display: inline-flex; 
-      align-items: center;
-      gap: 0.5rem;
-      background: #25d366; 
-      color: white; 
-      padding: 0.9rem 1.8rem; 
-      text-decoration: none; 
-      border-radius: 8px; 
-      font-weight: 600;
-      font-size: 1rem;
-      box-shadow: 0 4px 14px rgba(37, 211, 102, 0.4);
-      transition: transform 0.2s, background 0.3s;
-    }
-    .btn-whatsapp-main:hover {
-      background: #1eb854;
-      transform: translateY(-2px);
-    }
-
-    /* Floating WhatsApp Button */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 24px;
-      right: 24px;
-      background: #25D366;
-      color: white;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-      text-decoration: none;
-      z-index: 99;
-      transition: transform 0.2s;
-    }
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-    }
-
-    /* Footer */
-    footer { 
-      background: #1e293b; 
-      color: #94a3b8; 
-      padding: 1.5rem; 
-      text-align: center; 
-      font-size: 0.9rem;
-    }
-
-    /* Responsive Breakdown */
     @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.5rem;
-      }
-      nav a {
-        display: inline-block;
-        margin: 0.3rem 0.5rem;
-      }
-      .hero-banner h2 {
-        font-size: 1.6rem;
-      }
+      .service-detail-card { flex-direction: column; }
+      nav { display: none; }
     }
   </style>
 </head>
 <body>
 
+<div class="top-bar">⚡ Respon Cepat Panggilan 15 Menit — <span>Medan Deli, Marelan & Sekitarnya</span></div>
+
 <header>
-  <h1>BINTANG JAYA AC</h1>
-  <p>Spesialis Pemasangan & Service AC Profesional di Medan</p>
-  <nav>
-    <a href="index.html">Beranda</a>
-    <a href="layanan.html" class="active">Layanan</a>
-    <a href="tentang.html">Tentang</a>
-    <a href="blog.html">Blog</a>
-    <a href="kontak.html">Kontak</a>
-  </nav>
+  <div class="nav-container">
+    <a href="index.html" class="logo"><i class="fa-solid fa-snowflake"></i> BINTANG JAYA AC</a>
+    <nav>
+      <a href="index.html">Beranda</a>
+      <a href="layanan.html" class="active">Layanan</a>
+      <a href="galeri.html">Galeri</a>
+      <a href="kontak.html">Kontak</a>
+    </nav>
+  </div>
 </header>
 
-<div class="hero-banner">
-  <h2>Layanan Terbaik Kami</h2>
-  <p>Solusi lengkap pendingin ruangan untuk rumah, kantor, pertokoan, dan industri.</p>
+<div class="page-header">
+  <h1>Layanan & Solusi AC Medan</h1>
+  <p>Pilihan jasa perawatan, perbaikan, instalasi, dan tukar tambah AC professional bergaransi.</p>
 </div>
 
 <main class="container">
-  <div class="services-grid">
-    
-    <!-- Service 1: Pasang AC -->
-    <div class="layanan-card" id="pasang-ac">
-      <div>
-        <div class="icon-box"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-        <h3>Pasang AC Baru & Bekas</h3>
-        <p>Pemasangan AC semua tipe (Split, Cassette, Standing, Central) untuk rumah atau gedung. Pengerjaan rapi, kokoh, dan sesuai standar keamanan teknis.</p>
-      </div>
-      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20ingin%20pesan%20layanan%20Pasang%20AC" class="btn-card-wa" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i> Pesan Pasang AC
-      </a>
-    </div>
 
-    <!-- Service 2: Service AC -->
-    <div class="layanan-card" id="service-ac">
-      <div>
-        <div class="icon-box"><i class="fa-solid fa-gears"></i></div>
-        <h3>Perbaikan / Service AC</h3>
-        <p>Solusi AC tidak dingin, meneteskan air, suara bising, indikator berkedip, hingga perbaikan kompresor mati total dengan pengecekan teliti.</p>
-      </div>
-      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20ingin%20service%20perbaikan%20AC" class="btn-card-wa" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i> Pesan Service AC
-      </a>
+  <!-- Layanan 1 -->
+  <div class="service-detail-card">
+    <div class="service-detail-icon"><i class="fa-solid fa-snowflake"></i></div>
+    <div class="service-detail-content">
+      <h3>Cuci AC Clean & Higienis</h3>
+      <p>Pembersihan total unit indoor dan outdoor menggunakan pressure washer khusus. Mencegah penumpukan debu, jamur, serta bakteri penyebab bau tidak sedap dan hilangnya rasa dingin.</p>
+      <ul>
+        <li><i class="fa-solid fa-circle-check"></i> Cuci Filter & Evaporator Indoor</li>
+        <li><i class="fa-solid fa-circle-check"></i> Semprot Outdoor Condenser</li>
+        <li><i class="fa-solid fa-circle-check"></i> Pembersihan Saluran Pembuangan Air</li>
+        <li><i class="fa-solid fa-circle-check"></i> Pengecekan Amper & Arus Listrik</li>
+      </ul>
+      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20mau%20pesan%20Cuci%20AC" class="btn-wa-inline"><i class="fa-brands fa-whatsapp"></i> Pesan Jasa Cuci AC</a>
     </div>
-
-    <!-- Service 3: Cuci AC -->
-    <div class="layanan-card" id="cuci-ac">
-      <div>
-        <div class="icon-box"><i class="fa-solid fa-snowflake"></i></div>
-        <h3>Cuci & Maintenance AC</h3>
-        <p>Pembersihan berkala untuk evaporator, blower, filter, dan unit outdoor. Menjadikan udara lebih sehat, bebas debu, dan penggunaan listrik lebih hemat.</p>
-      </div>
-      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20ingin%20pesan%20layanan%20Cuci%20AC" class="btn-card-wa" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i> Pesan Cuci AC
-      </a>
-    </div>
-
-    <!-- Service 4: Jual Beli AC -->
-    <div class="layanan-card" id="jual-beli-ac">
-      <div>
-        <div class="icon-box"><i class="fa-solid fa-store"></i></div>
-        <h3>Jual Beli & Tukar Tambah</h3>
-        <p>Menyediakan unit AC baru dan bekas berkualitas berbagai merek (Daikin, Panasonic, LG, dll). Kami juga menerima pembelian AC bekas Anda dengan harga bersaing.</p>
-      </div>
-      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20ingin%20tanya%20Jual%20Beli%20/%20Tukar%20Tambah%20AC" class="btn-card-wa" target="_blank">
-        <i class="fa-brands fa-whatsapp"></i> Tanya Jual Beli
-      </a>
-    </div>
-
   </div>
 
-  <!-- Section Call to Action Utama -->
-  <div class="cta-banner">
-    <h3>Butuh Konsultasi Kendala AC Anda?</h3>
-    <p>Tim teknisi BINTANG JAYA AC siap melayani panggilan ke area Medan dan sekitarnya.</p>
-    <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20ingin%20konsultasi%20layanan" class="btn-whatsapp-main" target="_blank">
-      <i class="fa-brands fa-whatsapp"></i> Konsultasi via WhatsApp Sekarang
-    </a>
+  <!-- Layanan 2 -->
+  <div class="service-detail-card">
+    <div class="service-detail-icon"><i class="fa-solid fa-gas-pump"></i></div>
+    <div class="service-detail-content">
+      <h3>Pengisian & Tambah Freon</h3>
+      <p>Pemeriksaan tekanan udara pendingin dan pengisian ulang freon sesuai kebutuhan unit Anda. Menggunakan jenis freon ramah lingkungan dan original pabrikan.</p>
+      <ul>
+        <li><i class="fa-solid fa-circle-check"></i> Freon Jenis R22 / R32 / R410a</li>
+        <li><i class="fa-solid fa-circle-check"></i> Cek Kebocoran Pipa & Pentil Freon</li>
+        <li><i class="fa-solid fa-circle-check"></i> Penyesuaian Tekanan Standar PSI</li>
+      </ul>
+      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20mau%20isi%20Freon" class="btn-wa-inline"><i class="fa-brands fa-whatsapp"></i> Isi Freon Sekarang</a>
+    </div>
   </div>
+
+  <!-- Layanan 3 -->
+  <div class="service-detail-card">
+    <div class="service-detail-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+    <div class="service-detail-content">
+      <h3>Perbaikan Kerusakan & Sparepart</h3>
+      <p>Penanganan masalah AC bocor air menetes, mati total, tidak mau diremot, modul error, atau kompresor berisik oleh teknisi berpengalaman.</p>
+      <ul>
+        <li><i class="fa-solid fa-circle-check"></i> Perbaikan Bocor Air / Bocor Freon</li>
+        <li><i class="fa-solid fa-circle-check"></i> Penggantian Kapasitor & Modul PCB</li>
+        <li><i class="fa-solid fa-circle-check"></i> Garansi Pengerjaan 30 Hari</li>
+      </ul>
+      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20AC%20saya%20rusak%20butuh%20perbaikan" class="btn-wa-inline"><i class="fa-brands fa-whatsapp"></i> Konsultasi Kerusakan</a>
+    </div>
+  </div>
+
+  <!-- Layanan 4 -->
+  <div class="service-detail-card">
+    <div class="service-detail-icon"><i class="fa-solid fa-truck-ramp-box"></i></div>
+    <div class="service-detail-content">
+      <h3>Bongkar Pasang & Relokasi AC</h3>
+      <p>Layanan bongkar pasang AC untuk rumah baru, pindahan kontrakan, atau penataan ulang posisi indoor/outdoor secara rapi dan terukur.</p>
+      <ul>
+        <li><i class="fa-solid fa-circle-check"></i> Vacuum Pipa Instalasi Ulang</li>
+        <li><i class="fa-solid fa-circle-check"></i> Pemasangan Bracket Outdoor Kokoh</li>
+        <li><i class="fa-solid fa-circle-check"></i> Pengujian Performa Dingin Unit</li>
+      </ul>
+      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20tanya%20jasa%20Bongkar%20Pasang%20AC" class="btn-wa-inline"><i class="fa-brands fa-whatsapp"></i> Pesan Bongkar Pasang</a>
+    </div>
+  </div>
+
+  <!-- Layanan 5 -->
+  <div class="service-detail-card">
+    <div class="service-detail-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+    <div class="service-detail-content">
+      <h3>Jual Beli AC Second & Rusak</h3>
+      <p>Kami menerima penjualan AC bekas layak pakai maupun AC mati total dalam unit satuan atau borongan ruko/kantor dengan harga taksir yang adil.</p>
+      <ul>
+        <li><i class="fa-solid fa-circle-check"></i> Penjemputan Unit Langsung ke Lokasi</li>
+        <li><i class="fa-solid fa-circle-check"></i> Tukar Tambah AC Bekas ke Unit Siap Pakai</li>
+        <li><i class="fa-solid fa-circle-check"></i> Pembayaran Tunai / Transfer On The Spot</li>
+      </ul>
+      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20mau%20jual/tukar%20tambah%20AC" class="btn-wa-inline"><i class="fa-brands fa-whatsapp"></i> Tawarkan AC Bekas Anda</a>
+    </div>
+  </div>
+
 </main>
 
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/6282304257994" class="whatsapp-float" aria-label="WhatsApp Bintang Jaya AC" target="_blank">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+<div class="sticky-bottom">
+  <a href="tel:082304257994" class="sticky-btn btn-call-sticky"><i class="fa-solid fa-phone"></i> Telepon</a>
+  <a href="https://wa.me/6282304257994" class="sticky-btn btn-wa-sticky" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat WhatsApp</a>
+</div>
 
 <footer>
-  <p>&copy; 2025 BINTANG JAYA AC | Spesialis Pasang & Service AC Medan</p>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>BINTANG JAYA AC</h4>
+      <p>Jasa perbaikan, pembersihan, pemasangan, dan jual beli AC panggilan terpercaya untuk rumah, ruko, dan kantor di Medan.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Kontak Kami</h4>
+      <p><i class="fa-solid fa-phone"></i> 0823-0425-7994</p>
+      <p><i class="fa-solid fa-location-dot"></i> Jl. Pasar 3B Mabar Hilir Lk X, Medan Deli</p>
+      <p><i class="fa-solid fa-clock"></i> Senin - Minggu (08:00 - 18:00 WIB)</p>
+    </div>
+  </div>
+  <div style="text-align: center; border-top: 1px solid #334155; padding-top: 1.5rem; font-size: 0.8rem;">
+    &copy; 2026 BINTANG JAYA AC. All rights reserved.
+  </div>
 </footer>
 
 </body>
