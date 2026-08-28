@@ -70,7 +70,21 @@
     .service-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; }
     .service-card p { font-size: 0.88rem; color: #64748b; }
 
-    /* How It Works (Alur Kerja) */
+    /* Pricelist Grid */
+    .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
+    .price-card { background: white; padding: 2rem 1.5rem; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center; position: relative; }
+    .price-card.featured { border: 2px solid var(--primary); }
+    .badge-pop { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+    .price-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; font-weight: 700; }
+    .price-card ul { list-style: none; text-align: left; margin: 1.2rem 0; font-size: 0.88rem; color: #475569; }
+    .price-card ul li { margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem; }
+    .price-card ul li i { color: var(--accent); }
+
+    /* Brands Banner */
+    .brand-box { background: white; padding: 1.5rem; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center; margin-bottom: 3rem; }
+    .brand-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem 2rem; margin-top: 1rem; font-weight: 700; color: #475569; }
+
+    /* How It Works */
     .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
     .step-card { background: white; padding: 1.8rem; border-radius: 16px; border: 1px solid #e2e8f0; position: relative; }
     .step-number { width: 35px; height: 35px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; margin-bottom: 1rem; }
@@ -80,6 +94,10 @@
     /* Coverage Area Grid */
     .area-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; text-align: center; }
     .area-box { background: #e0f2fe; color: var(--primary-dark); padding: 1rem; border-radius: 12px; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; gap: 8px; }
+
+    /* Maps Responsive Embed */
+    .map-container { width: 100%; height: 350px; border-radius: 16px; overflow: hidden; border: 1px solid #cbd5e1; margin-top: 1rem; }
+    .map-container iframe { width: 100%; height: 100%; border: 0; }
 
     /* Sticky Bottom HP */
     .sticky-bottom { position: fixed; bottom: 0; left: 0; right: 0; background: white; display: flex; border-top: 1px solid #e2e8f0; z-index: 999; }
@@ -104,7 +122,7 @@
 <body>
 
 <div class="top-bar">
-  ⚡ Respon Cepat 15 Menit — <span>Area Medan Deli, Marelan & Sekitarnya</span>
+  ⚡ Respon Cepat Panggilan 15 Menit — <span>Medan Deli, Marelan & Sekitarnya</span>
 </div>
 
 <header>
@@ -124,7 +142,7 @@
 <!-- Hero Section -->
 <section class="hero">
   <div class="hero-content">
-    <div class="badge-hero">🛡️ Garansi Service 30 Hari</div>
+    <div class="badge-hero">🛡️ Garansi Service Resmi 30 Hari</div>
     <h1>Spesialis Service & Pasang AC Panggilan Medan</h1>
     <p>AC Rumah atau Office Tidak Dingin? Panggil Teknisi Professional Sekarang. Jujur, Transparan, Tepat Waktu.</p>
   </div>
@@ -214,8 +232,59 @@
     </div>
   </div>
 
-  <!-- Block 3: Alur Pemesanan -->
+  <!-- Block 3: Transparansi Harga -->
   <div class="section-header" style="margin-top: 4rem;">
+    <div class="section-subtitle">Estimasi Tarif</div>
+    <h2 class="section-title">Harga Transparan Tanpa Biaya Siluman</h2>
+  </div>
+
+  <div class="price-grid">
+    <div class="price-card featured">
+      <span class="badge-pop">Terfavorit</span>
+      <h3>Cuci AC Split</h3>
+      <ul>
+        <li><i class="fa-solid fa-check"></i> Cuci Indoor & Outdoor</li>
+        <li><i class="fa-solid fa-check"></i> Cek Freon & Kelistrikan</li>
+        <li><i class="fa-solid fa-check"></i> Garansi Service</li>
+      </ul>
+      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20tanya%20harga%20cuci%20AC" class="btn-submit" style="display:block; text-decoration:none; padding:0.6rem; font-size:0.9rem;">Tanya Biaya via WA</a>
+    </div>
+
+    <div class="price-card">
+      <h3>Isi / Tambah Freon</h3>
+      <ul>
+        <li><i class="fa-solid fa-check"></i> Pengecekan Kebocoran</li>
+        <li><i class="fa-solid fa-check"></i> Freon R22 / R32 / R410a</li>
+        <li><i class="fa-solid fa-check"></i> Tes Tekanan PSI</li>
+      </ul>
+      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20tanya%20harga%20freon" class="btn-submit" style="display:block; text-decoration:none; padding:0.6rem; font-size:0.9rem;">Tanya Biaya via WA</a>
+    </div>
+
+    <div class="price-card">
+      <h3>Bongkar Pasang AC</h3>
+      <ul>
+        <li><i class="fa-solid fa-check"></i> Instalasi Pipa Rapi</li>
+        <li><i class="fa-solid fa-check"></i> Pengujian Performa</li>
+        <li><i class="fa-solid fa-check"></i> Relokasi Unit Baru/Lama</li>
+      </ul>
+      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20tanya%20harga%20pasang%20AC" class="btn-submit" style="display:block; text-decoration:none; padding:0.6rem; font-size:0.9rem;">Tanya Biaya via WA</a>
+    </div>
+  </div>
+
+  <!-- Block 4: Merek AC -->
+  <div class="section-header" style="margin-top: 4rem;">
+    <div class="section-subtitle">Spesialis Merek</div>
+    <h2 class="section-title">Melayani Berbagai Merek AC Popular</h2>
+  </div>
+
+  <div class="brand-box">
+    <div class="brand-list">
+      <span>DAIKIN</span> &bull; <span>PANASONIC</span> &bull; <span>SHARP</span> &bull; <span>LG</span> &bull; <span>SAMSUNG</span> &bull; <span>GREE</span> &bull; <span>POLYTRON</span> &bull; <span>CHANGHONG</span>
+    </div>
+  </div>
+
+  <!-- Block 5: Alur Pemesanan -->
+  <div class="section-header">
     <div class="section-subtitle">Cara Order</div>
     <h2 class="section-title">4 Langkah Praktis Pesan Layanan</h2>
   </div>
@@ -243,7 +312,7 @@
     </div>
   </div>
 
-  <!-- Block 4: Jangkauan Area -->
+  <!-- Block 6: Jangkauan Area -->
   <div class="section-header" style="margin-top: 4rem;">
     <div class="section-subtitle">Jangkauan Panggilan</div>
     <h2 class="section-title">Melayani Seluruh Area Medan & Sekitarnya</h2>
@@ -256,6 +325,16 @@
     <div class="area-box"><i class="fa-solid fa-location-dot"></i> Medan Labuhan</div>
     <div class="area-box"><i class="fa-solid fa-location-dot"></i> Medan Timur</div>
     <div class="area-box"><i class="fa-solid fa-location-dot"></i> Medan Kota</div>
+  </div>
+
+  <!-- Block 7: Embed Google Maps -->
+  <div class="section-header" style="margin-top: 4rem;">
+    <div class="section-subtitle">Lokasi Workshop</div>
+    <h2 class="section-title">Kunjungi Workshop Kami di Medan</h2>
+  </div>
+
+  <div class="map-container">
+    <iframe src="https://maps.google.com/maps?q=Medan%20Deli%20Mabar%20Hilir&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
   </div>
 
 </main>
