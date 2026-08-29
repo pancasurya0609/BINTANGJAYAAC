@@ -136,6 +136,35 @@
     .btn-call-sticky { background: var(--primary); color: white; }
     .btn-wa-sticky { background: var(--accent); color: white; }
 
+    /* Floating WhatsApp Button */
+    .whatsapp-float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 75px;
+        right: 20px;
+        background-color: #25d366;
+        color: #fff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+    }
+
+    .whatsapp-float img {
+        width: 35px;
+        height: 35px;
+    }
+
     /* Footer */
     footer { background: var(--dark); color: #94a3b8; padding: 3rem 1rem 2rem; font-size: 0.9rem; }
     .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
@@ -445,6 +474,14 @@
   <a href="tel:082304257994" class="sticky-btn btn-call-sticky"><i class="fa-solid fa-phone"></i> Telepon</a>
   <a href="https://wa.me/6282304257994" class="sticky-btn btn-wa-sticky" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat WhatsApp</a>
 </div>
+
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20mau%20tanya%20jadwal%20service%20AC." 
+   target="_blank" 
+   class="whatsapp-float" 
+   title="Hubungi Kami via WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+</a>
 
 <!-- Footer -->
 <footer>
