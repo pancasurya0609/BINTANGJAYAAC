@@ -6,13 +6,11 @@
   <meta name="description" content="Jasa Service AC Medan Terpercaya - BINTANG JAYA AC. Layanan cuci AC, perbaikan bocor, bongkar pasang, isi freon, dan jual beli AC bekas/rusak panggilan murah bergaransi di Medan.">
   <title>BINTANG JAYA AC - Service & Pasang AC Medan Bergaransi</title>
 
-  <!-- Open Graph Meta Tags (Untuk Preview WhatsApp / Medsos) -->
   <meta property="og:title" content="BINTANG JAYA AC - Service & Pasang AC Medan Bergaransi">
   <meta property="og:description" content="Layanan cuci AC, perbaikan bocor, isi freon, dan jual beli AC bekas panggilan terpercaya di Medan Deli & Marelan.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://bintangjayaac.shop/">
 
-  <!-- Schema Markup LocalBusiness untuk SEO Google -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -37,14 +35,19 @@
   }
   </script>
   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
 
   <style>
     :root {
       --primary: #0284c7;
       --primary-dark: #0369a1;
-      --accent: #25D366;
+      --accent: #15803d;
+      --accent-hover: #166534;
       --dark: #0f172a;
     }
 
@@ -59,15 +62,15 @@
     header { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); padding: 1rem 1.5rem; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
     .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
     .logo { font-size: 1.5rem; font-weight: 800; color: var(--primary); display: flex; align-items: center; gap: 8px; text-decoration: none; }
-    nav a { color: #475569; margin-left: 1.2rem; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
-    nav a:hover, nav a.active { color: var(--primary); }
+    nav a { color: #334155; margin-left: 1.2rem; text-decoration: none; font-weight: 600; font-size: 0.95rem; }
+    nav a:hover, nav a.active { color: var(--primary-dark); }
 
     /* Hero Section */
     .hero { background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%); color: white; padding: 4rem 1rem 6rem; text-align: center; position: relative; }
     .hero-content { max-width: 800px; margin: 0 auto; }
-    .badge-hero { background: rgba(255,255,255,0.2); border: 1px solid rgba(255,255,255,0.3); padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; display: inline-block; margin-bottom: 1rem; }
+    .badge-hero { background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.4); padding: 0.4rem 1rem; border-radius: 50px; font-size: 0.85rem; font-weight: 600; display: inline-block; margin-bottom: 1rem; color: #ffffff; }
     .hero h1 { font-size: 2.4rem; font-weight: 800; line-height: 1.2; margin-bottom: 1rem; }
-    .hero p { font-size: 1.05rem; opacity: 0.95; margin-bottom: 1.5rem; color: #e0f2fe; }
+    .hero p { font-size: 1.05rem; opacity: 0.95; margin-bottom: 1.5rem; color: #f0f9ff; }
 
     /* Booking Form Card */
     .booking-wrapper { max-width: 650px; margin: -4rem auto 3rem; padding: 0 1rem; position: relative; z-index: 10; }
@@ -76,55 +79,55 @@
     .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
     .form-group { margin-bottom: 1rem; }
     .form-group.full { grid-column: span 2; }
-    .form-group label { display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.4rem; color: #334155; }
-    .form-group input, .form-group select { width: 100%; padding: 0.8rem 1rem; border: 1.5px solid #cbd5e1; border-radius: 10px; font-size: 0.95rem; }
+    .form-group label { display: block; font-size: 0.85rem; font-weight: 700; margin-bottom: 0.4rem; color: #1e293b; }
+    .form-group input, .form-group select { width: 100%; padding: 0.8rem 1rem; border: 1.5px solid #94a3b8; border-radius: 10px; font-size: 0.95rem; color: #0f172a; }
     .btn-submit { width: 100%; background: var(--accent); color: white; border: none; padding: 1rem; border-radius: 10px; font-weight: 800; font-size: 1rem; cursor: pointer; transition: 0.3s; }
-    .btn-submit:hover { background: #1eb854; }
+    .btn-submit:hover { background: var(--accent-hover); }
 
     /* Container Standard */
     .container { max-width: 1100px; margin: 0 auto; padding: 3rem 1rem; }
     .section-header { text-align: center; margin-bottom: 2.5rem; }
-    .section-subtitle { color: var(--primary); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
+    .section-subtitle { color: var(--primary-dark); font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; }
     .section-title { font-size: 1.8rem; font-weight: 800; color: var(--dark); margin-top: 0.2rem; }
 
     /* Stats Section */
     .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 3rem; }
     .stat-card { background: white; padding: 1.5rem; border-radius: 16px; text-align: center; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.03); }
-    .stat-number { font-size: 2.2rem; font-weight: 800; color: var(--primary); }
-    .stat-label { font-size: 0.9rem; color: #64748b; font-weight: 600; }
+    .stat-number { font-size: 2.2rem; font-weight: 800; color: var(--primary-dark); }
+    .stat-label { font-size: 0.9rem; color: #475569; font-weight: 600; }
 
     /* Service Cards */
     .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1.5rem; }
     .service-card { background: white; padding: 2rem 1.5rem; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center; transition: 0.3s; }
     .service-card:hover { transform: translateY(-5px); border-color: var(--primary); }
-    .icon-box { width: 65px; height: 65px; background: #e0f2fe; color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin: 0 auto 1.2rem; }
+    .icon-box { width: 65px; height: 65px; background: #e0f2fe; color: var(--primary-dark); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.6rem; margin: 0 auto 1.2rem; }
     .service-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 0.5rem; }
-    .service-card p { font-size: 0.88rem; color: #64748b; }
+    .service-card p { font-size: 0.88rem; color: #475569; }
 
     /* Pricelist Grid */
     .price-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; }
     .price-card { background: white; padding: 2rem 1.5rem; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center; position: relative; }
-    .price-card.featured { border: 2px solid var(--primary); }
-    .badge-pop { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary); color: white; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+    .price-card.featured { border: 2px solid var(--primary-dark); }
+    .badge-pop { position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: var(--primary-dark); color: white; padding: 0.2rem 0.8rem; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
     .price-card h3 { font-size: 1.2rem; margin-bottom: 0.5rem; font-weight: 700; }
-    .price-card ul { list-style: none; text-align: left; margin: 1.2rem 0; font-size: 0.88rem; color: #475569; }
+    .price-card ul { list-style: none; text-align: left; margin: 1.2rem 0; font-size: 0.88rem; color: #334155; }
     .price-card ul li { margin-bottom: 0.6rem; display: flex; align-items: center; gap: 0.5rem; }
     .price-card ul li i { color: var(--accent); }
 
     /* Brands Banner */
     .brand-box { background: white; padding: 1.5rem; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center; margin-bottom: 3rem; }
-    .brand-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem 2rem; font-weight: 700; color: #475569; margin-top: 1rem; }
+    .brand-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem 2rem; font-weight: 700; color: #334155; margin-top: 1rem; }
 
     /* How It Works */
     .steps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
     .step-card { background: white; padding: 1.8rem; border-radius: 16px; border: 1px solid #e2e8f0; position: relative; }
-    .step-number { width: 35px; height: 35px; background: var(--primary); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; margin-bottom: 1rem; }
-    .step-card h4 { font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--dark); }
-    .step-card p { font-size: 0.85rem; color: #64748b; }
+    .step-number { width: 35px; height: 35px; background: var(--primary-dark); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; margin-bottom: 1rem; }
+    .step-card h3 { font-size: 1.05rem; margin-bottom: 0.4rem; color: var(--dark); font-weight: 700; }
+    .step-card p { font-size: 0.85rem; color: #475569; }
 
     /* Coverage Area Grid */
     .area-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; text-align: center; }
-    .area-box { background: #e0f2fe; color: var(--primary-dark); padding: 1rem; border-radius: 12px; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; gap: 8px; }
+    .area-box { background: #e0f2fe; color: #075985; padding: 1rem; border-radius: 12px; font-weight: 700; font-size: 0.9rem; display: flex; align-items: center; justify-content: center; gap: 8px; }
 
     /* Maps Responsive Embed */
     .map-container { width: 100%; height: 350px; border-radius: 16px; overflow: hidden; border: 1px solid #cbd5e1; margin-top: 1rem; }
@@ -133,7 +136,7 @@
     /* Sticky Bottom HP */
     .sticky-bottom { position: fixed; bottom: 0; left: 0; right: 0; background: white; display: flex; border-top: 1px solid #e2e8f0; z-index: 999; }
     .sticky-btn { flex: 1; text-align: center; padding: 0.85rem; text-decoration: none; font-weight: 700; font-size: 0.95rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
-    .btn-call-sticky { background: var(--primary); color: white; }
+    .btn-call-sticky { background: var(--primary-dark); color: white; }
     .btn-wa-sticky { background: var(--accent); color: white; }
 
     /* Floating WhatsApp Button */
@@ -147,7 +150,6 @@
         color: #fff;
         border-radius: 50px;
         text-align: center;
-        font-size: 30px;
         box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
         z-index: 1000;
         display: flex;
@@ -163,10 +165,11 @@
     .whatsapp-float img {
         width: 35px;
         height: 35px;
+        display: block;
     }
 
     /* Footer */
-    footer { background: var(--dark); color: #94a3b8; padding: 3rem 1rem 2rem; font-size: 0.9rem; }
+    footer { background: var(--dark); color: #cbd5e1; padding: 3rem 1rem 2rem; font-size: 0.9rem; }
     .footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem; }
     .footer-col h4 { color: white; margin-bottom: 1rem; font-size: 1.1rem; }
     .footer-col p { margin-bottom: 0.5rem; font-size: 0.85rem; }
@@ -187,10 +190,10 @@
 
 <header>
   <div class="nav-container">
-    <a href="index.html" class="logo">
-      <i class="fa-solid fa-snowflake"></i> BINTANG JAYA AC
+    <a href="index.html" class="logo" aria-label="Bintang Jaya AC Beranda">
+      <i class="fa-solid fa-snowflake" aria-hidden="true"></i> BINTANG JAYA AC
     </a>
-    <nav>
+    <nav aria-label="Navigasi Utama">
       <a href="index.html" class="active">Beranda</a>
       <a href="layanan.html">Layanan</a>
       <a href="galeri.html">Galeri</a>
@@ -199,7 +202,6 @@
   </div>
 </header>
 
-<!-- Hero Section -->
 <section class="hero">
   <div class="hero-content">
     <div class="badge-hero">🛡️ Garansi Service Resmi 30 Hari</div>
@@ -208,28 +210,27 @@
   </div>
 </section>
 
-<!-- Form Order WA -->
 <div class="booking-wrapper">
   <div class="booking-card">
-    <h3><i class="fa-solid fa-paper-plane" style="color:var(--primary)"></i> Form Pesan Teknisi (Direct WA)</h3>
+    <h3><i class="fa-solid fa-paper-plane" style="color:var(--primary)" aria-hidden="true"></i> Form Pesan Teknisi (Direct WA)</h3>
     <form id="waForm" onsubmit="sendToWA(event)">
       <div class="form-row">
         <div class="form-group">
-          <label>Nama Anda</label>
-          <input type="text" id="nama" placeholder="Masukan nama" required>
+          <label for="nama">Nama Anda</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukan nama" required autocomplete="name">
         </div>
         <div class="form-group">
-          <label>No. HP / WA</label>
-          <input type="tel" id="nohp" placeholder="08xxx" required>
+          <label for="nohp">No. HP / WA</label>
+          <input type="tel" id="nohp" name="nohp" placeholder="08xxx" required autocomplete="tel">
         </div>
       </div>
       <div class="form-group full">
-        <label>Alamat Lengkap Medan</label>
-        <input type="text" id="alamat" placeholder="Contoh: Jl. Pasar 3B Mabar Hilir" required>
+        <label for="alamat">Alamat Lengkap Medan</label>
+        <input type="text" id="alamat" name="alamat" placeholder="Contoh: Jl. Pasar 3B Mabar Hilir" required autocomplete="street-address">
       </div>
       <div class="form-group full">
-        <label>Pilih Layanan AC</label>
-        <select id="layanan">
+        <label for="layanan">Pilih Layanan AC</label>
+        <select id="layanan" name="layanan">
           <option value="Cuci AC Rutin">Cuci AC Rutin / Berkala</option>
           <option value="Perbaikan AC Bocor Air / Menetes">Perbaikan AC Bocor Air / Menetes</option>
           <option value="AC Tidak Dingin / Tambah Freon">AC Tidak Dingin / Tambah Freon</option>
@@ -237,14 +238,13 @@
           <option value="Jual Beli AC Bekas / Rusak">Jual Beli AC Bekas / Rusak</option>
         </select>
       </div>
-      <button type="submit" class="btn-submit"><i class="fa-brands fa-whatsapp"></i> PESAN TEKNISI SEKARANG</button>
+      <button type="submit" class="btn-submit"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> PESAN TEKNISI SEKARANG</button>
     </form>
   </div>
 </div>
 
 <main class="container">
 
-  <!-- Block 1: Statistik Angka -->
   <div class="stats-grid">
     <div class="stat-card">
       <div class="stat-number">500+</div>
@@ -264,7 +264,6 @@
     </div>
   </div>
 
-  <!-- Block 2: Layanan Utama -->
   <div class="section-header">
     <div class="section-subtitle">Layanan Terbaik</div>
     <h2 class="section-title">Solusi AC Lengkap & Bergaransi</h2>
@@ -272,33 +271,32 @@
 
   <div class="service-grid">
     <div class="service-card">
-      <div class="icon-box"><i class="fa-solid fa-snowflake"></i></div>
-      <h3>Cuci AC </h3>
+      <div class="icon-box"><i class="fa-solid fa-snowflake" aria-hidden="true"></i></div>
+      <h3>Cuci AC</h3>
       <p>Pembersihan evaporator & outdoor unit mendalam agar aliran udara segar dan hemat daya listrik.</p>
     </div>
     <div class="service-card">
-      <div class="icon-box"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+      <div class="icon-box"><i class="fa-solid fa-screwdriver-wrench" aria-hidden="true"></i></div>
       <h3>Perbaikan & Sparepart</h3>
       <p>Mengatasi AC bocor air, mati total, berisik, hingga masalah kapasitor dan modul PCB.</p>
     </div>
     <div class="service-card">
-      <div class="icon-box"><i class="fa-solid fa-gas-pump"></i></div>
+      <div class="icon-box"><i class="fa-solid fa-gas-pump" aria-hidden="true"></i></div>
       <h3>Pengisian & Pengecekan Freon</h3>
       <p>Pengisian ulang freon R22, R32, R410a sesuai ukuran tekanan standar PSI pabrikan.</p>
     </div>
     <div class="service-card">
-      <div class="icon-box"><i class="fa-solid fa-truck-ramp-box"></i></div>
+      <div class="icon-box"><i class="fa-solid fa-truck-ramp-box" aria-hidden="true"></i></div>
       <h3>Bongkar Pasang</h3>
       <p>Jasa Pembongkaran & Pemasangan unit AC baru maupun pindah rumah secara rapi dan presisi.</p>
     </div>
     <div class="service-card">
-      <div class="icon-box"><i class="fa-solid fa-arrows-rotate"></i></div>
+      <div class="icon-box"><i class="fa-solid fa-arrows-rotate" aria-hidden="true"></i></div>
       <h3>Jual Beli AC Bekas & Rusak</h3>
       <p>Melayani jual beli dan terima tukar tambah AC bekas atau mati total dengan harga terbaik dan siap penjemputan unit.</p>
     </div>
   </div>
 
-  <!-- Block 3: Transparansi Harga -->
   <div class="section-header" style="margin-top: 4rem;">
     <div class="section-subtitle">Estimasi Tarif</div>
     <h2 class="section-title">Harga Transparan Tanpa Biaya Siluman</h2>
@@ -309,35 +307,34 @@
       <span class="badge-pop">Terfavorit</span>
       <h3>Cuci AC Split</h3>
       <ul>
-        <li><i class="fa-solid fa-check"></i> Cuci Indoor & Outdoor</li>
-        <li><i class="fa-solid fa-check"></i> Cek Freon & Kelistrikan</li>
-        <li><i class="fa-solid fa-check"></i> Garansi Service</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Cuci Indoor & Outdoor</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Cek Freon & Kelistrikan</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Garansi Service</li>
       </ul>
-      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20tanya%20harga%20cuci%20AC" class="btn-submit" style="display:block; text-decoration:none; padding:0.6rem; font-size:0.9rem;">Tanya Biaya via WA</a>
+      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20tanya%20harga%20cuci%20AC" class="btn-submit" style="display:block; text-decoration:none; padding:0.6rem; font-size:0.9rem;" aria-label="Tanya Biaya Cuci AC via WhatsApp">Tanya Biaya via WA</a>
     </div>
 
     <div class="price-card">
       <h3>Isi / Tambah Freon</h3>
       <ul>
-        <li><i class="fa-solid fa-check"></i> Pengecekan Kebocoran</li>
-        <li><i class="fa-solid fa-check"></i> Freon R22 / R32 / R410a</li>
-        <li><i class="fa-solid fa-check"></i> Tes Tekanan PSI</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Pengecekan Kebocoran</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Freon R22 / R32 / R410a</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Tes Tekanan PSI</li>
       </ul>
-      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20tanya%20harga%20freon" class="btn-submit" style="display:block; text-decoration:none; padding:0.6rem; font-size:0.9rem;">Tanya Biaya via WA</a>
+      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20tanya%20harga%20freon" class="btn-submit" style="display:block; text-decoration:none; padding:0.6rem; font-size:0.9rem;" aria-label="Tanya Biaya Isi Freon via WhatsApp">Tanya Biaya via WA</a>
     </div>
 
     <div class="price-card">
       <h3>Bongkar Pasang AC</h3>
       <ul>
-        <li><i class="fa-solid fa-check"></i> Instalasi Pipa Rapi</li>
-        <li><i class="fa-solid fa-check"></i> Pengujian Performa</li>
-        <li><i class="fa-solid fa-check"></i> Relokasi Unit Baru/Lama</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Instalasi Pipa Rapi</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Pengujian Performa</li>
+        <li><i class="fa-solid fa-check" aria-hidden="true"></i> Relokasi Unit Baru/Lama</li>
       </ul>
-      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20tanya%20harga%20pasang%20AC" class="btn-submit" style="display:block; text-decoration:none; padding:0.6rem; font-size:0.9rem;">Tanya Biaya via WA</a>
+      <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20tanya%20harga%20pasang%20AC" class="btn-submit" style="display:block; text-decoration:none; padding:0.6rem; font-size:0.9rem;" aria-label="Tanya Biaya Bongkar Pasang AC via WhatsApp">Tanya Biaya via WA</a>
     </div>
   </div>
 
-  <!-- Block 4: Merek AC -->
   <div class="section-header" style="margin-top: 4rem;">
     <div class="section-subtitle">Spesialis Merek</div>
     <h2 class="section-title">Melayani Berbagai Merek AC Popular</h2>
@@ -345,11 +342,10 @@
 
   <div class="brand-box">
     <div class="brand-list">
-      <span>DAIKIN</span> &bull; <span>PANASONIC</span> &bull; <span>SHARP</span> &bull; <span>LG</span> &bull; <span>SAMSUNG</span> &bull; <span>GREE</span> &bull; <span>POLYTRON</span> &bull; <span>CHANGHONG</span>
+      <span>DAIKIN</span> • <span>PANASONIC</span> • <span>SHARP</span> • <span>LG</span> • <span>SAMSUNG</span> • <span>GREE</span> • <span>POLYTRON</span> • <span>CHANGHONG</span>
     </div>
   </div>
 
-  <!-- Block 5: Alur Pemesanan -->
   <div class="section-header">
     <div class="section-subtitle">Cara Order</div>
     <h2 class="section-title">4 Langkah Praktis Pesan Layanan</h2>
@@ -358,27 +354,26 @@
   <div class="steps-grid">
     <div class="step-card">
       <div class="step-number">1</div>
-      <h4>Kirim Pesan WA</h4>
+      <h3>Kirim Pesan WA</h3>
       <p>Isi formulir di atas atau hubungi nomor WhatsApp kami langsung.</p>
     </div>
     <div class="step-card">
       <div class="step-number">2</div>
-      <h4>Penjadwalan</h4>
+      <h3>Penjadwalan</h3>
       <p>Tentukan lokasi dan waktu kedatangan teknisi sesuai keinginan Anda.</p>
     </div>
     <div class="step-card">
       <div class="step-number">3</div>
-      <h4>Pengerjaan Rapi</h4>
+      <h3>Pengerjaan Rapi</h3>
       <p>Teknisi datang tepat waktu dan melakukan perbaikan dengan jujur.</p>
     </div>
     <div class="step-card">
       <div class="step-number">4</div>
-      <h4>Garansi Aktif</h4>
+      <h3>Garansi Aktif</h3>
       <p>Nikmati garansi pengerjaan untuk kenyamanan maksimal Anda.</p>
     </div>
   </div>
 
-  <!-- Block 6: Testimonial Pelanggan -->
   <div class="section-header" style="margin-top: 4rem;">
     <div class="section-subtitle">Ulasan Pelanggan</div>
     <h2 class="section-title">Apa Kata Mereka Tentang Kami?</h2>
@@ -386,25 +381,24 @@
 
   <div class="service-grid">
     <div class="service-card" style="text-align: left;">
-      <div style="color: #f59e0b; margin-bottom: 0.5rem;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <div style="color: #d97706; margin-bottom: 0.5rem;"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div>
       <p style="font-style: italic; margin-bottom: 1rem;">"Respon cepat sekali, teknisi datang tepat waktu. AC kamar yang tadi dinginnya berkurang jadi dingin menggigil lagi setelah dicuci."</p>
       <strong style="font-size: 0.9rem; color: var(--dark);">— Bpk. Rian (Medan Deli)</strong>
     </div>
 
     <div class="service-card" style="text-align: left;">
-      <div style="color: #f59e0b; margin-bottom: 0.5rem;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <div style="color: #d97706; margin-bottom: 0.5rem;"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div>
       <p style="font-style: italic; margin-bottom: 1rem;">"Sangat jujur. AC saya menetes air langsung ditangani dengan rapi. Harganya transparan sesuai estimasi."</p>
       <strong style="font-size: 0.9rem; color: var(--dark);">— Ibu Siska (Marelan)</strong>
     </div>
 
     <div class="service-card" style="text-align: left;">
-      <div style="color: #f59e0b; margin-bottom: 0.5rem;"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+      <div style="color: #d97706; margin-bottom: 0.5rem;"><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i></div>
       <p style="font-style: italic; margin-bottom: 1rem;">"Jual AC bekas kantor di sini dihargai sangat layak dan unit langsung dijemput teknisinya. Mantap!"</p>
       <strong style="font-size: 0.9rem; color: var(--dark);">— Pak Hendra (Mabar Hilir)</strong>
     </div>
   </div>
 
-  <!-- Block 7: FAQ (Pertanyaan Populer) -->
   <div class="section-header" style="margin-top: 4rem;">
     <div class="section-subtitle">Pertanyaan Umum</div>
     <h2 class="section-title">Hal yang Sering Ditanyakan (FAQ)</h2>
@@ -412,78 +406,74 @@
 
   <div style="max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 1rem;">
     <div style="background: white; padding: 1.2rem; border-radius: 12px; border: 1px solid #e2e8f0;">
-      <h4 style="color: var(--dark); font-size: 1rem; margin-bottom: 0.4rem;"><i class="fa-solid fa-circle-question" style="color: var(--primary);"></i> Berapa lama garansi pengerjaan AC?</h4>
-      <p style="font-size: 0.88rem; color: #64748b;">Kami memberikan garansi pengerjaan resmi hingga 30 hari untuk memastikan kenyamanan Anda.</p>
+      <h3 style="color: var(--dark); font-size: 1rem; margin-bottom: 0.4rem; font-weight: 700;"><i class="fa-solid fa-circle-question" style="color: var(--primary-dark);" aria-hidden="true"></i> Berapa lama garansi pengerjaan AC?</h3>
+      <p style="font-size: 0.88rem; color: #475569;">Kami memberikan garansi pengerjaan resmi hingga 30 hari untuk memastikan kenyamanan Anda.</p>
     </div>
 
     <div style="background: white; padding: 1.2rem; border-radius: 12px; border: 1px solid #e2e8f0;">
-      <h4 style="color: var(--dark); font-size: 1rem; margin-bottom: 0.4rem;"><i class="fa-solid fa-circle-question" style="color: var(--primary);"></i> Apakah menerima penjualan AC bekas/rusak dalam jumlah banyak?</h4>
-      <p style="font-size: 0.88rem; color: #64748b;">Ya, kami menerima satuan maupun borongan AC bekas dan mati total dari rumah, toko, ruko, hingga perkantoran.</p>
+      <h3 style="color: var(--dark); font-size: 1rem; margin-bottom: 0.4rem; font-weight: 700;"><i class="fa-solid fa-circle-question" style="color: var(--primary-dark);" aria-hidden="true"></i> Apakah menerima penjualan AC bekas/rusak dalam jumlah banyak?</h3>
+      <p style="font-size: 0.88rem; color: #475569;">Ya, kami menerima satuan maupun borongan AC bekas dan mati total dari rumah, toko, ruko, hingga perkantoran.</p>
     </div>
 
     <div style="background: white; padding: 1.2rem; border-radius: 12px; border: 1px solid #e2e8f0;">
-      <h4 style="color: var(--dark); font-size: 1rem; margin-bottom: 0.4rem;"><i class="fa-solid fa-circle-question" style="color: var(--primary);"></i> Berapa lama waktu kedatangan teknisi ke lokasi?</h4>
-      <p style="font-size: 0.88rem; color: #64748b;">Untuk area Medan Deli, Marelan, dan sekitarnya, teknisi kami berupaya tiba dalam 15-30 menit setelah konfirmasi pesanan.</p>
+      <h3 style="color: var(--dark); font-size: 1rem; margin-bottom: 0.4rem; font-weight: 700;"><i class="fa-solid fa-circle-question" style="color: var(--primary-dark);" aria-hidden="true"></i> Berapa lama waktu kedatangan teknisi ke lokasi?</h3>
+      <p style="font-size: 0.88rem; color: #475569;">Untuk area Medan Deli, Marelan, dan sekitarnya, teknisi kami berupaya tiba dalam 15-30 menit setelah konfirmasi pesanan.</p>
     </div>
   </div>
 
-  <!-- Block 8: Metode Pembayaran -->
   <div class="section-header" style="margin-top: 4rem;">
     <div class="section-subtitle">Kemudahan Pembayaran</div>
     <h2 class="section-title">Pilihan Pembayaran Fleksibel</h2>
   </div>
 
   <div style="background: white; padding: 1.5rem; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center; max-width: 600px; margin: 0 auto;">
-    <p style="font-size: 0.9rem; color: #64748b; margin-bottom: 1rem;">Kami menerima pembayaran non-tunai maupun tunai setelah pekerjaan selesai dilakukan:</p>
-    <div style="display: flex; justify-content: center; align-items: center; gap: 1.5rem; flex-wrap: wrap; font-weight: 700; color: #334155;">
-      <span><i class="fa-solid fa-money-bill-wave" style="color: var(--accent);"></i> Tunai (Cash)</span>
-      <span><i class="fa-solid fa-qrcode" style="color: var(--primary);"></i> QRIS All Payment</span>
-      <span><i class="fa-solid fa-building-columns" style="color: var(--primary);"></i> Transfer Bank</span>
+    <p style="font-size: 0.9rem; color: #475569; margin-bottom: 1rem;">Kami menerima pembayaran non-tunai maupun tunai setelah pekerjaan selesai dilakukan:</p>
+    <div style="display: flex; justify-content: center; align-items: center; gap: 1.5rem; flex-wrap: wrap; font-weight: 700; color: #1e293b;">
+      <span><i class="fa-solid fa-money-bill-wave" style="color: var(--accent);" aria-hidden="true"></i> Tunai (Cash)</span>
+      <span><i class="fa-solid fa-qrcode" style="color: var(--primary-dark);" aria-hidden="true"></i> QRIS All Payment</span>
+      <span><i class="fa-solid fa-building-columns" style="color: var(--primary-dark);" aria-hidden="true"></i> Transfer Bank</span>
     </div>
   </div>
 
-  <!-- Block 9: Jangkauan Area -->
   <div class="section-header" style="margin-top: 4rem;">
     <div class="section-subtitle">Jangkauan Panggilan</div>
     <h2 class="section-title">Melayani Seluruh Area Medan & Sekitarnya</h2>
   </div>
 
   <div class="area-grid">
-    <div class="area-box"><i class="fa-solid fa-location-dot"></i> Medan Deli</div>
-    <div class="area-box"><i class="fa-solid fa-location-dot"></i> Mabar Hilir</div>
-    <div class="area-box"><i class="fa-solid fa-location-dot"></i> Medan Marelan</div>
-    <div class="area-box"><i class="fa-solid fa-location-dot"></i> Medan Labuhan</div>
-    <div class="area-box"><i class="fa-solid fa-location-dot"></i> Medan Timur</div>
-    <div class="area-box"><i class="fa-solid fa-location-dot"></i> Medan Kota</div>
+    <div class="area-box"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Medan Deli</div>
+    <div class="area-box"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Mabar Hilir</div>
+    <div class="area-box"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Medan Marelan</div>
+    <div class="area-box"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Medan Labuhan</div>
+    <div class="area-box"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Medan Timur</div>
+    <div class="area-box"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Medan Kota</div>
   </div>
 
-  <!-- Block 10: Embed Google Maps -->
   <div class="section-header" style="margin-top: 4rem;">
     <div class="section-subtitle">Lokasi Workshop</div>
     <h2 class="section-title">Kunjungi Workshop Kami di Medan</h2>
   </div>
 
   <div class="map-container">
-    <iframe src="https://maps.google.com/maps?q=Medan%20Deli%20Mabar%20Hilir&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy"></iframe>
+    <iframe title="Lokasi Bintang Jaya AC di Google Maps" src="https://maps.google.com/maps?q=Medan%20Deli%20Mabar%20Hilir&t=&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" width="600" height="350"></iframe>
   </div>
 
 </main>
 
-<!-- Sticky Bottom Bar Mobile -->
 <div class="sticky-bottom">
-  <a href="tel:082304257994" class="sticky-btn btn-call-sticky"><i class="fa-solid fa-phone"></i> Telepon</a>
-  <a href="https://wa.me/6282304257994" class="sticky-btn btn-wa-sticky" target="_blank"><i class="fa-brands fa-whatsapp"></i> Chat WhatsApp</a>
+  <a href="tel:082304257994" class="sticky-btn btn-call-sticky" aria-label="Telepon Teknisi Langsung"><i class="fa-solid fa-phone" aria-hidden="true"></i> Telepon</a>
+  <a href="https://wa.me/6282304257994" class="sticky-btn btn-wa-sticky" target="_blank" rel="noopener noreferrer" aria-label="Chat Teknisi via WhatsApp"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> Chat WhatsApp</a>
 </div>
 
-<!-- Floating WhatsApp Button -->
 <a href="https://wa.me/6282304257994?text=Halo%20Bintang%20Jaya%20AC,%20saya%20mau%20tanya%20jadwal%20service%20AC." 
    target="_blank" 
+   rel="noopener noreferrer"
    class="whatsapp-float" 
+   aria-label="Hubungi Bintang Jaya AC melalui WhatsApp"
    title="Hubungi Kami via WhatsApp">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" width="35" height="35" loading="lazy" />
 </a>
 
-<!-- Footer -->
 <footer>
   <div class="footer-grid">
     <div class="footer-col">
@@ -492,13 +482,13 @@
     </div>
     <div class="footer-col">
       <h4>Kontak Kami</h4>
-      <p><i class="fa-solid fa-phone"></i> 0823-0425-7994</p>
-      <p><i class="fa-solid fa-location-dot"></i> Jl. Pasar 3B Mabar Hilir Lk X, Medan Deli</p>
-      <p><i class="fa-solid fa-clock"></i> Senin - Minggu (08:00 - 18:00 WIB)</p>
+      <p><i class="fa-solid fa-phone" aria-hidden="true"></i> 0823-0425-7994</p>
+      <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Jl. Pasar 3B Mabar Hilir Lk X, Medan Deli</p>
+      <p><i class="fa-solid fa-clock" aria-hidden="true"></i> Senin - Minggu (08:00 - 18:00 WIB)</p>
     </div>
   </div>
   <div style="text-align: center; border-top: 1px solid #334155; padding-top: 1.5rem; font-size: 0.8rem;">
-    &copy; 2026 BINTANG JAYA AC. All rights reserved.
+    © 2026 BINTANG JAYA AC. All rights reserved.
   </div>
 </footer>
 
@@ -511,10 +501,10 @@
     var layanan = document.getElementById('layanan').value;
     
     var text = "Halo Bintang Jaya AC, saya ingin pesan layanan:" + "%0A" +
-               "- Nama: " + nama + "%0A" +
-               "- No HP: " + nohp + "%0A" +
-               "- Alamat: " + alamat + "%0A" +
-               "- Layanan: " + layanan;
+               "- Nama: " + encodeURIComponent(nama) + "%0A" +
+               "- No HP: " + encodeURIComponent(nohp) + "%0A" +
+               "- Alamat: " + encodeURIComponent(alamat) + "%0A" +
+               "- Layanan: " + encodeURIComponent(layanan);
                
     window.open("https://wa.me/6282304257994?text=" + text, '_blank');
   }
