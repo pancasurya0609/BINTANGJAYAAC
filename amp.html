@@ -1,160 +1,317 @@
 <!doctype html>
-<html ⚡ lang="id">
+<html amp lang="id">
 <head>
   <meta charset="utf-8">
-  <title>AMP - BINTANG JAYA AC</title>
-  <link rel="canonical" href="https://bintangjayaac.shop/">
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+  <title>Bintang Jaya AC - Jasa Cuci, Servis & Bongkar Pasang AC Profesional</title>
 
+  <!-- SESUAIKAN: Canonical mengarah ke halaman utama non-AMP -->
+  <link rel="canonical" href="https://bintangjayaac.shop/">
+
+  <!-- Meta SEO -->
+  <meta name="description" content="Bintang Jaya AC melayani cuci AC, perbaikan AC tidak dingin, bocor, isi freon, dan bongkar pasang AC. Teknisi berpengalaman, bergaransi, respon cepat via WhatsApp.">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph (untuk preview saat dibagikan di WhatsApp/Media Sosial) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Bintang Jaya AC - Jasa Servis & Cuci AC Terpercaya">
+  <meta property="og:description" content="Layanan cuci AC, perbaikan, isi freon, dan bongkar pasang AC cepat dan bergaransi.">
+  <meta property="og:url" content="https://bintangjayaac.shop/amp.html">
+
+  <!-- Script Wajib AMP -->
   <script async src="https://cdn.ampproject.org/v0.js"></script>
 
+  <!-- Boilerplate Wajib AMP -->
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 
+  <!-- Structured Data JSON-LD (HVACBusiness / LocalBusiness) -->
+  <!-- SESUAIKAN: Nomor telepon, koordinat, alamat, dan area layanan -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HVACBusiness",
+    "name": "Bintang Jaya AC",
+    "url": "https://bintangjayaac.shop/",
+    "telephone": "+6281234567890",
+    "priceRange": "Rp75.000 - Rp500.000",
+    "description": "Jasa cuci AC, servis perbaikan AC, isi freon, dan bongkar pasang AC rumah maupun kantor.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Jl. Contoh Alamat Bengkel No. 12",
+      "addressLocality": "Jakarta Selatan",
+      "addressRegion": "DKI Jakarta",
+      "postalCode": "12345",
+      "addressCountry": "ID"
+    },
+    "areaServed": [
+      "Jakarta Selatan",
+      "Jakarta Timur",
+      "Tangerang Selatan",
+      "Depok"
+    ],
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "07:00",
+      "closes": "21:00"
+    }
+  }
+  </script>
+
+  <!-- Custom CSS AMP (Maksimal 75KB) -->
   <style amp-custom>
     * {
       box-sizing: border-box;
-    }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      background-color: #0f172a;
-      color: #f8fafc;
       margin: 0;
       padding: 0;
-      line-height: 1.5;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: #f4f7fa;
+      color: #1e293b;
+      line-height: 1.6;
+      padding-bottom: 76px;
     }
     .container {
-      max-width: 600px;
+      max-width: 720px;
       margin: 0 auto;
       padding: 16px;
     }
-    .header {
-      text-align: center;
-      padding: 14px 0 18px;
-      border-bottom: 1px solid #1e293b;
-    }
-    .brand-title {
-      margin: 0;
-      font-size: 22px;
-      font-weight: 700;
-      letter-spacing: 0.5px;
+    header {
+      background: linear-gradient(135deg, #0284c7, #0369a1);
       color: #ffffff;
+      padding: 32px 20px;
+      text-align: center;
+      border-radius: 0 0 16px 16px;
     }
-    .banner-box {
-      margin: 16px 0;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid #3b82f6;
-      box-shadow: 0 10px 25px rgba(37, 99, 235, 0.2);
-      background-color: #1e293b;
+    header h1 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      margin-bottom: 8px;
+    }
+    header p {
+      font-size: 0.95rem;
+      opacity: 0.95;
+      margin-bottom: 20px;
     }
     .cta-group {
       display: flex;
-      flex-direction: column;
       gap: 10px;
-      margin: 18px 0;
+      justify-content: center;
+      flex-wrap: wrap;
     }
-    .btn-primary {
-      display: block;
-      text-align: center;
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 8px;
       text-decoration: none;
-      background-color: #2563eb;
-      color: #ffffff;
       font-weight: 700;
-      padding: 13px 16px;
-      border-radius: 8px;
-    }
-    .btn-secondary {
-      display: block;
+      font-size: 0.95rem;
       text-align: center;
-      text-decoration: none;
-      background-color: #1e293b;
-      color: #e2e8f0;
-      font-weight: 600;
-      padding: 12px 16px;
-      border-radius: 8px;
-      border: 1px solid #475569;
     }
-    .menu-section {
-      margin-top: 22px;
-    }
-    .menu-heading {
-      font-size: 16px;
-      margin: 0 0 10px;
-      color: #93c5fd;
-    }
-    .menu-list {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-    }
-    .menu-item {
-      background-color: #1e293b;
-      border: 1px solid #334155;
-      border-radius: 8px;
-      padding: 12px 14px;
-      margin-bottom: 10px;
-    }
-    .menu-item strong {
-      display: block;
-      font-size: 15px;
+    .btn-wa {
+      background-color: #22c55e;
       color: #ffffff;
     }
-    .menu-item span {
-      font-size: 13px;
-      color: #cbd5e1;
+    .btn-outline {
+      background-color: rgba(255, 255, 255, 0.15);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.4);
     }
-    .footer {
-      margin-top: 28px;
-      padding-top: 16px;
-      border-top: 1px solid #1e293b;
+    section {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+      margin-top: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+    h2 {
+      font-size: 1.25rem;
+      color: #0f172a;
+      margin-bottom: 14px;
+      border-left: 4px solid #0284c7;
+      padding-left: 10px;
+    }
+    .service-card {
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+    .service-card:last-child {
+      margin-bottom: 0;
+    }
+    .service-card h3 {
+      font-size: 1.05rem;
+      color: #0369a1;
+      margin-bottom: 4px;
+    }
+    .service-card p {
+      font-size: 0.9rem;
+      color: #475569;
+      margin-bottom: 8px;
+    }
+    .price-tag {
+      display: inline-block;
+      background-color: #e0f2fe;
+      color: #0369a1;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .features-list {
+      list-style: none;
+    }
+    .features-list li {
+      padding: 6px 0;
+      font-size: 0.92rem;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .features-list li:last-child {
+      border-bottom: none;
+    }
+    .area-badge {
+      display: inline-block;
+      background: #f1f5f9;
+      color: #334155;
+      padding: 6px 12px;
+      border-radius: 20px;
+      font-size: 0.85rem;
+      margin: 4px 4px 0 0;
+    }
+    footer {
       text-align: center;
-      font-size: 12px;
-      color: #94a3b8;
+      font-size: 0.82rem;
+      color: #64748b;
+      margin-top: 24px;
+      padding: 0 16px;
+    }
+    /* Sticky WhatsApp Bar di Bawah Layar */
+    .sticky-wa {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #ffffff;
+      padding: 10px 16px;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.08);
+      display: flex;
+      gap: 10px;
+      z-index: 999;
+    }
+    .sticky-wa a {
+      flex: 1;
+      text-align: center;
+      padding: 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+    }
+    .sticky-call {
+      background-color: #0284c7;
+      color: #ffffff;
+    }
+    .sticky-chat {
+      background-color: #22c55e;
+      color: #ffffff;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <header class="header">
-      <h1 class="brand-title">BINTANG JAYA AC</h1>
-    </header>
 
-    <div class="banner-box">
-      <amp-img
-        src="https://bintangjayaac.shop/9aa90008-796c-4dec-8c9b-1c0ae79d0712.png"
-        width="1200"
-        height="800"
-        layout="responsive"
-        alt="Teknisi Bintang Jaya AC Service Perawatan Perbaikan Instalasi">
-      </amp-img>
-    </div>
-
+  <header>
+    <h1>BINTANG JAYA AC</h1>
+    <p>Spesialis Cuci, Servis, Isi Freon & Bongkar Pasang AC Rumah & Kantor</p>
     <div class="cta-group">
-      <a href="https://bintangjayaac.shop/" class="btn-primary">Buka Halaman Utama</a>
-      <a href="https://bintangjayaac.shop/kontak" class="btn-secondary">Hubungi Kami</a>
+      <!-- SESUAIKAN: Ganti 6281234567890 dengan nomor WhatsApp Anda -->
+      <a class="btn btn-wa" href="https://wa.me/6281234567890?text=Halo%20Bintang%20Jaya%20AC%2C%20saya%20ingin%20tanya%20jadwal%20servis%20AC." target="_blank" rel="noopener">
+        Chat WhatsApp Sekarang
+      </a>
+      <a class="btn btn-outline" href="https://bintangjayaac.shop/">
+        Halaman Utama
+      </a>
     </div>
+  </header>
 
-    <section class="menu-section">
-      <h2 class="menu-heading">Daftar Layanan</h2>
-      <ul class="menu-list">
-        <li class="menu-item">
-          <strong>Cuci &amp; Perawatan AC</strong>
-          <span>Pembersihan rutin unit AC agar dingin maksimal dan hemat listrik.</span>
-        </li>
-        <li class="menu-item">
-          <strong>Perbaikan &amp; Servis AC</strong>
-          <span>Penanganan kendala kebocoran, kurang dingin, maupun gangguan teknis.</span>
-        </li>
-        <li class="menu-item">
-          <strong>Bongkar Pasang &amp; Isi Freon</strong>
-          <span>Layanan instalasi unit baru atau pemindahan AC dengan rapi dan aman.</span>
-        </li>
+  <main class="container">
+
+    <!-- Daftar Layanan -->
+    <section>
+      <h2>Daftar Layanan & Estimasi Tarif</h2>
+
+      <div class="service-card">
+        <h3>Cuci & Perawatan Rutin AC</h3>
+        <p>Pembersihan evaporator, filter, kipas indoor, dan unit outdoor agar AC kembali dingin maksimal serta hemat listrik.</p>
+        <span class="price-tag">Mulai Rp 75.000 / unit</span>
+      </div>
+
+      <div class="service-card">
+        <h3>Perbaikan & Servis Kendala AC</h3>
+        <p>Penanganan AC tidak dingin, bocor air, berisik, mati total, error modul, hingga penggantian kapasitor dan kompresor.</p>
+        <span class="price-tag">Cek & Estimasi di Tempat</span>
+      </div>
+
+      <div class="service-card">
+        <h3>Isi & Tambah Freon (R32 / R410A / R22)</h3>
+        <p>Pengukuran tekanan freon presisi serta pengecekan kebocoran pipa sebelum pengisian ulang.</p>
+        <span class="price-tag">Mulai Rp 150.000</span>
+      </div>
+
+      <div class="service-card">
+        <h3>Bongkar Pasang & Instalasi AC Baru</h3>
+        <p>Pemasangan unit AC baru maupun pemindahan unit lama dengan vakum instalasi yang rapi dan aman.</p>
+        <span class="price-tag">Mulai Rp 250.000</span>
+      </div>
+    </section>
+
+    <!-- Keunggulan -->
+    <section>
+      <h2>Mengapa Memilih Bintang Jaya AC?</h2>
+      <ul class="features-list">
+        <li><strong>Teknisi Berpengalaman:</strong> Menangani berbagai merek AC split, inverter, cassette, maupun standing floor.</li>
+        <li><strong>Bergaransi Servis:</strong> Jaminan pengerjaan ulang jika kendala yang sama muncul dalam masa garansi.</li>
+        <li><strong>Transparan & Jujur:</strong> Konfirmasi rincian biaya sebelum pengerjaan dilakukan.</li>
+        <li><strong>Jadwal Fleksibel:</strong> Buka setiap hari pukul 07.00 – 21.00 WIB (termasuk hari libur).</li>
       </ul>
     </section>
 
-    <footer class="footer">
-      &copy; 2026 BINTANG JAYA AC. Seluruh hak cipta dilindungi.
-    </footer>
+    <!-- Area Layanan -->
+    <section>
+      <h2>Area Jangkauan Layanan</h2>
+      <p style="font-size: 0.9rem; color: #475569; margin-bottom: 8px;">Melayani panggilan ke rumah, apartemen, ruko, dan kantor di wilayah:</p>
+      <!-- SESUAIKAN: Wilayah operasional Anda -->
+      <div>
+        <span class="area-badge">Jakarta Selatan</span>
+        <span class="area-badge">Jakarta Timur</span>
+        <span class="area-badge">Tangerang Selatan</span>
+        <span class="area-badge">Depok</span>
+        <span class="area-badge">Bekasi</span>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 BINTANG JAYA AC. Seluruh hak cipta dilindungi.</p>
+  </footer>
+
+  <!-- Sticky CTA di Bagian Bawah Mobile -->
+  <div class="sticky-wa">
+    <!-- SESUAIKAN: Nomor telepon dan WhatsApp -->
+    <a class="sticky-call" href="tel:+6281234567890">Telepon</a>
+    <a class="sticky-chat" href="https://wa.me/6281234567890?text=Halo%20Bintang%20Jaya%20AC%2C%20saya%20mau%20pesan%20servis%20AC." target="_blank" rel="noopener">WhatsApp</a>
   </div>
+
 </body>
 </html>
